@@ -1,0 +1,1772 @@
+<!DOCTYPE html>
+<html lang="zh-CN,en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"example.com","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="苹果intel芯片全系列bootcamp对照表，有的需要刻录成光盘安装，有的需要制作成优盘，有的iso文件即可，安装完windows后需要装上bootcamp原生驱动. mac上装windows双系统或单独装windows系统，需要打原生驱动，可以装什么版本的系统？驱动如何选择？">
+<meta property="og:type" content="article">
+<meta property="og:title" content="苹果BootCamp 启动转换助理对照表|bootcamp全系列对照表">
+<meta property="og:url" content="http://example.com/posts/cfe1d389/index.html">
+<meta property="og:site_name" content="开心系统">
+<meta property="og:description" content="苹果intel芯片全系列bootcamp对照表，有的需要刻录成光盘安装，有的需要制作成优盘，有的iso文件即可，安装完windows后需要装上bootcamp原生驱动. mac上装windows双系统或单独装windows系统，需要打原生驱动，可以装什么版本的系统？驱动如何选择？">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2024-08-05T08:16:34.000Z">
+<meta property="article:modified_time" content="2024-08-14T06:58:19.183Z">
+<meta property="article:author" content="开心系统">
+<meta property="article:tag" content="Bootcamp">
+<meta property="article:tag" content="驱动">
+<meta property="article:tag" content="window">
+<meta property="article:tag" content="win7">
+<meta property="article:tag" content="win10">
+<meta property="article:tag" content="win8">
+<meta property="article:tag" content="windows 7">
+<meta property="article:tag" content="windows 8">
+<meta property="article:tag" content="windows 10">
+<meta property="article:tag" content="启动转换助理">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="http://example.com/posts/cfe1d389/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>苹果BootCamp 启动转换助理对照表|bootcamp全系列对照表 | 开心系统</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">开心系统</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">简单、轻松装系统</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-products">
+
+    <a href="/products/" rel="section"><i class="fa fa-th fa-fw"></i>产品</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/posts/cfe1d389/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="开心系统">
+      <meta itemprop="description" content="苹果系统升级、降级、重装、双系统安装">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="开心系统">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          苹果BootCamp 启动转换助理对照表|bootcamp全系列对照表
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2024-08-05 16:16:34" itemprop="dateCreated datePublished" datetime="2024-08-05T16:16:34+08:00">2024-08-05</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2024-08-14 14:58:19" itemprop="dateModified" datetime="2024-08-14T14:58:19+08:00">2024-08-14</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mac/" itemprop="url" rel="index"><span itemprop="name">mac</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/mac/bootcamp%E9%A9%B1%E5%8A%A8/" itemprop="url" rel="index"><span itemprop="name">bootcamp驱动</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/posts/cfe1d389/" class="post-meta-item leancloud_visitors" data-flag-title="苹果BootCamp 启动转换助理对照表|bootcamp全系列对照表" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/posts/cfe1d389/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/posts/cfe1d389/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>苹果intel芯片全系列bootcamp对照表，有的需要刻录成光盘安装，有的需要制作成优盘，有的iso文件即可，安装完windows后需要装上bootcamp原生驱动.</p>
+<p>mac上装windows双系统或单独装windows系统，需要打原生驱动，可以装什么版本的系统？驱动如何选择？</p>
+<span id="more"></span>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><ul>
+<li>百度网盘<br> <a target="_blank" rel="noopener" href="https://pan.baidu.com/s/1aU2k0wNeh_gJW4VuxJOpLQ?pwd=5o3i">https://pan.baidu.com/s/1aU2k0wNeh_gJW4VuxJOpLQ?pwd=5o3i</a>?<br>提取码:5o3i</li>
+</ul>
+<h2 id="故障解决"><a href="#故障解决" class="headerlink" title="故障解决"></a>故障解决</h2><p>mac电脑安装双系统或单版本windows系统时，装不上系统，驱动打不上，声卡没声音等等，怎么办？</p>
+<p>推荐：<a target="_blank" rel="noopener" href="https://shop287609711.taobao.com/">开心萝卜os</a>,<a target="_blank" rel="noopener" href="https://shop404840814.taobao.com/">苹果之王</a></p>
+<h2 id="Macbook-pro"><a href="#Macbook-pro" class="headerlink" title="Macbook pro"></a>Macbook pro</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win11 ARM</strong></th>
+<th align="center"><strong>Win10 ARM预览版</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">MacBook Pro 13寸2022年M2</td>
+<td align="center">PD17-18虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro 14寸&#x2F;16英寸2021年M1 Pro&#x2F;M1 Max</td>
+<td align="center">PD17-18虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro 13寸2020年M1</td>
+<td align="center">PD17-18虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2020年初4端口</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7931</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2020年初2端口</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7931</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro16寸2019年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7748</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2019年中期2端口</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7577</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15寸2019年中期</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7071</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2019年中期4端口</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7071</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15寸带触控条2018年中期</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7071</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸带触控条2018年中期</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7071</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15寸有触控条2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.6851</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸有触控条2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.6813</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸无触控条2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.6813</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15寸2016年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.6655</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2016年末有触控条</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.6660</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2016年末无触控条</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.6660</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15寸2015年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2015年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15寸2014年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5640</td>
+<td align="center">5.1.5640</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15寸2013年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5640</td>
+<td align="center">5.1.5640</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15寸2013年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2012年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro 13寸Retina 2012年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4326</td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15寸2012年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4255</td>
+<td align="center"></td>
+<td align="center">光&#x2F;U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15&#x2F;17寸2011年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0,4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15&#x2F;17寸2011年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2010年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15&#x2F;17寸2010年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15&#x2F;17寸2009年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro17寸2009年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15&#x2F;17寸2008年初&#x2F;末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro 15&#x2F;17寸24&#x2F;22 GHz</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15&#x2F;17寸 Core 2 Duo</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15&#x2F;17寸镜面</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+</tbody></table>
+<h2 id="Macbook-air"><a href="#Macbook-air" class="headerlink" title="Macbook air"></a>Macbook air</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win11 ARM</strong></th>
+<th align="center"><strong>Win10 ARM预览版</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">MacBook Air 13寸 2022年 M2</td>
+<td align="center">PD虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2020年 M1</td>
+<td align="center">PD虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2020年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7854</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2019年中期</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7269</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2018年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7242</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 11&#x2F;13寸 2015年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 11&#x2F;13寸 2014年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5640</td>
+<td align="center">5.1.5640</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 11&#x2F;13寸 2013年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5640</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 11&#x2F;13寸 2012年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4326</td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 11&#x2F;13寸 2011年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4131</td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 11&#x2F;13寸 2010年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2009年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2008年初&#x2F;未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光益</td>
+</tr>
+</tbody></table>
+<h2 id="Macbook-air-1"><a href="#Macbook-air-1" class="headerlink" title="Macbook air"></a>Macbook air</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">MacBook 12寸 2017年</td>
+<td align="center">6.1.6813</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook 12寸 2016初</td>
+<td align="center">6.0.6427</td>
+<td align="center">6.0.6427</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook 12寸 2015初</td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2010中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2009未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2009初&#x2F;中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盎</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2008未 铝合金外壳</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盏</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2008初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2007中&#x2F;未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2006年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2006年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+</tbody></table>
+<h2 id="iMac"><a href="#iMac" class="headerlink" title="iMac"></a>iMac</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win11 ARM</strong></th>
+<th align="center"><strong>Win10 ARM预览版</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">iMac 24寸 4.5K 2021年M1</td>
+<td align="center">PD虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">iMac 27寸 5K 2020年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.8082</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 27寸 5K 2019年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7866</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5寸 4K 2019年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7866</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac Pro 27寸 5K 2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7866</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 27寸 5K 2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7866</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5寸 4K 2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7866</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5寸 普通屏 2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1 6721</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5&#x2F;27寸 2015年未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0 6237</td>
+<td align="center">6.0 6237</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 27寸 5K 2015年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0 6133</td>
+<td align="center">6.0 6133</td>
+<td align="center">5.1.5769</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 27寸 5K 2014年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0 6133</td>
+<td align="center">6.0 6133</td>
+<td align="center">5.1.5769</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5寸 2014年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0 6133</td>
+<td align="center">5.1.5722</td>
+<td align="center">5.1.5722</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5&#x2F;27寸 2013年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0 6133</td>
+<td align="center">5.1.5640</td>
+<td align="center">5.1.5640</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5&#x2F;27寸 2012年未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0 6133</td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">IMac 21.5寸 2011年未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5&#x2F;27寸 2011年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac.27寸 2010年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5寸 2010年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5&#x2F;27寸 2009年未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 20寸 2009年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 20&#x2F;24寸 2009年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 20&#x2F;24寸2008年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 20&#x2F;24寸 2007年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 17&#x2F;20&#x2F;24寸 2006年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 17 2006年初&#x2F;中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+</tbody></table>
+<h2 id="Mac-mini"><a href="#Mac-mini" class="headerlink" title="Mac mini"></a>Mac mini</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win11 ARM</strong></th>
+<th align="center"><strong>Win10 ARM预览版</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Mac Mini 2020年M1</td>
+<td align="center">PD虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">Mac Mini 2018年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7139</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini 2014年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5769</td>
+<td align="center">5.1.5769</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini&#x2F;Server 2012年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini&#x2F;Server 2011年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4131</td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini2010年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini 2009年初&#x2F;末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini 2007年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini 2006年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+</tbody></table>
+<h2 id="iMac-pro"><a href="#iMac-pro" class="headerlink" title="iMac pro"></a>iMac pro</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">IMac Pro 2019年末</td>
+<td align="center">6.1.7667</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">IMac Pro 2013年末</td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5640</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">IMac pro 2012年中</td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">IMac Pro 2010年中</td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">IMac Pro 2009年初</td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">IMac Pro 2008年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">IMac Pro 2007年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">IMac Pro 2005年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+</tbody></table>
+<h2 id="Mac-pro"><a href="#Mac-pro" class="headerlink" title="Mac pro"></a>Mac pro</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Mac Pro 2019年末</td>
+<td align="center">6.1.7667</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+</tbody></table>
+<h2 id="Mac-Studio"><a href="#Mac-Studio" class="headerlink" title="Mac Studio"></a>Mac Studio</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win11 ARM</strong></th>
+<th align="center"><strong>Win10 ARM预览版</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Mac Studio 2022年中 M1 Max&#x2F;M1 Ultra</td>
+<td align="center">PD虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+</tbody></table>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Bootcamp/" rel="tag"># Bootcamp</a>
+              <a href="/tags/%E9%A9%B1%E5%8A%A8/" rel="tag"># 驱动</a>
+              <a href="/tags/window/" rel="tag"># window</a>
+              <a href="/tags/win7/" rel="tag"># win7</a>
+              <a href="/tags/win10/" rel="tag"># win10</a>
+              <a href="/tags/win8/" rel="tag"># win8</a>
+              <a href="/tags/windows-7/" rel="tag"># windows 7</a>
+              <a href="/tags/windows-8/" rel="tag"># windows 8</a>
+              <a href="/tags/windows-10/" rel="tag"># windows 10</a>
+              <a href="/tags/%E5%90%AF%E5%8A%A8%E8%BD%AC%E6%8D%A2%E5%8A%A9%E7%90%86/" rel="tag"># 启动转换助理</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/f0a04af8/" rel="prev" title="Mac机型操作系统兼容性表 苹果macos系统版本-型号对照表">
+      <i class="fa fa-chevron-left"></i> Mac机型操作系统兼容性表 苹果macos系统版本-型号对照表
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%B8%8B%E8%BD%BD%E5%9C%B0%E5%9D%80"><span class="nav-number">1.</span> <span class="nav-text">下载地址</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%95%85%E9%9A%9C%E8%A7%A3%E5%86%B3"><span class="nav-number">2.</span> <span class="nav-text">故障解决</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Macbook-pro"><span class="nav-number">3.</span> <span class="nav-text">Macbook pro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Macbook-air"><span class="nav-number">4.</span> <span class="nav-text">Macbook air</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Macbook-air-1"><span class="nav-number">5.</span> <span class="nav-text">Macbook air</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iMac"><span class="nav-number">6.</span> <span class="nav-text">iMac</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mac-mini"><span class="nav-number">7.</span> <span class="nav-text">Mac mini</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#iMac-pro"><span class="nav-number">8.</span> <span class="nav-text">iMac pro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mac-pro"><span class="nav-number">9.</span> <span class="nav-text">Mac pro</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Mac-Studio"><span class="nav-number">10.</span> <span class="nav-text">Mac Studio</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">开心系统</p>
+  <div class="site-description" itemprop="description">苹果系统升级、降级、重装、双系统安装</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">10</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/true" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+  <div class="languages">
+    <label class="lang-select-label">
+      <i class="fa fa-language"></i>
+      <span>简体中文</span>
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </label>
+    <select class="lang-select" data-canonical="">
+      
+        <option value="zh-CN" data-href="/posts/cfe1d389/" selected="">
+          简体中文
+        </option>
+      
+        <option value="en" data-href="/en/posts/cfe1d389/" selected="">
+          English
+        </option>
+      
+    </select>
+  </div>
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">开心系统</span>
+</div>
+
+<!--
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a> 强力驱动
+  </div>
+-->
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'mail';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : true,
+      notify     : false,
+      appId      : '0fMP9nODso0yJSxOhrYXhH7f-MdYXbMMI',
+      appKey     : 'OAvZTqDxLuOi0YLnFY2Mzm42',
+      placeholder: "欢迎留言 your comments",
+      avatar     : 'mm',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-CN,en' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : false,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

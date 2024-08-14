@@ -1,0 +1,3717 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/posts/4a17b156/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+      <categories>
+        <category>mac</category>
+        <category>windows</category>
+        <category>PC</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+        <tag>install</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>post</title>
+    <url>/posts/5a8a6c8d/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>post</title>
+    <url>/posts/5a8a6c8d/</url>
+    <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>我的博客</title>
+    <url>/posts/d90f63aa/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>mac</category>
+        <category>windows</category>
+        <category>PC</category>
+      </categories>
+      <tags>
+        <tag>mac</tag>
+        <tag>install</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>苹果BootCamp 启动转换助理对照表|bootcamp全系列对照表</title>
+    <url>/posts/cfe1d389/</url>
+    <content><![CDATA[<p>苹果intel芯片全系列bootcamp对照表，有的需要刻录成光盘安装，有的需要制作成优盘，有的iso文件即可，安装完windows后需要装上bootcamp原生驱动.</p>
+<p>mac上装windows双系统或单独装windows系统，需要打原生驱动，可以装什么版本的系统？驱动如何选择？</p>
+<span id="more"></span>
+<h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><ul>
+<li>百度网盘<br> <a href="https://pan.baidu.com/s/1aU2k0wNeh_gJW4VuxJOpLQ?pwd=5o3i">https://pan.baidu.com/s/1aU2k0wNeh_gJW4VuxJOpLQ?pwd=5o3i</a>?<br>提取码:5o3i</li>
+</ul>
+<h2 id="故障解决"><a href="#故障解决" class="headerlink" title="故障解决"></a>故障解决</h2><p>mac电脑安装双系统或单版本windows系统时，装不上系统，驱动打不上，声卡没声音等等，怎么办？</p>
+<p>推荐：<a href="https://shop287609711.taobao.com/">开心萝卜os</a>,<a href="https://shop404840814.taobao.com/">苹果之王</a></p>
+<h2 id="Macbook-pro"><a href="#Macbook-pro" class="headerlink" title="Macbook pro"></a>Macbook pro</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win11 ARM</strong></th>
+<th align="center"><strong>Win10 ARM预览版</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">MacBook Pro 13寸2022年M2</td>
+<td align="center">PD17-18虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro 14寸&#x2F;16英寸2021年M1 Pro&#x2F;M1 Max</td>
+<td align="center">PD17-18虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro 13寸2020年M1</td>
+<td align="center">PD17-18虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2020年初4端口</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7931</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2020年初2端口</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7931</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro16寸2019年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7748</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2019年中期2端口</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7577</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15寸2019年中期</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7071</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2019年中期4端口</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7071</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15寸带触控条2018年中期</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7071</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸带触控条2018年中期</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7071</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15寸有触控条2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.6851</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸有触控条2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.6813</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸无触控条2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.6813</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15寸2016年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.6655</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2016年末有触控条</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.6660</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2016年末无触控条</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.6660</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15寸2015年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2015年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15寸2014年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5640</td>
+<td align="center">5.1.5640</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15寸2013年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5640</td>
+<td align="center">5.1.5640</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15寸2013年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2012年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro 13寸Retina 2012年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4326</td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15寸2012年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4255</td>
+<td align="center"></td>
+<td align="center">光&#x2F;U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15&#x2F;17寸2011年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0,4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15&#x2F;17寸2011年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13寸2010年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15&#x2F;17寸2010年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro13&#x2F;15&#x2F;17寸2009年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro17寸2009年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15&#x2F;17寸2008年初&#x2F;末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro 15&#x2F;17寸24&#x2F;22 GHz</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15&#x2F;17寸 Core 2 Duo</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Pro15&#x2F;17寸镜面</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+</tbody></table>
+<h2 id="Macbook-air"><a href="#Macbook-air" class="headerlink" title="Macbook air"></a>Macbook air</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win11 ARM</strong></th>
+<th align="center"><strong>Win10 ARM预览版</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">MacBook Air 13寸 2022年 M2</td>
+<td align="center">PD虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2020年 M1</td>
+<td align="center">PD虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2020年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7854</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2019年中期</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7269</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2018年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7242</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 11&#x2F;13寸 2015年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 11&#x2F;13寸 2014年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5640</td>
+<td align="center">5.1.5640</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 11&#x2F;13寸 2013年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5640</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 11&#x2F;13寸 2012年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4326</td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 11&#x2F;13寸 2011年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4131</td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 11&#x2F;13寸 2010年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2009年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook Air 13寸 2008年初&#x2F;未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光益</td>
+</tr>
+</tbody></table>
+<h2 id="Macbook-air-1"><a href="#Macbook-air-1" class="headerlink" title="Macbook air"></a>Macbook air</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">MacBook 12寸 2017年</td>
+<td align="center">6.1.6813</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook 12寸 2016初</td>
+<td align="center">6.0.6427</td>
+<td align="center">6.0.6427</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook 12寸 2015初</td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2010中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2009未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2009初&#x2F;中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盎</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2008未 铝合金外壳</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盏</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2008初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2007中&#x2F;未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2006年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">MacBook 13寸 2006年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+</tbody></table>
+<h2 id="iMac"><a href="#iMac" class="headerlink" title="iMac"></a>iMac</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win11 ARM</strong></th>
+<th align="center"><strong>Win10 ARM预览版</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">iMac 24寸 4.5K 2021年M1</td>
+<td align="center">PD虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">iMac 27寸 5K 2020年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.8082</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 27寸 5K 2019年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7866</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5寸 4K 2019年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7866</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac Pro 27寸 5K 2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7866</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 27寸 5K 2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7866</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5寸 4K 2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7866</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5寸 普通屏 2017年</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1 6721</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5&#x2F;27寸 2015年未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0 6237</td>
+<td align="center">6.0 6237</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 27寸 5K 2015年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0 6133</td>
+<td align="center">6.0 6133</td>
+<td align="center">5.1.5769</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">iMac 27寸 5K 2014年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0 6133</td>
+<td align="center">6.0 6133</td>
+<td align="center">5.1.5769</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5寸 2014年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0 6133</td>
+<td align="center">5.1.5722</td>
+<td align="center">5.1.5722</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5&#x2F;27寸 2013年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0 6133</td>
+<td align="center">5.1.5640</td>
+<td align="center">5.1.5640</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5&#x2F;27寸 2012年未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0 6133</td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">IMac 21.5寸 2011年未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5&#x2F;27寸 2011年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac.27寸 2010年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5寸 2010年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 21.5&#x2F;27寸 2009年未</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 20寸 2009年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 20&#x2F;24寸 2009年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 20&#x2F;24寸2008年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 20&#x2F;24寸 2007年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 17&#x2F;20&#x2F;24寸 2006年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">iMac 17 2006年初&#x2F;中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+</tbody></table>
+<h2 id="Mac-mini"><a href="#Mac-mini" class="headerlink" title="Mac mini"></a>Mac mini</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win11 ARM</strong></th>
+<th align="center"><strong>Win10 ARM预览版</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Mac Mini 2020年M1</td>
+<td align="center">PD虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+<tr>
+<td align="center">Mac Mini 2018年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.1.7139</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini 2014年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5769</td>
+<td align="center">5.1.5769</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini&#x2F;Server 2012年末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini&#x2F;Server 2011年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4131</td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini2010年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini 2009年初&#x2F;末</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini 2007年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">Mac Mini 2006年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+</tbody></table>
+<h2 id="iMac-pro"><a href="#iMac-pro" class="headerlink" title="iMac pro"></a>iMac pro</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">IMac Pro 2019年末</td>
+<td align="center">6.1.7667</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+<tr>
+<td align="center">IMac Pro 2013年末</td>
+<td align="center">6.0.6136</td>
+<td align="center">6.0.6136</td>
+<td align="center">5.1.5640</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">U盘</td>
+</tr>
+<tr>
+<td align="center">IMac pro 2012年中</td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">IMac Pro 2010年中</td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center"></td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">IMac Pro 2009年初</td>
+<td align="center"></td>
+<td align="center">5.1.5621</td>
+<td align="center">5.1.5621</td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">IMac Pro 2008年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">IMac Pro 2007年初</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+<tr>
+<td align="center">IMac Pro 2005年中</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">4.0.4033</td>
+<td align="center">3.0.0</td>
+<td align="center">光盘</td>
+</tr>
+</tbody></table>
+<h2 id="Mac-pro"><a href="#Mac-pro" class="headerlink" title="Mac pro"></a>Mac pro</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Mac Pro 2019年末</td>
+<td align="center">6.1.7667</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">ISO</td>
+</tr>
+</tbody></table>
+<h2 id="Mac-Studio"><a href="#Mac-Studio" class="headerlink" title="Mac Studio"></a>Mac Studio</h2><table>
+<thead>
+<tr>
+<th align="center"><strong>电脑型号</strong></th>
+<th align="center"><strong>Win11 ARM</strong></th>
+<th align="center"><strong>Win10 ARM预览版</strong></th>
+<th align="center"><strong>Win10 64位</strong></th>
+<th align="center"><strong>Win8&#x2F;81 64位</strong></th>
+<th align="center"><strong>Win7 64位</strong></th>
+<th align="center"><strong>Win7 32位</strong></th>
+<th align="center"><strong>WinXP 32位</strong></th>
+<th align="center"><strong>Win安装方式</strong></th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">Mac Studio 2022年中 M1 Max&#x2F;M1 Ultra</td>
+<td align="center">PD虚拟机，VM Fusion13虚拟机</td>
+<td align="center">PD16.5虚拟机</td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center"></td>
+<td align="center">虚拟机</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>mac</category>
+        <category>bootcamp驱动</category>
+      </categories>
+      <tags>
+        <tag>Bootcamp</tag>
+        <tag>驱动</tag>
+        <tag>window</tag>
+        <tag>win7</tag>
+        <tag>win10</tag>
+        <tag>win8</tag>
+        <tag>windows 7</tag>
+        <tag>windows 8</tag>
+        <tag>windows 10</tag>
+        <tag>启动转换助理</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Mac机型操作系统兼容性表 苹果macos系统版本-型号对照表</title>
+    <url>/posts/f0a04af8/</url>
+    <content><![CDATA[<h1 id="如何确定苹果电脑可以装什么版本？"><a href="#如何确定苹果电脑可以装什么版本？" class="headerlink" title="如何确定苹果电脑可以装什么版本？"></a>如何确定苹果电脑可以装什么版本？</h1><span id="more"></span>
+<ul>
+<li>技术网站，本文表格参考出处 <a href="https://yama-mac.com/en/macos_correspondence_table/">https://yama-mac.com/en/macos_correspondence_table/</a></li>
+<li>官网查序列号 <a href="https://checkcoverage.apple.com/?locale=zh_CN">https://checkcoverage.apple.com/?locale=zh_CN</a></li>
+<li>官方客服400-666-8800</li>
+</ul>
+<h1 id="苹果各机型技术规格快速查阅链接"><a href="#苹果各机型技术规格快速查阅链接" class="headerlink" title="苹果各机型技术规格快速查阅链接"></a>苹果各机型技术规格快速查阅链接</h1><p>（查询出厂版本，最高支持版本，可升级多大内存，机子有哪些接……）</p>
+<ul>
+<li><a href="https://support.apple.com/zh-cn/HT201300">识别 MacBook Pro 机型</a></li>
+<li><a href="https://support.apple.com/zh-cn/102887">识别 iMac </a></li>
+<li><a href="https://support.apple.com/zh-cn/102887">识别 Mac Pro 机型</a></li>
+<li><a href="https://support.apple.com/zh-cn/103257?caller=baiduansbx">识别 MacBook 机型</a></li>
+<li><a href="https://support.apple.com/zh-cn/102869">识别 MacBook Air 机型</a></li>
+<li><a href="https://support.apple.com/zh-cn/102852">识别 Mac mini 机型 </a></li>
+<li><a href="https://support.apple.com/zh-cn/112625">Xserve (2009 年初机型) - 技术规格</a></li>
+</ul>
+<h1 id="Mac机型操作系统兼容性表-苹果macos系统版本-型号对照表"><a href="#Mac机型操作系统兼容性表-苹果macos系统版本-型号对照表" class="headerlink" title="Mac机型操作系统兼容性表|苹果macos系统版本-型号对照表"></a>Mac机型操作系统兼容性表|苹果macos系统版本-型号对照表</h1><h2 id="MacBook-Pro"><a href="#MacBook-Pro" class="headerlink" title="MacBook Pro"></a>MacBook Pro</h2><h3 id="Apple-Silicon-Mac"><a href="#Apple-Silicon-Mac" class="headerlink" title="Apple Silicon Mac"></a>Apple Silicon Mac</h3><p>符号说明：○&#x3D;支持、△&#x3D;有限支持、×&#x3D;不提供支持</p>
+<table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>支持</th>
+<th>出厂版本</th>
+<th>最高版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2023</td>
+<td><a href="https://support.apple.com/kb/SP890">MacBook Pro (16-inch, 2023)</a></td>
+<td>○</td>
+<td>13.0</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2023</td>
+<td><a href="https://support.apple.com/kb/SP889">MacBook Pro (14-inch, 2023)</a></td>
+<td>○</td>
+<td>13.0</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2022</td>
+<td><a href="https://support.apple.com/kb/SP870">MacBook Pro (13-inch, M2, 2022)</a></td>
+<td>○</td>
+<td>12.4</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2021</td>
+<td><a href="https://support.apple.com/kb/SP858">MacBook Pro (16-inch, 2021)</a></td>
+<td>○</td>
+<td>12.0</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2021</td>
+<td><a href="https://support.apple.com/kb/SP854">MacBook Pro (14-inch, 2021)</a></td>
+<td>○</td>
+<td>12.0</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2020</td>
+<td><a href="https://support.apple.com/kb/SP824">MacBook Pro (13-inch, M1, 2020)</a></td>
+<td>○</td>
+<td>11.0</td>
+<td>14.6.1</td>
+</tr>
+</tbody></table>
+<h3 id="Intel-Mac"><a href="#Intel-Mac" class="headerlink" title="Intel Mac"></a>Intel Mac</h3><table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>支持</th>
+<th>出厂版本</th>
+<th>最高版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2020</td>
+<td><a href="https://support.apple.com/kb/SP819">MacBook Pro (13-inch, 2020, Four Thunderbolt 3 ports)</a></td>
+<td>○</td>
+<td>10.15.4</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2020</td>
+<td><a href="https://support.apple.com/kb/SP818">MacBook Pro (13-inch, 2020, Two Thunderbolt 3 ports)</a></td>
+<td>○</td>
+<td>10.15.4</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2019</td>
+<td><a href="https://support.apple.com/kb/SP809">MacBook Pro (16-inch, 2019)</a></td>
+<td>○</td>
+<td>10.15.1</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2019</td>
+<td><a href="https://support.apple.com/kb/SP799">MacBook Pro (13-inch, 2019, Two Thunderbolt 3 ports)</a></td>
+<td>○</td>
+<td>10.14.5</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2019</td>
+<td><a href="https://support.apple.com/kb/SP794">MacBook Pro (15-inch, 2019)</a></td>
+<td>○</td>
+<td>10.14.5</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2019</td>
+<td><a href="https://support.apple.com/kb/SP795">MacBook Pro (13-inch, 2019, Four Thunderbolt 3 ports)</a></td>
+<td>○</td>
+<td>10.14.5</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2018</td>
+<td><a href="https://support.apple.com/kb/SP776">MacBook Pro (15-inch, 2018)</a></td>
+<td>○</td>
+<td>10.13.6</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2018</td>
+<td><a href="https://support.apple.com/kb/SP775">MacBook Pro (13-inch, 2018, Four Thunderbolt 3 Ports)</a></td>
+<td>○</td>
+<td>10.13.6</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 14 Sonoma分割线 14 Sonoma) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2017</td>
+<td><a href="https://support.apple.com/kb/SP756">MacBook Pro (15-inch, 2017)</a></td>
+<td>△</td>
+<td>10.12.5</td>
+<td>13.6.9</td>
+</tr>
+<tr>
+<td>2017</td>
+<td><a href="https://support.apple.com/kb/SP755">MacBook Pro (13-inch, 2017, Four Thunderbolt 3 Ports)</a></td>
+<td>△</td>
+<td>10.12.5</td>
+<td>13.6.9</td>
+</tr>
+<tr>
+<td>2017</td>
+<td><a href="https://support.apple.com/kb/SP754">MacBook Pro (13-inch, 2017, Two Thunderbolt 3 Ports)</a></td>
+<td>○</td>
+<td>10.12.5</td>
+<td>13.6.9</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 13 Ventura分割线 13 Ventura) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2016</td>
+<td><a href="https://support.apple.com/kb/SP749">MacBook Pro (15-inch, 2016)</a></td>
+<td>△</td>
+<td>10.12.1</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td>2016</td>
+<td><a href="https://support.apple.com/kb/SP748">MacBook Pro (13-inch, 2016, Four Thunderbolt 3 Ports)</a></td>
+<td>△</td>
+<td>10.12.1</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td>2016</td>
+<td><a href="https://support.apple.com/kb/SP747">MacBook Pro (13-inch, 2016, Two Thunderbolt 3 Ports)</a></td>
+<td>△</td>
+<td>10.12.1</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td>2015</td>
+<td><a href="https://support.apple.com/kb/SP719">MacBook Pro (Retina, 15-inch, Mid 2015)</a></td>
+<td>△</td>
+<td>10.10.3</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td>2015</td>
+<td><a href="https://support.apple.com/kb/SP715">MacBook Pro (Retina, 13-inch, Early 2015)</a></td>
+<td>△</td>
+<td>10.10.2</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 12 Monterey分割线 12 Monterey) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2014</td>
+<td><a href="https://support.apple.com/kb/SP704">MacBook Pro (Retina, 15-inch, Mid 2014)</a></td>
+<td>×</td>
+<td>10.9.4</td>
+<td>11.7.10</td>
+</tr>
+<tr>
+<td>2014</td>
+<td><a href="https://support.apple.com/kb/SP703">MacBook Pro (Retina, 13-inch, Mid 2014)</a></td>
+<td>×</td>
+<td>10.9.4</td>
+<td>11.7.10</td>
+</tr>
+<tr>
+<td>2013</td>
+<td><a href="https://support.apple.com/kb/SP690">MacBook Pro (Retina, 15-inch, Late 2013)</a></td>
+<td>×</td>
+<td>10.9</td>
+<td>11.7.10</td>
+</tr>
+<tr>
+<td>2013</td>
+<td><a href="https://support.apple.com/kb/SP691">MacBook Pro (Retina, 13-inch, Late 2013)</a></td>
+<td>×</td>
+<td>10.9</td>
+<td>11.7.10</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 11 Big Sur分割线 11 Big Sur) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2013</td>
+<td><a href="https://support.apple.com/kb/SP669">MacBook Pro (Retina, 15-inch, Early 2013)</a></td>
+<td>×</td>
+<td>10.8.2</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td>2013</td>
+<td><a href="https://support.apple.com/kb/SP668">MacBook Pro (Retina, 13-inch, Early 2013)</a></td>
+<td>×</td>
+<td>10.8.2</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td>2012</td>
+<td><a href="https://support.apple.com/kb/SP658">MacBook Pro (Retina, 13-inch, Late 2012)</a></td>
+<td>×</td>
+<td>10.8.1</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td>2012</td>
+<td><a href="https://support.apple.com/kb/SP694">MacBook Pro (Retina, 15-inch, Mid 2012)</a></td>
+<td>×</td>
+<td>10.7.4</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td>2012</td>
+<td><a href="https://support.apple.com/kb/SP694">MacBook Pro (15-inch, Mid 2012)</a></td>
+<td>×</td>
+<td>10.7.4</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td>2012</td>
+<td><a href="https://support.apple.com/kb/SP649">MacBook Pro (13-inch, Mid 2012)</a></td>
+<td>×</td>
+<td>10.7.4</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.15 Catalina分割线 10.5 Catalina) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://support.apple.com/kb/SP646">MacBook Pro (17-inch, Late 2011)</a></td>
+<td>×</td>
+<td>10.7.2</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://support.apple.com/kb/SP644">MacBook Pro (15-inch, Late 2011)</a></td>
+<td>×</td>
+<td>10.7.2</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://support.apple.com/kb/SP645">MacBook Pro (13-inch, Late 2011)</a></td>
+<td>×</td>
+<td>10.7.2</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://support.apple.com/kb/SP621">MacBook Pro (17-inch, Early 2011)</a></td>
+<td>×</td>
+<td>10.6.6</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://support.apple.com/kb/SP620">MacBook Pro (15-inch, Early 2011)</a></td>
+<td>×</td>
+<td>10.6.6</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://support.apple.com/kb/SP619">MacBook Pro (13-inch, Early 2011)</a></td>
+<td>×</td>
+<td>10.6.6</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2010</td>
+<td><a href="https://support.apple.com/kb/SP581">MacBook Pro (17-inch, Mid 2010)</a></td>
+<td>×</td>
+<td>10.6.3</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2010</td>
+<td><a href="https://support.apple.com/kb/SP582">MacBook Pro (15-inch, Mid 2010)</a></td>
+<td>×</td>
+<td>10.6.3</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2010</td>
+<td><a href="https://support.apple.com/kb/SP583">MacBook Pro (13-inch, Mid 2010)</a></td>
+<td>×</td>
+<td>10.6.3</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.13 High Sierra分割线 10.13 High Sierra) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP546">MacBook Pro (17-inch, Mid 2009)</a></td>
+<td>×</td>
+<td>10.5.7</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP544">MacBook Pro (15-inch, Mid 2009)</a></td>
+<td>×</td>
+<td>10.5.7</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP544">MacBook Pro (15-inch, 2.53 GHz, Mid 2009)</a></td>
+<td>×</td>
+<td>10.5.7</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP541">MacBook Pro (13-inch, Mid 2009)</a></td>
+<td>×</td>
+<td>10.5.7</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP503">MacBook Pro (17-inch, Early 2009)</a></td>
+<td>×</td>
+<td>10.5.6</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>MacBook Pro (17-inch, Late 2008)</td>
+<td>×</td>
+<td>10.5.4</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2008</td>
+<td><a href="https://support.apple.com/kb/SP499">MacBook Pro (15-inch, Late 2008)</a></td>
+<td>×</td>
+<td>10.5.5</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2008</td>
+<td><a href="https://support.apple.com/kb/SP4">MacBook Pro (17-inch, Early 2008)</a></td>
+<td>×</td>
+<td>10.5.2</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2008</td>
+<td><a href="https://support.apple.com/kb/SP4">MacBook Pro (15-inch, Early 2008)</a></td>
+<td>×</td>
+<td>10.5.2</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2007</td>
+<td><a href="https://www.apple.com/jp/support/datasheet/portable/ma895_7.html">MacBook Pro (17-inch, Mid&#x2F;Late 2007, 2.4 GHz)</a></td>
+<td>×</td>
+<td>10.4.9</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2007</td>
+<td><a href="https://www.apple.com/jp/support/datasheet/portable/ma895_7.html">MacBook Pro (15-inch, Mid&#x2F;Late 2007, 2.4&#x2F;2.2 GHz)</a></td>
+<td>×</td>
+<td>10.4.9</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.11 El Capitan分割线 10.11 El Capitan) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2006</td>
+<td>MacBook Pro (17-inch Core 2 Duo)</td>
+<td>×</td>
+<td>10.4.8</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>MacBook Pro (15-inch Core 2 Duo)</td>
+<td>×</td>
+<td>10.4.8</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.7 Lion分割线 10.7 Lion) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2006</td>
+<td>MacBook Pro (15-inch Glossy)</td>
+<td>×</td>
+<td>10.4.6</td>
+<td>10.6.8</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>MacBook Pro (17-inch)</td>
+<td>×</td>
+<td>10.4.6</td>
+<td>10.6.8</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>MacBook Pro (17-inch)</td>
+<td>×</td>
+<td>10.4.5</td>
+<td>10.6.8</td>
+</tr>
+</tbody></table>
+<h2 id="MacBook-Air"><a href="#MacBook-Air" class="headerlink" title="MacBook Air"></a>MacBook Air</h2><h3 id="Apple-Silicon-Mac-1"><a href="#Apple-Silicon-Mac-1" class="headerlink" title="Apple Silicon Mac"></a>Apple Silicon Mac</h3><table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>支持</th>
+<th>出厂版本</th>
+<th>最高版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2023</td>
+<td><a href="https://support.apple.com/kb/SP893">MacBook Air (15-inch, M2, 2023)</a></td>
+<td>○</td>
+<td>13.4</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>2022</td>
+<td><a href="https://support.apple.com/kb/SP869">MacBook Air (M2, 2022)</a></td>
+<td>○</td>
+<td>12.4</td>
+<td>TBD</td>
+</tr>
+<tr>
+<td>2020</td>
+<td><a href="https://support.apple.com/kb/SP825">MacBook Air (M1, 2020)</a></td>
+<td>○</td>
+<td>11.0</td>
+<td>TBD</td>
+</tr>
+</tbody></table>
+<h3 id="Intel-Mac-1"><a href="#Intel-Mac-1" class="headerlink" title="Intel Mac"></a>Intel Mac</h3><table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>支持</th>
+<th>出厂版本</th>
+<th>最高版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2020</td>
+<td><a href="https://support.apple.com/kb/SP813">MacBook Air (Retina, 13-inch, 2020)</a></td>
+<td>○</td>
+<td>10.15.3</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2019</td>
+<td><a href="https://support.apple.com/kb/SP798">MacBook Air (Retina, 13-inch, 2019)</a></td>
+<td>○</td>
+<td>10.14.5</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2018</td>
+<td><a href="https://support.apple.com/kb/SP783">MacBook Air (Retina, 13-inch, 2018)</a></td>
+<td>○</td>
+<td>10.14.1</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 14 Sonoma分割线 14 Sonoma) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2017</td>
+<td><a href="https://support.apple.com/kb/SP753">MacBook Air (13-inch, 2017)</a></td>
+<td>○</td>
+<td>10.12.4</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td>2015</td>
+<td><a href="https://support.apple.com/kb/SP714">MacBook Air (13-inch, Early 2015)</a></td>
+<td>△</td>
+<td>10.10.2</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td>2015</td>
+<td><a href="https://support.apple.com/kb/SP713">MacBook Air (11-inch, Early 2015)</a></td>
+<td>△</td>
+<td>10.10.2</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 12 Monterey分割线 12 Monterey) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2014</td>
+<td><a href="https://support.apple.com/kb/SP700">MacBook Air (13-inch, Early 2014)</a></td>
+<td>×</td>
+<td>10.9.2</td>
+<td>11.7.10</td>
+</tr>
+<tr>
+<td>2014</td>
+<td><a href="https://support.apple.com/kb/SP699">MacBook Air (11-inch, Early 2014)</a></td>
+<td>×</td>
+<td>10.9.2</td>
+<td>11.7.10</td>
+</tr>
+<tr>
+<td>2013</td>
+<td><a href="https://support.apple.com/kb/SP678">MacBook Air (13-inch, Mid 2013)</a></td>
+<td>×</td>
+<td>10.8.4</td>
+<td>11.7.10</td>
+</tr>
+<tr>
+<td>2013</td>
+<td><a href="https://support.apple.com/kb/SP677">MacBook Air (11-inch, Mid 2013)</a></td>
+<td>×</td>
+<td>10.8.4</td>
+<td>11.7.10</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 11 Big Sur分割线 11 Big Sur) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2012</td>
+<td><a href="https://support.apple.com/kb/SP670">MacBook Air (13-inch, Mid 2012)</a></td>
+<td>×</td>
+<td>10.7.4</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td>2012</td>
+<td><a href="https://support.apple.com/kb/SP650">MacBook Air (11-inch, Mid 2012)</a></td>
+<td>×</td>
+<td>10.7.4</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.15 Catalina分割线 10.15 Catalina) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://support.apple.com/kb/SP683">MacBook Air (13-inch, Mid 2011)</a></td>
+<td>×</td>
+<td>10.7</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://support.apple.com/kb/SP631">MacBook Air (11-inch, Mid 2011)</a></td>
+<td>×</td>
+<td>10.7</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2010</td>
+<td><a href="https://support.apple.com/kb/SP618">MacBook Air (13-inch, Late 2010)</a></td>
+<td>×</td>
+<td>10.6.4</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2010</td>
+<td><a href="https://support.apple.com/kb/SP617">MacBook Air (11-inch, Late 2010)</a></td>
+<td>×</td>
+<td>10.6.4</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.13 High Sierra分割线 10.13 High Sierra) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP548">MacBook Air (Mid 2009)</a></td>
+<td>×</td>
+<td>10.5.6</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>MacBook Air (Late 2008)</td>
+<td>×</td>
+<td>10.5.5</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.11 El Capitan分割线 10.11 El Capitan) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2008</td>
+<td>MacBook Air</td>
+<td>×</td>
+<td>10.5.1</td>
+<td>10.7.5</td>
+</tr>
+</tbody></table>
+<h2 id="MacBook"><a href="#MacBook" class="headerlink" title="MacBook"></a>MacBook</h2><h3 id="Intel-Mac-2"><a href="#Intel-Mac-2" class="headerlink" title="Intel Mac"></a>Intel Mac</h3><table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>支持</th>
+<th>出厂版本</th>
+<th>最高版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2017</td>
+<td><a href="https://support.apple.com/kb/SP757">MacBook (Retina, 12-inch, 2017)</a></td>
+<td>○</td>
+<td>10.12.5</td>
+<td>13.6.9</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 13 Ventura分割线 13 Ventura) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2016</td>
+<td><a href="https://support.apple.com/kb/SP741">MacBook (Retina, 12-inch, Early 2016)</a></td>
+<td>△</td>
+<td>10.11.4</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 12 Monterey分割线 12 Monterey) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2015</td>
+<td><a href="https://support.apple.com/kb/SP712">MacBook (Retina, 12-inch, Early 2015)</a></td>
+<td>×</td>
+<td>10.10.2</td>
+<td>11.7.10</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 11 Big Sur分割线 11 Big Sur) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2010</td>
+<td><a href="https://support.apple.com/kb/SP584">MacBook (13-inch, Mid 2010)</a></td>
+<td>×</td>
+<td>10.6.3</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP579">MacBook (13-inch, Late 2009)</a></td>
+<td>×</td>
+<td>10.6.1</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.13 High Sierra分割线 10.13 High Sierra) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP512">MacBook (13-inch, Mid 2009)</a></td>
+<td>×</td>
+<td>10.5.7</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP504">MacBook (13-inch, Early 2009)</a></td>
+<td>×</td>
+<td>10.5.6</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>MacBook (13-inch, Aluminium, Late 2008)</td>
+<td>×</td>
+<td>10.5.5</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.11 El Capitan分割线 10.11 El Capitan) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2008</td>
+<td>MacBook (13-inch, Late 2008)</td>
+<td>×</td>
+<td>10.5.4</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>MacBook (13-inch, Early 2008)</td>
+<td>×</td>
+<td>10.5.2</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>MacBook (13-inch, Late 2007)</td>
+<td>×</td>
+<td>10.5</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>MacBook (13-inch, Mid 2007)</td>
+<td>×</td>
+<td>10.4.9</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>MacBook (13-inch, Late 2006)</td>
+<td>×</td>
+<td>10.4.8</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.7 Lion分割线 10.7 Lion) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2006</td>
+<td>MacBook (13-inch)</td>
+<td>×</td>
+<td>10.4.6</td>
+<td>10.6.8</td>
+</tr>
+</tbody></table>
+<h2 id="iMac"><a href="#iMac" class="headerlink" title="iMac"></a>iMac</h2><h3 id="Apple-Silicon-Mac-2"><a href="#Apple-Silicon-Mac-2" class="headerlink" title="Apple Silicon Mac"></a>Apple Silicon Mac</h3><table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>支持</th>
+<th>出厂版本</th>
+<th>最高版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2023</td>
+<td><a href="https://support.apple.com/kb/SP897">iMac (24-inch, M3, 2023, Four ports)</a></td>
+<td>○</td>
+<td>14.1</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2021</td>
+<td><a href="https://support.apple.com/kb/SP839">iMac (24-inch, M1, 2021)</a></td>
+<td>○</td>
+<td>11.3</td>
+<td>14.6.1</td>
+</tr>
+</tbody></table>
+<h3 id="Intel-Mac-3"><a href="#Intel-Mac-3" class="headerlink" title="Intel Mac"></a>Intel Mac</h3><table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>支持</th>
+<th>出厂版本</th>
+<th>最高版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2020</td>
+<td><a href="https://support.apple.com/kb/SP821">iMac (Retina 5K, 27-inch, 2020)</a></td>
+<td>○</td>
+<td>10.15.6</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2019</td>
+<td><a href="https://support.apple.com/kb/SP790">iMac (Retina 5K, 27-inch, 2020)</a></td>
+<td>○</td>
+<td>10.14.4</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2019</td>
+<td><a href="https://support.apple.com/kb/SP789">iMac (Retina 4K, 21.5-inch, 2019)</a></td>
+<td>○</td>
+<td>10.14.4</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 14 Sonoma分割线 14 Sonoma) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2017</td>
+<td><a href="https://support.apple.com/kb/SP771">iMac Pro(2017)</a></td>
+<td>○</td>
+<td>10.13.2</td>
+<td>13.6.9</td>
+</tr>
+<tr>
+<td>2017</td>
+<td><a href="https://support.apple.com/kb/SP760">iMac (Retinak 5K, 27-inch, 2017)</a></td>
+<td>○</td>
+<td>10.12.4</td>
+<td>13.6.9</td>
+</tr>
+<tr>
+<td>2017</td>
+<td><a href="https://support.apple.com/kb/SP759">iMac (Retinak 4K, 21.5-inch, 2017)</a></td>
+<td>○</td>
+<td>10.12.4</td>
+<td>13.6.9</td>
+</tr>
+<tr>
+<td>2017</td>
+<td><a href="https://support.apple.com/kb/SP758">iMac (21.5-inch, 2017)</a></td>
+<td>○</td>
+<td>10.12.4</td>
+<td>13.6.9</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 13 Ventura分割线 13 Ventura) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2015</td>
+<td><a href="https://support.apple.com/kb/SP731">iMac (Retina 5K, 27-inch, Late 2015)</a></td>
+<td>△</td>
+<td>10.11</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td>2015</td>
+<td><a href="https://support.apple.com/kb/SP732">iMac (Retina 4K, 21.5-inch, Late 2015)</a></td>
+<td>○</td>
+<td>10.11</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td>2015</td>
+<td><a href="https://support.apple.com/kb/SP733">iMac (21.5-inch, Late 2015)</a></td>
+<td>△</td>
+<td>10.11</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 12 Monterey分割线 12 Monterey) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2015</td>
+<td><a href="https://support.apple.com/kb/SP718">iMac (Retinak 5K, 27-inch, Mid 2015)</a></td>
+<td>△</td>
+<td>10.10.2</td>
+<td>11.7.10</td>
+</tr>
+<tr>
+<td>2014</td>
+<td><a href="https://support.apple.com/kb/SP707">iMac (Retinak 5K, 27-inch, Late 2014)</a></td>
+<td>×</td>
+<td>10.10</td>
+<td>11.7.10</td>
+</tr>
+<tr>
+<td>2014</td>
+<td><a href="https://support.apple.com/kb/SP701">iMac (21.5-inch, Mid 2014)</a></td>
+<td>×</td>
+<td>10.9.3</td>
+<td>11.7.10</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 11 Big Sur分割线 11 Big Sur) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2013</td>
+<td><a href="https://support.apple.com/kb/SP688">iMac (27-inch, Late 2013)</a></td>
+<td>×</td>
+<td>10.8.4</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td>2013</td>
+<td><a href="https://support.apple.com/kb/SP687">iMac (21.5-inch, Late 2013)</a></td>
+<td>×</td>
+<td>10.8.4</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td>2013</td>
+<td>iMac (21.5-inch, Early 2013)</td>
+<td>△</td>
+<td>10.8.2</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td>2012</td>
+<td><a href="https://support.apple.com/kb/sp667">iMac (27-inch, Late 2012)</a></td>
+<td>×</td>
+<td>10.8.2</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td>2012</td>
+<td><a href="https://support.apple.com/kb/SP665">iMac (21.5-inch, Late 2012)</a></td>
+<td>×</td>
+<td>10.8.2</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.15 Catalina分割线 10.15 Catalina) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2011</td>
+<td>iMac (21.5-inch, Late 2011)</td>
+<td>×</td>
+<td>10.7</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://support.apple.com/kb/SP689">iMac (27-inch, Mid 2011)</a></td>
+<td>×</td>
+<td>10.6.6</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://support.apple.com/kb/SP623">iMac (21.5-inch, Mid 2011)</a></td>
+<td>×</td>
+<td>10.6.6</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2010</td>
+<td><a href="https://support.apple.com/kb/SP695">iMac (27-inch, Mid 2010)</a></td>
+<td>×</td>
+<td>10.6.3</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2010</td>
+<td><a href="https://support.apple.com/kb/SP588">iMac (21.5-inch, Mid 2010)</a></td>
+<td>×</td>
+<td>10.6.3</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP696">iMac (27-inch, Late 2009)</a></td>
+<td>×</td>
+<td>10.6.1</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP576">iMac (21.5-inch, Late 2009)</a></td>
+<td>×</td>
+<td>10.6.1</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.13 High Sierra分割线 10.13 High Sierra) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2009</td>
+<td>iMac (20-inch, Mid 2009)</td>
+<td>×</td>
+<td>10.5.6</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP507">iMac (24-inch, Early 2009)</a></td>
+<td>×</td>
+<td>10.5.6</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP507">iMac (20-inch, Early 2009)</a></td>
+<td>×</td>
+<td>10.5.6</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>iMac (24-inch, Early 2008)</td>
+<td>×</td>
+<td>10.5.2</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>iMac (20-inch, Early 2008)</td>
+<td>×</td>
+<td>10.5.2</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>iMac (24-inch, Mid 2007)</td>
+<td>×</td>
+<td>10.4.10</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>iMac (20-inch, Mid 2007)</td>
+<td>×</td>
+<td>10.4.10</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.11 El Capitan分割线 10.11 El Capitan) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2006</td>
+<td>iMac (24-inch)</td>
+<td>×</td>
+<td>10.4.7</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>iMac (20-inch Late 2006)</td>
+<td>×</td>
+<td>10.4.7</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>iMac (17-inch Late 2006)</td>
+<td>×</td>
+<td>10.4.7</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>iMac (17-inch Late 2006 CD)</td>
+<td>×</td>
+<td>10.4.7</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.7 Lion分割线 10.7 Lion) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2006</td>
+<td>iMac (Mid 2006 17-inch)</td>
+<td>×</td>
+<td>10.4.6</td>
+<td>10.6.8</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>iMac (Early 2006 20-inch)</td>
+<td>×</td>
+<td>10.4.4</td>
+<td>10.6.8</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>iMac (Early 2006 17-inch)</td>
+<td>×</td>
+<td>10.4.4</td>
+<td>10.6.8</td>
+</tr>
+</tbody></table>
+<h2 id="Mac-mini"><a href="#Mac-mini" class="headerlink" title="Mac mini"></a>Mac mini</h2><h3 id="Apple-Silicon-Mac-3"><a href="#Apple-Silicon-Mac-3" class="headerlink" title="Apple Silicon Mac"></a>Apple Silicon Mac</h3><table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>支持</th>
+<th>出厂版本</th>
+<th>最高版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2023</td>
+<td><a href="https://support.apple.com/kb/SP891">Mac mini (2023)</a></td>
+<td>○</td>
+<td>13.0</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2020</td>
+<td><a href="https://support.apple.com/kb/SP823">Mac mini (M1, 2020)</a></td>
+<td>○</td>
+<td>11.0</td>
+<td>14.6.1</td>
+</tr>
+</tbody></table>
+<h3 id="Intel-Mac-4"><a href="#Intel-Mac-4" class="headerlink" title="Intel Mac"></a>Intel Mac</h3><table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>支持</th>
+<th>出厂版本</th>
+<th>最高版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2018</td>
+<td><a href="https://support.apple.com/kb/SP782">Mac mini (2018)</a></td>
+<td>○</td>
+<td>10.14</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 14 Sonoma分割线 14 Sonoma) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2014</td>
+<td><a href="https://support.apple.com/kb/SP710">Mac mini (Late 2014)</a></td>
+<td>○</td>
+<td>10.10</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 12 Monterey分割线 12 Monterey) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2012</td>
+<td><a href="https://support.apple.com/kb/SP659">Mac mini (Late 2012)</a></td>
+<td>×</td>
+<td>10.8.1</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td>2012</td>
+<td><a href="https://support.apple.com/kb/SP659">Mac mini Server (Late 2012)</a></td>
+<td>×</td>
+<td>10.8.1</td>
+<td>10.15.7</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.15 Catalina分割线 10.15 Catalina) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://support.apple.com/kb/SP632">Mac mini (Mid 2011)</a></td>
+<td>×</td>
+<td>10.7</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2011</td>
+<td><a href="https://support.apple.com/kb/SP632">Mac mini Server (Mid 2011)</a></td>
+<td>×</td>
+<td>10.7</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2010</td>
+<td><a href="https://support.apple.com/kb/SP585">Mac mini (Mid 2010)</a></td>
+<td>×</td>
+<td>10.6.3</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td>2010</td>
+<td><a href="https://support.apple.com/kb/SP585">Mac mini Server (Mid 2010)</a></td>
+<td>×</td>
+<td>10.6.3</td>
+<td>10.13.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.13 High Sierra分割线 10.13 High Sierra) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP577">Mac mini (Late 2009)</a></td>
+<td>×</td>
+<td>10.6</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP505">Mac mini (Early 2009)</a></td>
+<td>×</td>
+<td>10.5.6</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.11 El Capitan分割线 10.11 El Capitan) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2007</td>
+<td>Mac mini (Mid 2007)</td>
+<td>×</td>
+<td>10.4.10</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.7 Lion分割线 10.7 Lion) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2006</td>
+<td>Mac mini (Late 2006)</td>
+<td>×</td>
+<td>10.4.7</td>
+<td>10.6.8</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>Mac mini (Early 2006)</td>
+<td>×</td>
+<td>10.4.5</td>
+<td>10.6.8</td>
+</tr>
+</tbody></table>
+<h2 id="Mac-Pro"><a href="#Mac-Pro" class="headerlink" title="Mac Pro"></a>Mac Pro</h2><h3 id="Apple-Silicon-Mac-4"><a href="#Apple-Silicon-Mac-4" class="headerlink" title="Apple Silicon Mac"></a>Apple Silicon Mac</h3><table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>支持</th>
+<th>出厂版本</th>
+<th>最高版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2023</td>
+<td><a href="https://support.apple.com/kb/SP892">Mac Pro (2023)</a></td>
+<td>○</td>
+<td>13.4</td>
+<td>14.6.1</td>
+</tr>
+</tbody></table>
+<h3 id="Intel-Mac-5"><a href="#Intel-Mac-5" class="headerlink" title="Intel Mac"></a>Intel Mac</h3><table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>支持</th>
+<th>出厂版本</th>
+<th>最高版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2019</td>
+<td><a href="https://support.apple.com/kb/SP797">Mac Pro (2019)</a></td>
+<td>○</td>
+<td>10.15.2</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 14 Sonoma分割线 14 Sonoma) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2013</td>
+<td><a href="https://support.apple.com/kb/SP697">Mac Pro (Late 2013)</a></td>
+<td>○</td>
+<td>10.9</td>
+<td>12.7.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 12 Monterey分割线 12 Monterey) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2012</td>
+<td><a href="https://support.apple.com/kb/SP652">Mac Pro (Mid 2012)</a></td>
+<td>△</td>
+<td>10.7.3</td>
+<td>10.14.6 （矿卡）  10.13.6  （非矿显卡）</td>
+</tr>
+<tr>
+<td>2010</td>
+<td><a href="https://support.apple.com/kb/SP589">Mac Pro (Mid 2010)</a></td>
+<td>×</td>
+<td>10.6.4</td>
+<td>10.14.6 （矿卡）  10.13.6 （非矿显卡）</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.13 High Sierra分割线 10.13 High Sierra) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2009</td>
+<td><a href="https://support.apple.com/kb/SP506">Mac Pro (Early 2009)</a></td>
+<td>×</td>
+<td>10.5.6</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td>2008</td>
+<td>Mac Pro (Early 2008)</td>
+<td>×</td>
+<td>10.5.1</td>
+<td>10.11.6</td>
+</tr>
+<tr>
+<td></td>
+<td>&lt;— 10.11 El Capitan分割线 10.11 El Capitan) —&gt;</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2007</td>
+<td>Mac Pro (8-core)</td>
+<td>×</td>
+<td>10.4.9</td>
+<td>10.7.5</td>
+</tr>
+<tr>
+<td>2006</td>
+<td>Mac Pro</td>
+<td>×</td>
+<td>10.4.7</td>
+<td>10.7.5</td>
+</tr>
+</tbody></table>
+<h2 id="Mac-Studio"><a href="#Mac-Studio" class="headerlink" title="Mac Studio"></a>Mac Studio</h2><h3 id="Apple-Silicon-Mac-5"><a href="#Apple-Silicon-Mac-5" class="headerlink" title="Apple Silicon Mac"></a>Apple Silicon Mac</h3><table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>支持</th>
+<th>出厂版本</th>
+<th>最高版本</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2023</td>
+<td><a href="https://support.apple.com/kb/SP894">Mac Studio (2023)</a></td>
+<td>○</td>
+<td>13.4</td>
+<td>14.6.1</td>
+</tr>
+<tr>
+<td>2022</td>
+<td><a href="https://support.apple.com/kb/SP865?locale=ja_JP">Mac Studio (2022)</a></td>
+<td>○</td>
+<td>12.3.1</td>
+<td>14.6.1</td>
+</tr>
+</tbody></table>
+]]></content>
+      <categories>
+        <category>mac</category>
+        <category>系统文件镜像</category>
+      </categories>
+      <tags>
+        <tag>mac系统</tag>
+        <tag>版本</tag>
+        <tag>对照表</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>苹果刷机文件IPSW下载方法及链接</title>
+    <url>/posts/2912beb/</url>
+    <content><![CDATA[<h1 id="苹果刷机IPSW文件下载地址"><a href="#苹果刷机IPSW文件下载地址" class="headerlink" title="苹果刷机IPSW文件下载地址"></a>苹果刷机IPSW文件下载地址</h1><p>从macos 11 big sur开始，有IPSW格式的文件用于刷机。</p>
+<span id="more"></span>
+<h2 id="苹果官方"><a href="#苹果官方" class="headerlink" title="苹果官方"></a>苹果官方</h2><ol>
+<li>Sequoia</li>
+</ol>
+<ul>
+<li><a href="">UniversalMac_15.1_24B5024e_Restore.ipsw	15.1 Beta 2 M1</a></li>
+<li><a href="https://updates.cdn-apple.com/2024SummerSeed/fullrestores/062-45756/5B063A0C-5ECA-434B-A462-CD1F65737105/UniversalMac_15.0_24A5309e_Restore.ipsw">UniversalMac_15.0_24A5309e_Restore.ipsw	Beta 5</a></li>
+<li><a href="https://updates.cdn-apple.com/2024SummerSeed/fullrestores/062-47125/381F8D56-0EB1-4EB6-AEF4-04D9BC5D2426/UniversalMac_15.1_24B5009l_Restore.ipsw">UniversalMac_15.1_24B5009l_Restore.ipsw	15.1 Beta 1 M1</a></li>
+<li><a href="https://updates.cdn-apple.com/2024SummerSeed/fullrestores/062-39288/8A58D88A-ED62-4E46-A406-13F0294EB4F5/UniversalMac_15.0_24A5298h_Restore.ipsw">UniversalMac_15.0_24A5298h_Restore.ipsw	Beta 4</a></li>
+<li><a href="https://updates.cdn-apple.com/2024SummerSeed/fullrestores/062-36090/83523325-6540-4A17-BA93-A5849E4E9AC2/UniversalMac_15.0_24A5289h_Restore.ipsw">UniversalMac_15.0_24A5289h_Restore.ipsw	Beta 3 Public</a> </li>
+<li><a href="https://updates.cdn-apple.com/2024SummerSeed/fullrestores/062-33928/E22622FB-DAFC-4C64-8CC6-B7CAF89477F7/UniversalMac_15.0_24A5289g_Restore.ipsw">UniversalMac_15.0_24A5289g_Restore.ipsw	Beta 3</a></li>
+<li><a href="https://updates.cdn-apple.com/2024SummerSeed/fullrestores/062-22022/AB066FFB-B7FE-4132-83AC-E58A323805C1/UniversalMac_15.0_24A5279h_Restore.ipsw">UniversalMac_15.0_24A5279h_Restore.ipsw	Beta 2</a></li>
+<li><a href="https://updates.cdn-apple.com/2024SummerSeed/fullrestores/052-49083/ED8F54D6-A7BF-488A-85E5-617E08C41383/UniversalMac_15.0_24A5264n_Restore.ipsw">UniversalMac_15.0_24A5264n_Restore.ipsw	Beta 1</a></li>
+</ul>
+<ol start="2">
+<li>Sonoma</li>
+</ol>
+<ul>
+<li><a href="https://updates.cdn-apple.com/2024SummerFCS/fullrestores/062-52859/932E0A8F-6644-4759-82DA-F8FA8DEA806A/UniversalMac_14.6.1_23G93_Restore.ipsw">UniversalMac_14.6.1_23G93_Restore.ipsw	14.6.1	8&#x2F;07&#x2F;24 </a></li>
+<li><a href="https://updates.cdn-apple.com/2024SummerFCS/fullrestores/052-69922/F5DA2B64-25EB-4370-9E89-FA5689859796/UniversalMac_14.6_23G80_Restore.ipsw">UniversalMac_14.6_23G80_Restore.ipsw	14.6	7&#x2F;29&#x2F;24</a></li>
+<li><a href="https://updates.cdn-apple.com/2024SpringFCS/fullrestores/062-01897/C874907B-9F82-4109-87EB-6B3C9BF1507D/UniversalMac_14.5_23F79_Restore.ipsw">UniversalMac_14.5_23F79_Restore.ipsw	14.5	5&#x2F;13&#x2F;24</a><br>-<a href="https://updates.cdn-apple.com/2024WinterFCS/fullrestores/052-77579/4569734E-120C-4F31-AD08-FC1FF825D059/UniversalMac_14.4.1_23E224_Restore.ipsw">UniversalMac_14.4.1_23E224_Restore.ipsw	14.4.1	3&#x2F;25&#x2F;24</a></li>
+<li><a href="https://updates.cdn-apple.com/2024WinterFCS/fullrestores/052-61990/47F0DD06-1106-4F2E-9CD6-AE6B361A0EC6/UniversalMac_14.4_23E214_Restore.ipsw">UniversalMac_14.4_23E214_Restore.ipsw	14.4	3&#x2F;07&#x2F;24</a></li>
+<li><a href="https://updates.cdn-apple.com/2024WinterFCS/fullrestores/052-40770/72916BCC-D357-422D-A4A2-EF1DEDF6968C/UniversalMac_14.3.1_23D60_Restore.ipsw">UniversalMac_14.3.1_23D60_Restore.ipsw	14.3.1	2&#x2F;08&#x2F;24</a></li>
+<li><a href="https://updates.cdn-apple.com/2024WinterFCS/fullrestores/042-78241/B45074EB-2891-4C05-BCA4-7463F3AC0982/UniversalMac_14.3_23D56_Restore.ipsw">UniversalMac_14.3_23D56_Restore.ipsw	14.3	1&#x2F;22&#x2F;24</a></li>
+<li><a href="https://updates.cdn-apple.com/2023FallFCS/fullrestores/052-22662/ECE59A41-DACC-4CA5-AB23-FDED1A4567DE/UniversalMac_14.2.1_23C71_Restore.ipsw">UniversalMac_14.2.1_23C71_Restore.ipsw	14.2.1	12&#x2F;19&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023FallFCS/fullrestores/052-15117/DC2EE605-ABF3-41AE-9652-D137A8AA5907/UniversalMac_14.2_23C64_Restore.ipsw">UniversalMac_14.2_23C64_Restore.ipsw	14.2	12&#x2F;11&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023FallFCS/fullrestores/052-09443/E8752548-0B80-480C-9FB4-67246672C1B5/UniversalMac_14.1.2_23B92_Restore.ipsw">UniversalMac_14.1.2_23B92_Restore.ipsw	14.1.2	11&#x2F;30&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023FallFCS/fullrestores/052-09457/1210EB3D-1767-4FE4-8433-E2C21AA4D1AE/UniversalMac_14.1.2_23B2091_Restore.ipsw">UniversalMac_14.1.2_23B2091_Restore.ipsw	M3!	11&#x2F;30&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023FallFCS/fullrestores/042-89681/55BD14DB-5535-4203-9359-E2C070E43FBE/UniversalMac_14.1.1_23B81_Restore.ipsw">UniversalMac_14.1.1_23B81_Restore.ipsw	14.1.1	11&#x2F;07&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023FallFCS/fullrestores/042-95557/7C64CC3D-AA8F-4E13-86B1-EF071058D39F/UniversalMac_14.1.1_23B2082_Restore.ipsw">UniversalMac_14.1.1_23B2082_Restore.ipsw	M3!	11&#x2F;07&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023FallFCS/fullrestores/042-86430/DBE44960-58A6-4715-948B-D64F33F769BD/UniversalMac_14.1_23B74_Restore.ipsw">UniversalMac_14.1_23B74_Restore.ipsw	14.1	10&#x2F;25&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023FallFCS/fullrestores/042-41691/76E2D10A-00AA-4536-97D6-D55885468755/UniversalMac_14.1_23B2077_Restore.ipsw">UniversalMac_14.1_23B2077_Restore.ipsw	M3!	11&#x2F;03&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023FallFCS/fullrestores/042-54934/0E101AD6-3117-4B63-9BF1-143B6DB9270A/UniversalMac_14.0_23A344_Restore.ipsw">UniversalMac_14.0_23A344_Restore.ipsw	14.0	9&#x2F;21&#x2F;23</a></li>
+</ul>
+<ol start="3">
+<li>Ventura</li>
+</ol>
+<p>13.6为ipsw发布最终版 	 </p>
+<ul>
+<li><a href="https://updates.cdn-apple.com/2023FallFCS/fullrestores/042-55833/C0830847-A2F8-458F-B680-967991820931/UniversalMac_13.6_22G120_Restore.ipsw">UniversalMac_13.6_22G120_Restore.ipsw	YES	9&#x2F;21&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023SummerFCS/fullrestores/042-43686/945D434B-DA5D-48DB-A558-F6D18D11AD69/UniversalMac_13.5.2_22G91_Restore.ipsw">UniversalMac_13.5.2_22G91_Restore.ipsw	YES	9&#x2F;07&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023SummerFCS/fullrestores/042-25658/2D6BE8DB-5549-4F85-8C54-39FC23BABC68/UniversalMac_13.5.1_22G90_Restore.ipsw">UniversalMac_13.5.1_22G90_Restore.ipsw	YES	8&#x2F;17&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023SummerFCS/fullrestores/032-69606/D3E05CDF-E105-434C-A4A1-4E3DC7668DD0/UniversalMac_13.5_22G74_Restore.ipsw">UniversalMac_13.5_22G74_Restore.ipsw	YES	7&#x2F;24&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023SpringFCS/fullrestores/042-01877/2F49A9FE-7033-41D0-9D0C-64EFCE6B4C22/UniversalMac_13.4.1_22F82_Restore.ipsw">UniversalMac_13.4.1_22F82_Restore.ipsw	YES	6&#x2F;21&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023SpringFCS/fullrestores/032-84884/F97A22EE-9B5E-4FD5-94C1-B39DCEE8D80F/UniversalMac_13.4_22F66_Restore.ipsw">UniversalMac_13.4_22F66_Restore.ipsw	YES	5&#x2F;18&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023WinterFCS/fullrestores/032-66602/418BC37A-FCD9-400A-B4FA-022A19576CD4/UniversalMac_13.3.1_22E261_Restore.ipsw">UniversalMac_13.3.1_22E261_Restore.ipsw	YES	4&#x2F;07&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023WinterSeed/fullrestores/002-75537/8250FA0E-0962-46D6-8A90-57A390B9FFD7/UniversalMac_13.3_22E252_Restore.ipsw">UniversalMac_13.3_22E252_Restore.ipsw	YES	3&#x2F;27&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023WinterFCS/fullrestores/032-48346/EFF99C1E-C408-4E7A-A448-12E1468AF06C/UniversalMac_13.2.1_22D68_Restore.ipsw">UniversalMac_13.2.1_22D68_Restore.ipsw	YES	2&#x2F;13&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2023WinterFCS/fullrestores/032-35688/0350BB21-2B4B-4850-BF77-70B830283B28/UniversalMac_13.2_22D49_Restore.ipsw">UniversalMac_13.2_22D49_Restore.ipsw	YES	1&#x2F;23&#x2F;23</a></li>
+<li><a href="https://updates.cdn-apple.com/2022FallFCS/fullrestores/012-60270/0A7F49BA-FC31-4AD9-8E45-49B1FB9128A6/UniversalMac_13.1_22C65_Restore.ipsw">UniversalMac_13.1_22C65_Restore.ipsw	YES	12&#x2F;13&#x2F;22</a></li>
+<li><a href="https://updates.cdn-apple.com/2022FallFCS/fullrestores/012-93802/A7270B0F-05F8-43D1-A9AD-40EF5699E82C/UniversalMac_13.0.1_22A400_Restore.ipsw">UniversalMac_13.0.1_22A400_Restore.ipsw	YES	11&#x2F;09&#x2F;22</a></li>
+<li><a href="https://updates.cdn-apple.com/2022FallFCS/fullrestores/012-92188/2C38BCD1-2BFF-4A10-B358-94E8E28BE805/UniversalMac_13.0_22A380_Restore.ipsw">UniversalMac_13.0_22A380_Restore.ipsw	YES	10&#x2F;24&#x2F;22</a></li>
+</ul>
+<ol start="4">
+<li>Monterey</li>
+</ol>
+<p>12.6.1为ipsw发布最终版 	 	 </p>
+<ul>
+<li><a href="https://updates.cdn-apple.com/2022FallFCS/fullrestores/012-66032/8D8D90C6-A876-4FFF-BBF4-D158939B3841/UniversalMac_12.6.1_21G217_Restore.ipsw">UniversalMac_12.6.1_21G217_Restore.ipsw	YES	11&#x2F;01&#x2F;22</a></li>
+<li><a href="https://updates.cdn-apple.com/2022FallFCS/fullrestores/012-40537/0EC7C669-13E9-49FB-BD64-9EECC1D174B2/UniversalMac_12.6_21G115_Restore.ipsw">UniversalMac_12.6_21G115_Restore.ipsw	YES	9&#x2F;12&#x2F;22</a></li>
+<li><a href="https://updates.cdn-apple.com/2022SummerFCS/fullrestores/012-51674/A7019DDB-3355-470F-A355-4162A187AB6C/UniversalMac_12.5.1_21G83_Restore.ipsw">UniversalMac_12.5.1_21G83_Restore.ipsw	YES	8&#x2F;17&#x2F;22</a></li>
+<li><a href="https://updates.cdn-apple.com/2022SummerFCS/fullrestores/012-42731/BD9917E0-262C-41C5-A69F-AC316A534A39/UniversalMac_12.5_21G72_Restore.ipsw">UniversalMac_12.5_21G72_Restore.ipsw	YES	7&#x2F;20&#x2F;22</a></li>
+<li><a href="https://updates.cdn-apple.com/2022SpringFCS/fullrestores/012-06874/9CECE956-D945-45E2-93E9-4FFDC81BB49A/UniversalMac_12.4_21F79_Restore.ipsw">UniversalMac_12.4_21F79_Restore.ipsw	YES	5&#x2F;16&#x2F;22</a></li>
+<li><a href="https://updates.cdn-apple.com/2022SpringFCS/fullrestores/012-26509/5D021AD7-2AB3-44E4-A094-67F50D26F09E/UniversalMac_12.4_21F2092_Restore.ipsw">UniversalMac_12.4_21F2092_Restore.ipsw	YES	6&#x2F;16&#x2F;22</a>	 	 </li>
+<li><a href="https://updates.cdn-apple.com/2022SpringFCS/fullrestores/002-79219/851BEDF0-19DB-4040-B765-0F4089D1530D/UniversalMac_12.3.1_21E258_Restore.ipsw">UniversalMac_12.3.1_21E258_Restore.ipsw	YES	03&#x2F;31&#x2F;22</a></li>
+<li><a href="https://updates.cdn-apple.com/2022SpringFCS/fullrestores/071-08757/74A4F2A1-C747-43F9-A22A-C0AD5FB4ECB6/UniversalMac_12.3_21E230_Restore.ipsw">UniversalMac_12.3_21E230_Restore.ipsw	YES	03&#x2F;14&#x2F;22</a></li>
+<li><a href="https://updates.cdn-apple.com/2022WinterFCS/fullrestores/002-66272/FB0B40F5-49EB-421B-81EC-8B56B8468D3C/UniversalMac_12.2.1_21D62_Restore.ipsw">UniversalMac_12.2.1_21D62_Restore.ipsw	YES	02&#x2F;10&#x2F;22</a></li>
+<li><a href="https://updates.cdn-apple.com/2022WinterFCS/fullrestores/002-57044/F1C9CC9E-28BE-49E2-82F9-C7BBBBCC42F8/UniversalMac_12.2_21D49_Restore.ipsw">UniversalMac_12.2_21D49_Restore.ipsw	YES	1&#x2F;26&#x2F;22</a></li>
+<li><a href="https://updates.cdn-apple.com/2021FCSWinter/fullrestores/002-42433/F3F6D5CD-67FE-449C-9212-F7409808B6C4/UniversalMac_12.1_21C52_Restore.ipsw">UniversalMac_12.1_21C52_Restore.ipsw	YES	12&#x2F;13&#x2F;21</a></li>
+<li><a href="https://updates.cdn-apple.com/2021FCSFall/fullrestores/002-23780/D3417F21-41BD-4DDF-9135-FA5A129AF6AF/UniversalMac_12.0.1_21A559_Restore.ipsw">UniversalMac_12.0.1_21A559_Restore.ipsw	YES	10&#x2F;18&#x2F;21</a></li>
+</ul>
+<ol start="5">
+<li>Big sur</li>
+</ol>
+<p>11.6 为ipsw发布最终版</p>
+<ul>
+<li><a href="https://updates.cdn-apple.com/2021FallFCS/fullrestores/071-97388/C361BF5E-0E01-47E5-8D30-5990BC3C9E29/UniversalMac_11.6_20G165_Restore.ipsw">UniversalMac_11.6_20G165_Restore.ipsw	YES	9&#x2F;17&#x2F;21</a></li>
+<li><a href="https://updates.cdn-apple.com/2021SummerFCS/fullrestores/071-78715/CFEE4AA0-C104-479B-BDE1-3BFA1DFE710C/UniversalMac_11.5.2_20G95_Restore.ipsw">UniversalMac_11.5.2_20G95_Restore.ipsw	YES	8&#x2F;11&#x2F;21</a></li>
+<li><a href="https://updates.cdn-apple.com/2021SummerFCS/fullrestores/071-72793/D57C87F1-FFDA-49FD-8747-30B9EE0DB21F/UniversalMac_11.5.1_20G80_Restore.ipsw">UniversalMac_11.5.1_20G80_Restore.ipsw	YES	7&#x2F;26&#x2F;21</a></li>
+<li><a href="https://updates.cdn-apple.com/2021SpringFCS/fullrestores/071-71365/F9BFCEFA-87EB-4B03-A983-6DD23940414B/UniversalMac_11.5_20G71_Restore.ipsw">UniversalMac_11.5_20G71_Restore.ipsw	YES	7&#x2F;19&#x2F;21</a></li>
+<li><a href="http://updates-http.cdn-apple.com/2021SpringFCS/fullrestores/071-00710/AB478B0E-D78C-4DFE-9BDA-5497969A5272/UniversalMac_11.4_20F71_Restore.ipsw">UniversalMac_11.4_20F71_Restore.ipsw	YES	5&#x2F;26&#x2F;21</a></li>
+<li><a href="http://updates-http.cdn-apple.com/2021SpringFCS/fullrestores/071-32411/2A29A9DC-01C7-4A50-A6C4-9705269F780D/UniversalMac_11.3.1_20E241_Restore.ipsw">UniversalMac_11.3.1_20E241_Restore.ipsw	YES	5&#x2F;03&#x2F;21</a></li>
+<li><a href="http://updates-http.cdn-apple.com/2021SpringFCS/fullrestores/071-29178/0E506A34-BA6B-40DF-AB6C-AAA981AD5953/UniversalMac_11.3_20E232_Restore.ipsw">UniversalMac_11.3_20E232_Restore.ipsw	YES	4&#x2F;26&#x2F;21</a></li>
+<li><a href="http://updates-http.cdn-apple.com/2021WinterFCS/fullrestores/071-14756/5676903C-6D55-4412-B9DF-969F15F5491A/UniversalMac_11.2.3_20D91_Restore.ipsw">UniversalMac_11.2.3_20D91_Restore.ipsw	YES	3&#x2F;08&#x2F;21</a></li>
+<li><a href="http://updates-http.cdn-apple.com/2021WinterFCS/fullrestores/071-05436/F88A5D8A-2118-481F-94EB-AA170026A141/UniversalMac_11.2.2_20D80_Restore.ipsw">UniversalMac_11.2.2_20D80_Restore.ipsw	YES	2&#x2F;25&#x2F;21</a></li>
+<li><a href="http://updates-http.cdn-apple.com/2021WinterFCS/fullrestores/071-05402/657ADD63-ABE6-4D42-93FD-E5E3E9D48C67/UniversalMac_11.2.1_20D74_Restore.ipsw">UniversalMac_11.2.1_20D74_Restore.ipsw	YES	2&#x2F;09&#x2F;21</a></li>
+<li><a href="http://updates-http.cdn-apple.com/2021WinterFCS/fullrestores/071-00846/DCCBFDF4-0B4E-4628-A843-F8755C863FB0/UniversalMac_11.2_20D64_Restore.ipsw">UniversalMac_11.2_20D64_Restore.ipsw	YES	2&#x2F;01&#x2F;21</a></li>
+<li><a href="http://updates-http.cdn-apple.com/2020FallFCS/fullrestores/001-86608/A64021D1-CE56-4ABE-BB05-566A951EE3D0/UniversalMac_11.1_20C69_Restore.ipsw">UniversalMac_11.1_20C69_Restore.ipsw	YES	12&#x2F;14&#x2F;20</a></li>
+<li><a href="http://updates-http.cdn-apple.com/2020FallFCS/fullrestores/001-79706/93A4C43C-2B45-47AF-84EA-794F8886B85C/UniversalMac_11.0.1_20B29_Restore.ipsw">UniversalMac_11.0.1_20B29_Restore.ipsw	YES	11&#x2F;12&#x2F;20</a></li>
+</ul>
+<h2 id="网店"><a href="#网店" class="headerlink" title="网店"></a>网店</h2><p>网店提供各版本的系统制作及安装服务，有iso,dmg,rdr,img等格式，满足mac,windows,linux等不同系统下制作安装优盘的要求。<br>   推荐：<a href="https://shop287609711.taobao.com/">开心萝卜os</a>,<a href="https://shop404840814.taobao.com/">苹果之王</a></p>
+<h2 id="博客网站"><a href="#博客网站" class="headerlink" title="博客网站"></a>博客网站</h2><ul>
+<li><a href="www.sysin.org">Sysin博客</a></li>
+<li><a href="https://ipsw.me/">ipsw下载</a></li>
+</ul>
+]]></content>
+      <categories>
+        <category>mac</category>
+        <category>系统文件镜像</category>
+      </categories>
+      <tags>
+        <tag>mac系统</tag>
+        <tag>下载</tag>
+        <tag>IPSW</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>macOS 系统下载汇总</title>
+    <url>/posts/64716a70/</url>
+    <content><![CDATA[<p>搜索引擎虽然可以搜到各种下载链接，但是否经过验证，下载速度是否有保证，有没有进一步技术支持？除了苹果官方下载以外，非官方的推荐如下。</p>
+<span id="more"></span>
+<ol>
+<li>网店。网店提供各版本的系统制作及安装服务，有iso,dmg,rdr,img等格式，满足mac,windows,linux等不同系统下制作安装优盘的要求。<br>推荐：<a href="https://shop287609711.taobao.com/">开心萝卜os</a>,<a href="https://shop404840814.taobao.com/">苹果之王</a></li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>发布年份</th>
+<th>型号</th>
+<th>发布版本</th>
+<th>最高版本</th>
+<th>芯片</th>
+<th>本站下载</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>2028</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2027</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2026</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2025</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>2024</td>
+<td>macOS 15 Sequoia</td>
+<td>15</td>
+<td></td>
+<td>intel，M</td>
+<td><a href="#%E4%B8%8B%E8%BD%BDmacos-15-sequoia">DMG,PKG,ISO,IPSW</a></td>
+</tr>
+<tr>
+<td>2023</td>
+<td>macOS 14 Sonoma</td>
+<td>14</td>
+<td></td>
+<td>intel,M</td>
+<td><a href="#15">DMG,PKG,ISO,IPSW</a></td>
+</tr>
+<tr>
+<td>2022</td>
+<td>macOS 13 Ventura</td>
+<td>13</td>
+<td>13.6.9</td>
+<td>intel,M</td>
+<td><a href="">DMG,PKG,ISO,IPSW</a></td>
+</tr>
+<tr>
+<td>2021</td>
+<td>macOS 12 Monterey</td>
+<td>12</td>
+<td>12.7.6</td>
+<td>intel,M</td>
+<td><a href="">DMG,PKG,ISO,IPSW</a></td>
+</tr>
+<tr>
+<td>2020</td>
+<td>macOS 11 Big Sur</td>
+<td>11</td>
+<td>11.7.10</td>
+<td>intel,M</td>
+<td><a href="">DMG,PKG,ISO,IPSW</a></td>
+</tr>
+<tr>
+<td>2019</td>
+<td>macOS 10.15 Catalina</td>
+<td>10.15</td>
+<td>10.15.7</td>
+<td>intel</td>
+<td><a href="">DMG,PKG,ISO</a></td>
+</tr>
+<tr>
+<td>2018</td>
+<td>macOS 10.14 Mojave</td>
+<td>10.14</td>
+<td>10.14.6</td>
+<td>intel</td>
+<td><a href="">DMG,PKG,ISO</a></td>
+</tr>
+<tr>
+<td>2017</td>
+<td>macOS 10.13 High Sierra</td>
+<td>10.13</td>
+<td>10.13.6</td>
+<td>intel</td>
+<td><a href="">DMG,PKG,ISO</a></td>
+</tr>
+<tr>
+<td>2016</td>
+<td>macOS 10.12 Sierra</td>
+<td>10.12</td>
+<td>10.12.6</td>
+<td>intel</td>
+<td><a href="">DMG,ISO</a></td>
+</tr>
+<tr>
+<td>2015</td>
+<td>OS X 10.11 El capitan</td>
+<td>10.11</td>
+<td>10.11.6</td>
+<td>intel</td>
+<td><a href="">DMG,ISO</a></td>
+</tr>
+<tr>
+<td>2014</td>
+<td>OS X 10.10 Yosemite</td>
+<td>10.1</td>
+<td>10.10.5</td>
+<td>intel</td>
+<td><a href="">DMG,ISO</a></td>
+</tr>
+<tr>
+<td>2013</td>
+<td>OS X 10.9 Mavericks</td>
+<td>10.9</td>
+<td>10.9.5</td>
+<td>intel</td>
+<td><a href="">DMG,ISO</a></td>
+</tr>
+<tr>
+<td>2012</td>
+<td>OS X 10.8 Mountain Lion</td>
+<td>10.8</td>
+<td>10.8.5</td>
+<td>intel</td>
+<td><a href="">DMG,ISO</a></td>
+</tr>
+<tr>
+<td>2011</td>
+<td>Mac OS X 10.7 Lion</td>
+<td>10.7</td>
+<td>10.7.5</td>
+<td>intel</td>
+<td><a href="">DMG,ISO</a></td>
+</tr>
+<tr>
+<td>2009</td>
+<td>Mac OS X 10.6 Snow Leopard</td>
+<td>10.6</td>
+<td>10.6.8</td>
+<td>intel</td>
+<td>&#x2F;</td>
+</tr>
+<tr>
+<td>2007</td>
+<td>Mac OS X 10.5 Leopard</td>
+<td>10.5</td>
+<td>10.5.8</td>
+<td>ppc,intel</td>
+<td>&#x2F;</td>
+</tr>
+<tr>
+<td>2005</td>
+<td>Mac OS X 10.4 Tiger</td>
+<td>10.4.5</td>
+<td>10.4.11</td>
+<td>ppc,intel</td>
+<td>&#x2F;</td>
+</tr>
+<tr>
+<td>2003</td>
+<td>Mac OS X 10.3 Panther</td>
+<td>10.3</td>
+<td>10.3.9</td>
+<td>ppc</td>
+<td>&#x2F;</td>
+</tr>
+<tr>
+<td>2002</td>
+<td>Mac OS X 10.2 Jaguar</td>
+<td>10.2</td>
+<td>10.2.8</td>
+<td>ppc</td>
+<td>&#x2F;</td>
+</tr>
+<tr>
+<td>2001</td>
+<td>Mac OS X 10.1 Puma</td>
+<td>10.1</td>
+<td>10.1.5</td>
+<td>ppc</td>
+<td>&#x2F;</td>
+</tr>
+<tr>
+<td>2001</td>
+<td>Mac OS X 10.0 Cheetah</td>
+<td>10</td>
+<td>10.0.4</td>
+<td>ppc</td>
+<td>&#x2F;</td>
+</tr>
+<tr>
+<td>2001</td>
+<td>Mac OS 9</td>
+<td>9.2</td>
+<td>9.2.2</td>
+<td>ppc</td>
+<td>&#x2F;</td>
+</tr>
+</tbody></table>
+<p>提供常见版本以下格式，其他版本可参阅<a href=""></a>。使用过程中有疑惑，或其他需求推荐咨询专业服务：<a href="https://shop287609711.taobao.com/">开心萝卜os</a>,<a href="https://shop404840814.taobao.com/">苹果之王</a></p>
+<ul>
+<li>pkg格式</li>
+</ul>
+<p>该格式下载双击运行后将生成在应用程序中，双击直接安装，或者通过打命令制作安装U盘。</p>
+<ul>
+<li>dmg格式</li>
+</ul>
+<p>该格式支持mac,windows下制作安装U盘。</p>
+<ul>
+<li>iso格式</li>
+</ul>
+<p>该格式支持mac,windows下制作安装U盘，支持mac,windows下安装虚拟机。</p>
+<ul>
+<li>ipsw格式</li>
+</ul>
+<p>M芯片刷机专用格式。</p>
+<p>ipsw格式需要<a href="https://support.apple.com/zh-cn/116943">搭载 Apple 芯片的 Mac 电脑 &gt;</a>，专业称为刷DFU，俗称刷机，<a href="https://support.apple.com/zh-cn/108900">具体方法 &gt;</a></p>
+<h2 id="macOS-15-Sequoia"><a href="#macOS-15-Sequoia" class="headerlink" title="macOS 15 Sequoia"></a>macOS 15 Sequoia</h2><h3 id="macOS-Sequoia-硬件兼容性列表"><a href="#macOS-Sequoia-硬件兼容性列表" class="headerlink" title="macOS Sequoia 硬件兼容性列表"></a>macOS Sequoia 硬件兼容性列表</h3><p>看看你的 Mac 是否能用 macOS Sequoia</p>
+<p><a href="https://www.apple.com.cn/mac/">进一步了解 Mac&gt;</a></p>
+<ul>
+<li><p><strong>MacBook Air</strong> 2020 and later <a href="https://support.apple.com/zh-cn/HT201862">进一步了解 &gt;</a></p>
+</li>
+<li><p><strong>MacBook Pro</strong> 2018 and later <a href="https://support.apple.com/zh-cn/HT201300">进一步了解 &gt;</a></p>
+</li>
+<li><p><strong>Mac mini</strong> 2018 and later <a href="https://support.apple.com/zh-cn/HT201894">进一步了解 &gt;</a></p>
+</li>
+<li><p><strong>Mac Studio</strong> 2022 <a href="https://support.apple.com/zh-cn/HT213073">进一步了解 &gt;</a></p>
+</li>
+<li><p><strong>Mac Pro</strong> 2019 and later <a href="https://support.apple.com/zh-cn/HT202888">进一步了解 &gt;</a></p>
+</li>
+<li><p><strong>iMac</strong> 2019 and later <a href="https://support.apple.com/zh-cn/HT201634">进一步了解 &gt;</a></p>
+</li>
+<li><p><strong>iMac Pro</strong> 2017 and later <a href="https://support.apple.com/zh-cn/HT201634">进一步了解 &gt;</a></p>
+</li>
+</ul>
+<p>如果你的 Mac 不在兼容性列表，参看：<a href="">在不受支持的 Mac 上强制升级，解放生产力</a></p>
+<h2 id="下载macOS-15-Sequoia"><a href="#下载macOS-15-Sequoia" class="headerlink" title="下载macOS 15 Sequoia"></a>下载macOS 15 Sequoia</h2><h3 id="pkg格式"><a href="#pkg格式" class="headerlink" title="pkg格式"></a>pkg格式</h3><p><a href="https://swcdn.apple.com/content/downloads/22/26/062-45761-A_4K7H81V6R7/9umy19dvhkl2dgr9ldtb2mph22gkwpjrzg/InstallAssistant.pkg"> 15.0    | 24A5309e | Beta 5  InstallAssistant.pkg</a> </p>
+<h3 id="dmg格式"><a href="#dmg格式" class="headerlink" title="dmg格式"></a>dmg格式</h3><h3 id="iso格式"><a href="#iso格式" class="headerlink" title="iso格式"></a>iso格式</h3><h3 id="ipsw格式"><a href="#ipsw格式" class="headerlink" title="ipsw格式"></a>ipsw格式</h3><p><a href="https://updates.cdn-apple.com/2024SummerSeed/fullrestores/062-45756/5B063A0C-5ECA-434B-A462-CD1F65737105/UniversalMac_15.0_24A5309e_Restore.ipsw">UniversalMac_15.0_24A5309e_Restore.ipsw	Beta 5</a></p>
+<p>macOS 14 Sonoma</p>
+<h3 id="pkg格式-1"><a href="#pkg格式-1" class="headerlink" title="pkg格式"></a>pkg格式</h3><p><a href="https://swcdn.apple.com/content/downloads/30/63/062-58676-A_ECWQ492BNE/hrlydsxfk837el7k95venauqmn8ruizw3e/InstallAssistant.pkg"> InstallAssistant.pkg	14.6	23G80</a> </p>
+<h3 id="dmg格式-1"><a href="#dmg格式-1" class="headerlink" title="dmg格式"></a>dmg格式</h3><h3 id="iso格式-1"><a href="#iso格式-1" class="headerlink" title="iso格式"></a>iso格式</h3><h3 id="ipsw格式-1"><a href="#ipsw格式-1" class="headerlink" title="ipsw格式"></a>ipsw格式</h3><p><a href="https://updates.cdn-apple.com/2024SummerFCS/fullrestores/052-69922/F5DA2B64-25EB-4370-9E89-FA5689859796/UniversalMac_14.6_23G80_Restore.ipsw">14.6 23G80</a></p>
+<p>macOS 13 Ventura<br>macOS 12 Monterey<br>macOS 11 Big Sur<br>macOS 10.15 Catalina<br>macOS 10.14 Mojave<br>macOS 10.13 High Sierra<br>macOS 10.12 Sierra<br>OS X 10.11 El capitan<br>OS X 10.10 Yosemite<br>OS X 10.9 Mavericks<br>OS X 10.8 Mountain Lion<br>Mac OS X 10.7 Lion<br>Mac OS X 10.6 Snow Leopard<br>Mac OS X 10.5 Leopard<br>Mac OS X 10.4 Tiger<br>Mac OS X 10.3 Panther<br>Mac OS X 10.2 Jaguar<br>Mac OS X 10.1 Puma<br>Mac OS X 10.0 Cheetah<br>Mac OS 9</p>
+]]></content>
+      <categories>
+        <category>mac</category>
+        <category>系统文件镜像</category>
+      </categories>
+      <tags>
+        <tag>mac系统</tag>
+        <tag>下载</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>苹果系统镜像非官方下载方法及链接</title>
+    <url>/posts/8ddc45c2/</url>
+    <content><![CDATA[<p>搜索引擎虽然可以搜到各种下载链接，但是否经过验证，下载速度是否有保证，有没有进一步技术支持？除了苹果官方下载以外，非官方的推荐如下。</p>
+<span id="more"></span>
+<ol>
+<li><p>网店。网店提供各版本的系统制作及安装服务，有iso,dmg,rdr,img等格式，满足mac,windows,linux等不同系统下制作安装优盘的要求。<br>推荐：<a href="https://shop287609711.taobao.com/">开心萝卜os</a>,<a href="https://shop404840814.taobao.com/">苹果之王</a></p>
+</li>
+<li><p>借助强制升级工具opencore Legacy Patcher</p>
+<p>自带了下载工具，可下载macos 11 big sur以上版本，还支持下载开发者版本</p>
+</li>
+</ol>
+<p><a href="https://github.com/dortania/OpenCore-Legacy-Patcher/releases">https://github.com/dortania/OpenCore-Legacy-Patcher/releases</a></p>
+<ol>
+<li><p>Mist工具</p>
+<p>广受好评的工具，mac下运行。<br><a href="https://github.com/ninxsoft/Mist">https://github.com/ninxsoft/Mist</a></p>
+</li>
+<li><p>installinstallmacos.py</p>
+</li>
+</ol>
+<p>pathon程序，在mac终端里运行。</p>
+<p>介绍：<a href="https://github.com/munki/macadmin-scripts/blob/master/installinstallmacos.py">https://github.com/munki/macadmin-scripts/blob/master/installinstallmacos.py</a></p>
+<p>直接下载使用：<a href="https://raw.githubusercontent.com/munki/macadmin-scripts/master/installinstallmacos.py">https://raw.githubusercontent.com/munki/macadmin-scripts/master/installinstallmacos.py</a></p>
+<ol start="3">
+<li>Mac Deploy Stick</li>
+</ol>
+<p>直接下载使用： <a href="https://twocanoes.com/products/mac/mac-deploy-stick/">https://twocanoes.com/products/mac/mac-deploy-stick/</a></p>
+]]></content>
+      <categories>
+        <category>mac</category>
+        <category>系统文件镜像</category>
+      </categories>
+      <tags>
+        <tag>mac系统</tag>
+        <tag>下载</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>苹果官方下载方法及链接</title>
+    <url>/posts/c67c69f6/</url>
+    <content><![CDATA[<h1 id="来自苹果官方各版本系统的下载方法。"><a href="#来自苹果官方各版本系统的下载方法。" class="headerlink" title="来自苹果官方各版本系统的下载方法。"></a>来自苹果官方各版本系统的下载方法。</h1><p>苹果官方下载方法有3个渠道，整理如下。</p>
+<span id="more"></span>
+<ol>
+<li>苹果应用商城App Store<br>10.13以上版本支持直接下载，下载后位于应用程序里</li>
+</ol>
+<p>– macOS Sequoia 15 目前还未开放</p>
+<p>– macOS Sonoma 14</p>
+<p><a href="https://apps.apple.com/us/app/macos-sonoma/id6450717509">https://apps.apple.com/us/app/macos-sonoma/id6450717509</a></p>
+<p> – macOS Ventura 13</p>
+<p><a href="https://apps.apple.com/us/app/macos-ventura/id1638787999">https://apps.apple.com/us/app/macos-ventura/id1638787999</a></p>
+<p> – macOS Monterey 12</p>
+<p><a href="https://apps.apple.com/us/app/macos-monterey/id1576738294">https://apps.apple.com/us/app/macos-monterey/id1576738294</a></p>
+<p> – macOS Big Sur 11</p>
+<p><a href="https://apps.apple.com/us/app/macos-big-sur/id1526878132">https://apps.apple.com/us/app/macos-big-sur/id1526878132</a></p>
+<p> – macOS Catalina 10.15</p>
+<p><a href="https://apps.apple.com/us/app/macos-catalina/id1466841314">https://apps.apple.com/us/app/macos-catalina/id1466841314</a></p>
+<p> – macOS Mojave 10.14</p>
+<p><a href="https://apps.apple.com/us/app/macos-mojave/id1398502828">https://apps.apple.com/us/app/macos-mojave/id1398502828</a></p>
+<p> – macOS High Sierra 10.13</p>
+<p><a href="https://itunes.apple.com/us/app/macos-high-sierra/id1246284741">https://itunes.apple.com/us/app/macos-high-sierra/id1246284741</a></p>
+<p> – macOS Sierra 10.12</p>
+<p><a href="https://apps.apple.com/us/app/macos-sierra/id1127487414">https://apps.apple.com/us/app/macos-sierra/id1127487414</a></p>
+<ol start="2">
+<li>通过苹果软件更新服务器下载</li>
+</ol>
+<p> – macOS Sequoia</p>
+<table>
+<thead>
+<tr>
+<th>macOS Sequoia BETA</th>
+<th>Version</th>
+<th>Build</th>
+<th>App</th>
+<th>Avail</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://swcdn.apple.com/content/downloads/22/26/062-45761-A_4K7H81V6R7/9umy19dvhkl2dgr9ldtb2mph22gkwpjrzg/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>15.0</td>
+<td>24A5309e</td>
+<td>Beta 5</td>
+<td>YES</td>
+<td>8&#x2F;06</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/48/45/062-39268-A_36NTYE5BPL/0cd85jhjwcbnmk5fqvu4yp323wcmzr9jmu/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>15.0</td>
+<td>24A5298h</td>
+<td>Beta 4</td>
+<td>YES</td>
+<td>7&#x2F;24</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/00/55/062-36085-A_SVM8I0RSF8/xqj8j50pwf49z53toqmdsej6od5u2s0kmw/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>15.0</td>
+<td>24A5289h</td>
+<td>Beta 3 Public 1</td>
+<td>YES</td>
+<td>7&#x2F;15</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/29/38/062-33923-A_THNAK2KUFH/73h0xt67zan3p288k1ll4wg2gkwv0wk54v/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>15.0</td>
+<td>24A5289g</td>
+<td>Beta 3</td>
+<td>YES</td>
+<td>7&#x2F;10</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/56/31/062-22031-A_W5CYUPUHNT/ud3vjnbs2w5yxby2v4eqhwkfbzx2xnjnk3/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>15.0</td>
+<td>24A5279h</td>
+<td>Beta 2</td>
+<td>YES</td>
+<td>6&#x2F;24</td>
+</tr>
+</tbody></table>
+<p> – macOS Sonoma</p>
+<table>
+<thead>
+<tr>
+<th>macOS Sonoma Final</th>
+<th>Version</th>
+<th>Build</th>
+<th>App</th>
+<th>Avail</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://swcdn.apple.com/content/downloads/30/63/062-58676-A_ECWQ492BNE/hrlydsxfk837el7k95venauqmn8ruizw3e/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>14.6.1</td>
+<td>23G93</td>
+<td></td>
+<td>YES</td>
+<td>9&#x2F;07</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/00/11/052-69919-A_USBF3SRH1R/doynj295laqw3fo9i3fmhlljb0prsmzw0y/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>14.6</td>
+<td>23G80</td>
+<td>19.6.01</td>
+<td>YES</td>
+<td>7&#x2F;29</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/32/06/062-01946-A_0PEP7JHIWA/1pfs4xh22555dj51fkep7w06s4eiezh21p/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>14.5</td>
+<td>23F79</td>
+<td></td>
+<td>YES</td>
+<td>5&#x2F;13</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/04/13/052-77516-A_4P7VY083DT/83qy3989rsnylxagdmim3owwjdtc33zfe4/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>14.4.1</td>
+<td>23E224</td>
+<td>19.1.02</td>
+<td>YES</td>
+<td>3&#x2F;24</td>
+</tr>
+</tbody></table>
+<p> – macOS Ventura</p>
+<table>
+<thead>
+<tr>
+<th>macOS 13 Final</th>
+<th>Version</th>
+<th>Build</th>
+<th>App</th>
+<th>Avail</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://swcdn.apple.com/content/downloads/32/13/052-33049-A_UX3Z28TPLL/702vi772ckrytq1r67eli9zrgsu8jxxoqw/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>13.6.9</td>
+<td>22G830</td>
+<td></td>
+<td>YES</td>
+<td>8&#x2F;07</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/28/04/062-39980-A_E2QPJBGQ4F/bg46pvbieyqap91k8idx3anrem2ip80bcq/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>13.6.8</td>
+<td>22G820</td>
+<td></td>
+<td>YES</td>
+<td>7&#x2F;29</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/46/31/052-96247-A_MLN9N00Y8W/dmml3up52hrsb01krjtczmdhexiruv1b5m/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>13.6.7</td>
+<td>22G720</td>
+<td></td>
+<td>YES</td>
+<td>6&#x2F;24</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/39/23/052-64249-A_9F709WX21B/y8u836xffflrewihfvnacmy3p4v8rm3w57/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>13.6.6</td>
+<td>22G630</td>
+<td></td>
+<td>YES</td>
+<td>3&#x2F;24</td>
+</tr>
+</tbody></table>
+<p> – macOS Monterey</p>
+<table>
+<thead>
+<tr>
+<th>macOS 12 Final Version Download</th>
+<th>Version</th>
+<th>Build</th>
+<th>App</th>
+<th>Avail</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="https://swcdn.apple.com/content/downloads/34/21/062-40406-A_GZQ27OUQER/ggclib72ow1omcvfexvp84bc9x5ei5tyqu/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>12.7.6</td>
+<td>21H1320</td>
+<td></td>
+<td>YES</td>
+<td>7&#x2F;29&#x2F;24</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/02/18/052-96238-A_V534Q7DYXO/lj721dkb4wvu0l3ucuhqfjk7i5uwq1s8tz/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>12.7.5</td>
+<td>21H1222</td>
+<td></td>
+<td>YES</td>
+<td>5&#x2F;13&#x2F;24</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/46/57/052-60131-A_KM2RH04C2D/9yzvba1uvpem2wuo95r459qno57qaizwf2/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>12.7.4</td>
+<td>21H1123</td>
+<td>17.7.41</td>
+<td>YES</td>
+<td>3&#x2F;07&#x2F;24</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/53/08/052-33037-A_AKHX79ZA4S/z7yb5wdcrk453a3hi7c3hc9n6zzju9di7f/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>12.7.3</td>
+<td>21H1015</td>
+<td></td>
+<td>YES</td>
+<td>1&#x2F;22&#x2F;24</td>
+</tr>
+</tbody></table>
+<p> – macOS Big Sur</p>
+<table>
+<thead>
+<tr>
+<th>Big Sur Production Download</th>
+<th>Version</th>
+<th>Build</th>
+<th>App</th>
+<th>Avail?</th>
+<th>Date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="http://swcdn.apple.com/content/downloads/14/38/042-45246-A_NLFOFLCJFZ/jk992zbv98sdzz3rgc7mrccjl3l22ruk1c/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.7.10</td>
+<td>20G1427</td>
+<td></td>
+<td>YES</td>
+<td>8&#x2F;11&#x2F;23</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/52/21/042-14707-A_2UU8KFUT6R/fm457iizu501ta77tsmm11x28qgj1bpfly/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.7.9</td>
+<td>20G1426</td>
+<td></td>
+<td>YES</td>
+<td>7&#x2F;24&#x2F;23</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/36/17/032-96684-A_QB492M6Q9O/nhrd4zw4zjyv6gw5dz7f564giqpnp1ujot/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.7.8</td>
+<td>20G1351</td>
+<td></td>
+<td>YES</td>
+<td>6&#x2F;21&#x2F;23</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/26/34/032-82176-A_8REZNXFIVG/emf4n3m7klcrjxsfxytps0km45fnjz5lgn/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.7.7</td>
+<td>20G1345</td>
+<td></td>
+<td>YES</td>
+<td>5&#x2F;18&#x2F;23</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/26/50/032-71551-A_NEEJFFMQN1/c06fxmsx5spzdzexzlfoexop24tl03i490/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.7.6</td>
+<td>20G1231</td>
+<td></td>
+<td>YES</td>
+<td>4&#x2F;10&#x2F;23</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/15/42/032-63762-A_6CJ6JOEC74/hdc26sfhq2a4c4x7yvafi9mrbe3jg3xo3d/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.7.5</td>
+<td>20G1225</td>
+<td></td>
+<td>YES</td>
+<td>3&#x2F;27&#x2F;23</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/26/54/032-50519-A_CXUH67MIZN/z1mbjod7nna0yhubto3a7pyq1gilhin6fw/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.7.4</td>
+<td>20G1120</td>
+<td></td>
+<td>YES</td>
+<td>2&#x2F;15&#x2F;23</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/42/51/032-33756-A_AESP8TG5IZ/etbmyyij5yv83bsn0os00qz6dc92zykvog/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.7.3</td>
+<td>20G1116</td>
+<td></td>
+<td>YES</td>
+<td>1&#x2F;23&#x2F;23</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/36/35/032-12833-A_767J3FVTQ1/27g8em98uo6ghra4newzc7lkhd4ek0u0xm/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.7.2</td>
+<td>20G1020</td>
+<td></td>
+<td>YES</td>
+<td>12&#x2F;13&#x2F;22</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/62/53/012-90253-A_05NBWHTA4J/wk1on4mznvduz1jbd0javp5p1zid5z5uvn/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.7.1</td>
+<td>20G918</td>
+<td>16.9.11</td>
+<td>YES</td>
+<td>10&#x2F;24&#x2F;22</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/00/52/012-38280-A_U42U8QWY6W/xlqy3umkvwvbsjyh471ips53ux8r0jdywq/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.7</td>
+<td>20G817</td>
+<td>16.9.00</td>
+<td>YES</td>
+<td>9&#x2F;12&#x2F;22</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/29/18/012-40387-A_6L2BGPAEXT/jvvolxk1xmh2vzw6sde7p2o1px2k6ycmom/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.6.8</td>
+<td>20G730</td>
+<td>16.8.60</td>
+<td>YES</td>
+<td>7&#x2F;20&#x2F;22</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/44/35/012-22320-A_AOID136T4U/g33x1akyjzjpkpe7z0xn7nguoakljpe3a8/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.6.7</td>
+<td>20G630</td>
+<td>16.8.51</td>
+<td>YES</td>
+<td>6&#x2F;09&#x2F;22</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/45/40/012-08272-A_KGMMYPA2W5/0b42ig80fy1eau4b7z3oa4bc1ogs2jw23p/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.6.6</td>
+<td>20G624</td>
+<td>16.8.50</td>
+<td>YES</td>
+<td>5&#x2F;16&#x2F;22</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/15/10/002-77154-A_LAKRVPO4Y6/dbmkv9538dfpvqaqdygjciw8775qjuytbh/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.6.5</td>
+<td>20G527</td>
+<td>16.8.40</td>
+<td>YES</td>
+<td>03&#x2F;14&#x2F;22</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/20/37/002-65695-A_JXBNO95L82/wwmyfh1vggj8qsk8dv069c9dmz1zmjm3fq/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.6.4</td>
+<td>20G417</td>
+<td>16.8.32</td>
+<td>YES</td>
+<td>2&#x2F;14&#x2F;22</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/01/43/002-57023-A_L5XMA854F3/nqk4ne8vdfnmj3r119qwc9yjt31ek5dn1t/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.6.3</td>
+<td>20G415</td>
+<td>16.8.31</td>
+<td>YES</td>
+<td>1&#x2F;26&#x2F;22</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/04/42/002-42341-A_4PL6G0S8GN/cs65avpi1aelh133lc36fy0ste3lihe71n/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.6.2</td>
+<td>20G314</td>
+<td>16.8.20</td>
+<td>YES</td>
+<td>12&#x2F;13&#x2F;21</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/05/24/002-23589-A_ZQQIIUQAXQ/zn8n836sojdlmlvqdu7n2k4gj8roqmcysu/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.6.1</td>
+<td>20G224</td>
+<td>16.8.10</td>
+<td>YES</td>
+<td>10&#x2F;25&#x2F;21</td>
+</tr>
+<tr>
+<td><a href="https://swcdn.apple.com/content/downloads/57/38/071-97382-A_OEKYSXCO6D/97vrhncortwd3i38zfogcscagmpwksdzce/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.6</td>
+<td>20G165</td>
+<td>16.8.00</td>
+<td>YES</td>
+<td>9&#x2F;17&#x2F;21</td>
+</tr>
+<tr>
+<td><a href="http://swcdn.apple.com/content/downloads/43/16/071-78704-A_U5B3K7DQY9/cj9xbdobsdoe67yq9e1w2x0cafwjk8ofkr/InstallAssistant.pkg">InstallAssistant.pkg</a></td>
+<td>11.5.2</td>
+<td>20G95</td>
+<td>16.7.04</td>
+<td>YES</td>
+<td>8&#x2F;11&#x2F;21</td>
+</tr>
+</tbody></table>
+<ol start="3">
+<li><p>苹果官网下载页面</p>
+<p><a href="https://support.apple.com/zh-cn/102662">https://support.apple.com/zh-cn/102662</a></p>
+<p><a href="https://support.apple.com/en-us/102662">https://support.apple.com/en-us/102662</a></p>
+<p>含有10.13以上版本的下载页面。及10.7,10.8,10.10,10.11,10.12的直接下载地址。</p>
+</li>
+</ol>
+<p> – Sonoma 14</p>
+<p>macappstores:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;macos-sonoma&#x2F;id6450717509?mt&#x3D;12</p>
+<p> – Ventura 13</p>
+<p>macappstores:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;macos-ventura&#x2F;id1638787999?mt&#x3D;12</p>
+<p> – Monterey 12</p>
+<p>macappstores:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;macos-monterey&#x2F;id1576738294?mt&#x3D;12</p>
+<p> – Big Sur 11</p>
+<p>macappstores:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;macos-big-sur&#x2F;id1526878132?mt&#x3D;12</p>
+<p> – Catalina 10.15</p>
+<p>macappstores:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;macos-catalina&#x2F;id1466841314?mt&#x3D;12</p>
+<p> – Mojave 10.14</p>
+<p>macappstores:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;macos-mojave&#x2F;id1398502828?mt&#x3D;12</p>
+<p> – High Sierra 10.13</p>
+<p>macappstores:&#x2F;&#x2F;apps.apple.com&#x2F;app&#x2F;macos-high-sierra&#x2F;id1246284741?mt&#x3D;12</p>
+<p>以下为直接下载</p>
+<p> – Sierra 10.12</p>
+<p><a href="http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg">http://updates-http.cdn-apple.com/2019/cert/061-39476-20191023-48f365f4-0015-4c41-9f44-39d3d2aca067/InstallOS.dmg</a></p>
+<p> – El Capitan 10.11</p>
+<p><a href="http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg">http://updates-http.cdn-apple.com/2019/cert/061-41424-20191024-218af9ec-cf50-4516-9011-228c78eda3d2/InstallMacOSX.dmg</a></p>
+<p> – Yosemite 10.10</p>
+<p><a href="http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg">http://updates-http.cdn-apple.com/2019/cert/061-41343-20191023-02465f92-3ab5-4c92-bfe2-b725447a070d/InstallMacOSX.dmg</a></p>
+<p> – Mountain Lion 10.8</p>
+<p><a href="https://updates.cdn-apple.com/2021/macos/031-0627-20210614-90D11F33-1A65-42DD-BBEA-E1D9F43A6B3F/InstallMacOSX.dmg">https://updates.cdn-apple.com/2021/macos/031-0627-20210614-90D11F33-1A65-42DD-BBEA-E1D9F43A6B3F/InstallMacOSX.dmg</a></p>
+<p> – Lion 10.7</p>
+<p><a href="https://updates.cdn-apple.com/2021/macos/041-7683-20210614-E610947E-C7CE-46EB-8860-D26D71F0D3EA/InstallMacOSX.dmg">https://updates.cdn-apple.com/2021/macos/041-7683-20210614-E610947E-C7CE-46EB-8860-D26D71F0D3EA/InstallMacOSX.dmg</a></p>
+]]></content>
+      <categories>
+        <category>mac</category>
+        <category>系统文件镜像</category>
+      </categories>
+      <tags>
+        <tag>mac系统</tag>
+        <tag>下载</tag>
+      </tags>
+  </entry>
+</search>
