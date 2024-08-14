@@ -1,1 +1,1 @@
-# easyos2.github.io
+# Mac|Windows|系统安装|系统故障|
