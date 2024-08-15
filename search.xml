@@ -3158,43 +3158,6 @@
       </tags>
   </entry>
   <entry>
-    <title>苹果系统镜像非官方下载方法及链接</title>
-    <url>/posts/8ddc45c2/</url>
-    <content><![CDATA[<p>搜索引擎虽然可以搜到各种下载链接，但是否经过验证，下载速度是否有保证，有没有进一步技术支持？除了苹果官方下载以外，非官方的推荐如下。</p>
-<span id="more"></span>
-<ol>
-<li><p>网店。网店提供各版本的系统制作及安装服务，有iso,dmg,rdr,img等格式，满足mac,windows,linux等不同系统下制作安装优盘的要求。<br>推荐：<a href="https://shop287609711.taobao.com/">开心萝卜os</a>,<a href="https://shop404840814.taobao.com/">苹果之王</a></p>
-</li>
-<li><p>借助强制升级工具opencore Legacy Patcher</p>
-<p>自带了下载工具，可下载macos 11 big sur以上版本，还支持下载开发者版本</p>
-</li>
-</ol>
-<p><a href="https://github.com/dortania/OpenCore-Legacy-Patcher/releases">https://github.com/dortania/OpenCore-Legacy-Patcher/releases</a></p>
-<ol>
-<li><p>Mist工具</p>
-<p>广受好评的工具，mac下运行。<br><a href="https://github.com/ninxsoft/Mist">https://github.com/ninxsoft/Mist</a></p>
-</li>
-<li><p>installinstallmacos.py</p>
-</li>
-</ol>
-<p>pathon程序，在mac终端里运行。</p>
-<p>介绍：<a href="https://github.com/munki/macadmin-scripts/blob/master/installinstallmacos.py">https://github.com/munki/macadmin-scripts/blob/master/installinstallmacos.py</a></p>
-<p>直接下载使用：<a href="https://raw.githubusercontent.com/munki/macadmin-scripts/master/installinstallmacos.py">https://raw.githubusercontent.com/munki/macadmin-scripts/master/installinstallmacos.py</a></p>
-<ol start="3">
-<li>Mac Deploy Stick</li>
-</ol>
-<p>直接下载使用： <a href="https://twocanoes.com/products/mac/mac-deploy-stick/">https://twocanoes.com/products/mac/mac-deploy-stick/</a></p>
-]]></content>
-      <categories>
-        <category>mac</category>
-        <category>系统文件镜像</category>
-      </categories>
-      <tags>
-        <tag>mac系统</tag>
-        <tag>下载</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>苹果刷机文件IPSW下载方法及链接</title>
     <url>/posts/2912beb/</url>
     <content><![CDATA[<p>从macos 11 big sur开始，有IPSW格式的文件用于刷机。</p>
@@ -3301,6 +3264,43 @@
         <tag>mac系统</tag>
         <tag>下载</tag>
         <tag>IPSW</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>苹果系统镜像非官方下载方法及链接</title>
+    <url>/posts/8ddc45c2/</url>
+    <content><![CDATA[<p>搜索引擎虽然可以搜到各种下载链接，但是否经过验证，下载速度是否有保证，有没有进一步技术支持？除了苹果官方下载以外，非官方的推荐如下。</p>
+<span id="more"></span>
+<ol>
+<li><p>网店。网店提供各版本的系统制作及安装服务，有iso,dmg,rdr,img等格式，满足mac,windows,linux等不同系统下制作安装优盘的要求。<br>推荐：<a href="https://shop287609711.taobao.com/">开心萝卜os</a>,<a href="https://shop404840814.taobao.com/">苹果之王</a></p>
+</li>
+<li><p>借助强制升级工具opencore Legacy Patcher</p>
+<p>自带了下载工具，可下载macos 11 big sur以上版本，还支持下载开发者版本</p>
+</li>
+</ol>
+<p><a href="https://github.com/dortania/OpenCore-Legacy-Patcher/releases">https://github.com/dortania/OpenCore-Legacy-Patcher/releases</a></p>
+<ol>
+<li><p>Mist工具</p>
+<p>广受好评的工具，mac下运行。<br><a href="https://github.com/ninxsoft/Mist">https://github.com/ninxsoft/Mist</a></p>
+</li>
+<li><p>installinstallmacos.py</p>
+</li>
+</ol>
+<p>pathon程序，在mac终端里运行。</p>
+<p>介绍：<a href="https://github.com/munki/macadmin-scripts/blob/master/installinstallmacos.py">https://github.com/munki/macadmin-scripts/blob/master/installinstallmacos.py</a></p>
+<p>直接下载使用：<a href="https://raw.githubusercontent.com/munki/macadmin-scripts/master/installinstallmacos.py">https://raw.githubusercontent.com/munki/macadmin-scripts/master/installinstallmacos.py</a></p>
+<ol start="3">
+<li>Mac Deploy Stick</li>
+</ol>
+<p>直接下载使用： <a href="https://twocanoes.com/products/mac/mac-deploy-stick/">https://twocanoes.com/products/mac/mac-deploy-stick/</a></p>
+]]></content>
+      <categories>
+        <category>mac</category>
+        <category>系统文件镜像</category>
+      </categories>
+      <tags>
+        <tag>mac系统</tag>
+        <tag>下载</tag>
       </tags>
   </entry>
   <entry>
