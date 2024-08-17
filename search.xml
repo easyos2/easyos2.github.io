@@ -6,6 +6,21 @@
     <content><![CDATA[<p>苹果intel芯片全系列bootcamp对照表，有的需要刻录成光盘安装，有的需要制作成优盘，有的iso文件即可，安装完windows后需要装上bootcamp原生驱动.</p>
 <p>mac上装windows双系统或单独装windows系统，需要打原生驱动，可以装什么版本的系统？驱动如何选择？</p>
 <span id="more"></span>
+<p>如何确定苹果电脑可以装什么版本？<br>步骤简述：</p>
+<ol>
+<li><p>查机子序列号，可参考官网介绍，</p>
+<p>英文的：<a href="https://support.apple.com/en-us/102767">https://support.apple.com/en-us/102767</a> </p>
+<p>中文的：<a href="https://support.apple.com/zh-cn/102767">https://support.apple.com/zh-cn/102767</a></p>
+<p>或B站视频： <a href="https://b23.tv/uPZYPMM">https://b23.tv/uPZYPMM</a></p>
+</li>
+<li><p>根据查到的序列号到官网查阅机子信息</p>
+<p>中文的：<a href="https://checkcoverage.apple.com/?locale=zh-CN">https://checkcoverage.apple.com/?locale=zh-CN</a></p>
+<p>英文的：<a href="https://checkcoverage.apple.com/?locale=en-US">https://checkcoverage.apple.com/?locale=en-US</a></p>
+</li>
+<li><p>根据提供的机型、年份在本站查兼容性表</p>
+</li>
+</ol>
+<p>嫌麻烦，直接打客服400-666-8800</p>
 <h2 id="下载地址"><a href="#下载地址" class="headerlink" title="下载地址"></a>下载地址</h2><ul>
 <li>百度网盘<br> <a href="https://pan.baidu.com/s/1aU2k0wNeh_gJW4VuxJOpLQ?pwd=5o3i">https://pan.baidu.com/s/1aU2k0wNeh_gJW4VuxJOpLQ?pwd=5o3i</a>?<br>提取码:5o3i</li>
 </ul>
@@ -1252,11 +1267,25 @@
     <url>/posts/f0a04af8/</url>
     <content><![CDATA[<p>电脑能装什么版本的系统？好像是10.13，可是10.13都淘汰了，能不能装10.15？<br>现在用14 sonoma感觉很卡，想降级，可以降级到什么版本呢？</p>
 <span id="more"></span>
-<h1 id="如何确定苹果电脑可以装什么版本？"><a href="#如何确定苹果电脑可以装什么版本？" class="headerlink" title="如何确定苹果电脑可以装什么版本？"></a>如何确定苹果电脑可以装什么版本？</h1><ul>
+<h1 id="如何确定苹果电脑可以装什么版本？"><a href="#如何确定苹果电脑可以装什么版本？" class="headerlink" title="如何确定苹果电脑可以装什么版本？"></a>如何确定苹果电脑可以装什么版本？</h1><p>步骤简述：</p>
+<ol>
+<li><p>查机子序列号，可参考官网介绍，</p>
+<p>英文的：<a href="https://support.apple.com/en-us/102767">https://support.apple.com/en-us/102767</a> </p>
+<p>中文的：<a href="https://support.apple.com/zh-cn/102767">https://support.apple.com/zh-cn/102767</a></p>
+<p>或B站视频： <a href="https://b23.tv/uPZYPMM">https://b23.tv/uPZYPMM</a></p>
+</li>
+<li><p>根据查到的序列号到官网查阅机子信息</p>
+<p>中文的：<a href="https://checkcoverage.apple.com/?locale=zh-CN">https://checkcoverage.apple.com/?locale=zh-CN</a></p>
+<p>英文的：<a href="https://checkcoverage.apple.com/?locale=en-US">https://checkcoverage.apple.com/?locale=en-US</a></p>
+</li>
+<li><p>根据提供的机型、年份查兼容性表</p>
+</li>
+</ol>
+<ul>
+<li>本站</li>
 <li>技术网站，本文表格参考出处 <a href="https://yama-mac.com/en/macos_correspondence_table/">https://yama-mac.com/en/macos_correspondence_table/</a></li>
-<li>官网查序列号 <a href="https://checkcoverage.apple.com/?locale=zh_CN">https://checkcoverage.apple.com/?locale=zh_CN</a></li>
-<li>官方客服400-666-8800</li>
 </ul>
+<p>嫌麻烦，直接打客服400-666-8800</p>
 <h1 id="苹果各机型技术规格快速查阅链接"><a href="#苹果各机型技术规格快速查阅链接" class="headerlink" title="苹果各机型技术规格快速查阅链接"></a>苹果各机型技术规格快速查阅链接</h1><p>（查询出厂版本，最高支持版本，可升级多大内存，机子有哪些接……）</p>
 <ul>
 <li><a href="https://support.apple.com/zh-cn/HT201300">识别 MacBook Pro 机型</a></li>
@@ -3181,7 +3210,8 @@
 <ul>
 <li><a href="https://updates.cdn-apple.com/2024SummerFCS/fullrestores/062-52859/932E0A8F-6644-4759-82DA-F8FA8DEA806A/UniversalMac_14.6.1_23G93_Restore.ipsw">UniversalMac_14.6.1_23G93_Restore.ipsw	14.6.1	8&#x2F;07&#x2F;24 </a></li>
 <li><a href="https://updates.cdn-apple.com/2024SummerFCS/fullrestores/052-69922/F5DA2B64-25EB-4370-9E89-FA5689859796/UniversalMac_14.6_23G80_Restore.ipsw">UniversalMac_14.6_23G80_Restore.ipsw	14.6	7&#x2F;29&#x2F;24</a></li>
-<li><a href="https://updates.cdn-apple.com/2024SpringFCS/fullrestores/062-01897/C874907B-9F82-4109-87EB-6B3C9BF1507D/UniversalMac_14.5_23F79_Restore.ipsw">UniversalMac_14.5_23F79_Restore.ipsw	14.5	5&#x2F;13&#x2F;24</a><br>-<a href="https://updates.cdn-apple.com/2024WinterFCS/fullrestores/052-77579/4569734E-120C-4F31-AD08-FC1FF825D059/UniversalMac_14.4.1_23E224_Restore.ipsw">UniversalMac_14.4.1_23E224_Restore.ipsw	14.4.1	3&#x2F;25&#x2F;24</a></li>
+<li><a href="https://updates.cdn-apple.com/2024SpringFCS/fullrestores/062-01897/C874907B-9F82-4109-87EB-6B3C9BF1507D/UniversalMac_14.5_23F79_Restore.ipsw">UniversalMac_14.5_23F79_Restore.ipsw	14.5	5&#x2F;13&#x2F;24</a></li>
+<li><a href="https://updates.cdn-apple.com/2024WinterFCS/fullrestores/052-77579/4569734E-120C-4F31-AD08-FC1FF825D059/UniversalMac_14.4.1_23E224_Restore.ipsw">UniversalMac_14.4.1_23E224_Restore.ipsw	14.4.1	3&#x2F;25&#x2F;24</a></li>
 <li><a href="https://updates.cdn-apple.com/2024WinterFCS/fullrestores/052-61990/47F0DD06-1106-4F2E-9CD6-AE6B361A0EC6/UniversalMac_14.4_23E214_Restore.ipsw">UniversalMac_14.4_23E214_Restore.ipsw	14.4	3&#x2F;07&#x2F;24</a></li>
 <li><a href="https://updates.cdn-apple.com/2024WinterFCS/fullrestores/052-40770/72916BCC-D357-422D-A4A2-EF1DEDF6968C/UniversalMac_14.3.1_23D60_Restore.ipsw">UniversalMac_14.3.1_23D60_Restore.ipsw	14.3.1	2&#x2F;08&#x2F;24</a></li>
 <li><a href="https://updates.cdn-apple.com/2024WinterFCS/fullrestores/042-78241/B45074EB-2891-4C05-BCA4-7463F3AC0982/UniversalMac_14.3_23D56_Restore.ipsw">UniversalMac_14.3_23D56_Restore.ipsw	14.3	1&#x2F;22&#x2F;24</a></li>
@@ -3740,6 +3770,156 @@
       <tags>
         <tag>mac系统</tag>
         <tag>下载</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows nt驱动安装</title>
+    <url>/posts/3dd47a8/</url>
+    <content><![CDATA[<p>winnt驱动出了名的诡异难装，没有驱动备份软件，设备管理不显示找到哪些设备，怎么弄呢？</p>
+<p>多年实践总结一些提示如下。如碰到难题，推荐咨询：<a href="https://shop287609711.taobao.com/">开心萝卜os</a></p>
+<span id="more"></span>
+
+<ol>
+<li><p>启用即插即用<br>NT4光盘，打开drvlib\x86\pnpisa,右键点击pnpisa.inf选安装。注意这个即插即用并不是很智能。比如VM的SBPCI128声卡它不能自动找到。兼容性不一样，试了才知道。</p>
+</li>
+<li><p>显卡<br>显示属性-设置-显示类型-更改。</p>
+</li>
+<li><p>声卡<br>控制面板-多媒体-设备-添加。</p>
+</li>
+<li><p>网卡<br>网络属性-适配器-添加。</p>
+</li>
+<li><p>Modem、打印机<br>与Windows其他版本相同。</p>
+</li>
+<li><p>USB<br>安装Dell的USB驱动。 <a href="http://ftp1.us.dell.com/utility/R62200.EXE">USB for NT &gt;</a>，不同机子兼容性不一样，只有试了才知道。</p>
+</li>
+<li><p>硬盘控制器<br>控制面板-SCSI适配器。</p>
+</li>
+<li><p>鼠标，键盘<br>鼠标&#x2F;键盘属性-常规-更改。</p>
+</li>
+<li><p>安装<a href="http://down2.tech.sina.com.cn/down/0607/fat32.exe">FAT32 for NT4驱动 &gt;</a>，识别FAT32分区。  </p>
+<p>更多参见<a href="https://www.renrendoc.com/paper/177762855.html">WindowsNT4.0硬件驱动程序安装大全</a></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>windows</category>
+      </categories>
+      <tags>
+        <tag>驱动</tag>
+        <tag>windows nt</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>dmg镜像相关命令</title>
+    <url>/posts/c96e41b7/</url>
+    <content><![CDATA[<p>找苹果mac对应的iso文件找不到，想编辑dmg格式文件没有头绪，那就动手做一个吧。<br>不要迷信网上各种转换软件，转出来的文件丢文件或各种bug，一言难尽！</p>
+<p>用苹果自带的命令来制作，虽然麻烦了些，但真香！</p>
+<p>实践中有困难可咨询，推荐：<a href="https://shop287609711.taobao.com/">开心萝卜os</a></p>
+<span id="more"></span>
+<ul>
+<li><p>dmg 转iso</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hdiutil convert ~/Desktop/macOS\ Mojave.dmg -format UDTO -o ~/Desktop/macOS\ Mojave.iso</span><br></pre></td></tr></table></figure>
+<p> 会生成iso.cdr格式的</p>
+</li>
+<li><p>将iso.cdr格式改为iso格式</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mv ~/Desktop/macOS\ Mojave.iso.cdr  ~/Desktop/macOS\ Mojave.iso</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>dmg只读改可编辑</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hdiutil convert read.dmg -format UDRW -o writable.dmg</span><br></pre></td></tr></table></figure></li>
+<li><p>dmg可编辑改只读</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hdiutil convert writable.dmg -format UDRO -o read.dmg</span><br></pre></td></tr></table></figure></li>
+<li><p>dmg可编辑改只读压缩</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hdiutil convert writable.dmg -format UDBZ -o read.dmg</span><br></pre></td></tr></table></figure></li>
+<li><p>DMG镜像文件制作</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hdiutil create -o ~/Desktop/filename -size 6500m -layout SPUD -fs HFS+</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>mac</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>mac系统</tag>
+        <tag>命令</tag>
+        <tag>镜像</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>windows 7 10 11 win7 win10 win11系统改语言为中文、英文、日文、韩文、繁体中文</title>
+    <url>/posts/de4723de/</url>
+    <content><![CDATA[<p>win7之后可以在系统里变更，虽然还有部分无法完全改变，但对于大部分用户来讲，已经可以满足要求。</p>
+<p>如碰到难题，推荐咨询：<a href="https://shop287609711.taobao.com/">开心萝卜os</a></p>
+<span id="more"></span>
+
+
+<p><a href="https://support.microsoft.com/en-us/windows/language-packs-for-windows-a5094319-a92d-18de-5b53-1cfc697cfca8">官网方法 &gt;</a></p>
+<p>windows 7 sp1语言包官网下载地址如下。</p>
+<p><strong>下载官方 32 位 （x86） Windows 7 SP1 MUI 语言包</strong></p>
+<p>阿拉伯语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-ar-sa_5add6e4a36127029d431ba98d99708c44ef9b53f.exe">windows6.1-kb2483139-x86-ar-sa_5add6e4a36127029d431ba98d99708c44ef9b53f.exe</a><br>保加利亚语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-bg-bg_a8a5013e477366119cfdc5fbda43b904755db450.exe">windows6.1-kb2483139-x86-bg-bg_a8a5013e477366119cfdc5fbda43b904755db450.exe</a><br>简体中文： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-zh-cn_ae61ea226215f96fc95be33201ffc96755ac7eb5.exe">windows6.1-kb2483139-x86-zh-cn_ae61ea226215f96fc95be33201ffc96755ac7eb5.exe</a><br>繁体中文： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-zh-hk_411a6bb68728f12f5ced712d9a33fee9ebe0b0b3.exe">windows6.1-kb2483139-x86-zh-hk_411a6bb68728f12f5ced712d9a33fee9ebe0b0b3.exe</a><br>克罗地亚语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-hr-hr_685e217ce007af8005db4726087893d04e19dade.exe">windows6.1-kb2483139-x86-hr-hr_685e217ce007af8005db4726087893d04e19dade.exe</a><br>捷克语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-cs-cz_bb5061f4bd24437dd31a3714e1b54318ced7e63a.exe">windows6.1-kb2483139-x86-cs-cz_bb5061f4bd24437dd31a3714e1b54318ced7e63a.exe</a><br>丹麦语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-da-dk_67fecaab0a940e2e537bc8dcd8a9ebb8ab4ed102.exe">windows6.1-kb2483139-x86-da-dk_67fecaab0a940e2e537bc8dcd8a9ebb8ab4ed102.exe</a><br>荷兰语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-nl-nl_b7e1c3046b218fb45a665ab5f5ed8a5ea8125760.exe">windows6.1-kb2483139-x86-nl-nl_b7e1c3046b218fb45a665ab5f5ed8a5ea8125760.exe</a><br>英语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-en-us_783d6dd59e2ec8fb0995a059c9c121795bde46c8.exe">windows6.1-kb2483139-x86-en-us_783d6dd59e2ec8fb0995a059c9c121795bde46c8.exe</a><br>爱沙尼亚语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-et-ee_d0f798de315b696bf560b559f6f90064687c0b7b.exe">windows6.1-kb2483139-x86-et-ee_d0f798de315b696bf560b559f6f90064687c0b7b.exe</a><br>芬兰语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-fi-fi_5259ca6a22a981dbdee352dde5b8e65c2fddd407.exe">windows6.1-kb2483139-x86-fi-fi_5259ca6a22a981dbdee352dde5b8e65c2fddd407.exe</a><br>法语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-fr-fr_f57427487dfc2f49da67cac22480ab1f48983d22.exe">windows6.1-kb2483139-x86-fr-fr_f57427487dfc2f49da67cac22480ab1f48983d22.exe</a><br>德语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-de-de_acb9b88b96d432749ab63bd93423af054d23bf81.exe">windows6.1-kb2483139-x86-de-de_acb9b88b96d432749ab63bd93423af054d23bf81.exe</a><br>希腊语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-el-gr_5aeecda7e1d689a083975128901da8156751dfc5.exe">windows6.1-kb2483139-x86-el-gr_5aeecda7e1d689a083975128901da8156751dfc5.exe</a><br>希伯来语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-he-il_1849d14777a76c7c5b4ef766490dccc8aed5c56b.exe">windows6.1-kb2483139-x86-he-il_1849d14777a76c7c5b4ef766490dccc8aed5c56b.exe</a><br>匈牙利语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-hu-hu_a7a5af62c59ab7a4e8cb0f21242b42606b95195b.exe">windows6.1-kb2483139-x86-胡-胡_a7a5af62c59ab7a4e8cb0f21242b42606b95195b.exe</a><br>意大利语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-it-it_1d54a8d0047674fc1b5b6f41292a0074d9fe3cc5.exe">windows6.1-kb2483139-x86-it-it_1d54a8d0047674fc1b5b6f41292a0074d9fe3cc5.exe</a><br>日语：<a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-ja-jp_bc46078938ae9129c7ce86a9c176fa517e4c0a3d.exe">windows6.1-kb2483139-x86-ja-jp_bc46078938ae9129c7ce86a9c176fa517e4c0a3d.exe</a><br>韩语：<a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-ko-kr_18f213428cc6fde96d8c76c6dd91446348e86ce6.exe">windows6.1-kb2483139-x86-ko-kr_18f213428cc6fde96d8c76c6dd91446348e86ce6.exe</a><br>拉脱维亚语：<a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-lv-lv_97b58149699a2e8b02bd7cac720ac0795b51c98b.exe">windows6.1-kb2483139-x86-lv-lv_97b58149699a2e8b02bd7cac720ac0795b51c98b.exe</a><br>立陶宛语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-lt-lt_297c5ee6e98ab646b14f1492716b67cc0970fcd8.exe">windows6.1-kb2483139-x86-lt-lt_297c5ee6e98ab646b14f1492716b67cc0970fcd8.exe</a><br>挪威语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-nb-no_5bd6fc76ad54b7a232d4ceb4a5f5c7c366bf90b6.exe">windows6.1-kb2483139-x86-nb-no_5bd6fc76ad54b7a232d4ceb4a5f5c7c366bf90b6.exe</a><br>波兰语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-pl-pl_c460a8c1392d7f3d35d1c0b37e56017d3552d245.exe">windows6.1-kb2483139-x86-pl-pl_c460a8c1392d7f3d35d1c0b37e56017d3552d245.exe</a><br>葡萄牙语（巴西）： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-pt-br_6e1d337b2fd56669d461e82601aa51004fecbd24.exe">windows6.1-kb2483139-x86-pt-br_6e1d337b2fd56669d461e82601aa51004fecbd24.exe</a><br>葡萄牙语 （葡萄牙）： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-pt-pt_5cc92ef98ed177b2f6bbae3a0420ee2f12764fab.exe">windows6.1-kb2483139-x86-pt-pt_5cc92ef98ed177b2f6bbae3a0420ee2f12764fab.exe</a><br>罗马尼亚语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-ro-ro_d8d9b2b4c5c457fe6a7dcb09a5f645cfe77cc30c.exe">windows6.1-kb2483139-x86-ro-ro_d8d9b2b4c5c457fe6a7dcb09a5f645cfe77cc30c.exe</a><br>俄语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-ru-ru_6532a8f36ad7d15277d5d60da92555f0fbee4daa.exe">windows6.1-kb2483139-x86-ru-ru_6532a8f36ad7d15277d5d60da92555f0fbee4daa.exe</a><br>塞尔维亚语（拉丁语）： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-sr-latn-cs_e3d9acfcc9f608cf7687bd3b5ee7f0d9658b7bc9.exe">windows6.1-kb2483139-x86-sr-latn-cs_e3d9acfcc9f608cf7687bd3b5ee7f0d9658b7bc9.exe</a><br>斯洛伐克语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-sk-sk_4c7b17a6cb292b09bede4c8731ad4f24cd09ab2a.exe">windows6.1-kb2483139-x86-sk-sk_4c7b17a6cb292b09bede4c8731ad4f24cd09ab2a.exe</a><br>斯洛文尼亚语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-sl-si_de7f366819e1c12954557e3e65b7c0f059f49b67.exe">windows6.1-kb2483139-x86-sl-si_de7f366819e1c12954557e3e65b7c0f059f49b67.exe</a><br>西班牙语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-es-es_6aef75f7d83edaabc2a921a6b157cc7005628286.exe">windows6.1-kb2483139-x86-es-es_6aef75f7d83edaabc2a921a6b157cc7005628286.exe</a><br>瑞典语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-sv-se_bd65af75e8995bd865d93c8d8c8a35091499083f.exe">windows6.1-kb2483139-x86-sv-se_bd65af75e8995bd865d93c8d8c8a35091499083f.exe</a><br>泰语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-th-th_8248f2b209d65a39ddaeb36e1782fcc0f6664f73.exe">windows6.1-kb2483139-x86-th-th_8248f2b209d65a39ddaeb36e1782fcc0f6664f73.exe</a><br>土耳其语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-tr-tr_228dfa5fbaa4606b17f93d6fcd51c8c85c0f1fd3.exe">windows6.1-kb2483139-x86-tr-tr_228dfa5fbaa4606b17f93d6fcd51c8c85c0f1fd3.exe</a><br>乌克兰语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x86-uk-ua_7f01db99ad2b2d41598bfc71aaa9bd4be04b6369.exe">windows6.1-kb2483139-x86-uk-ua_7f01db99ad2b2d41598bfc71aaa9bd4be04b6369.exe</a></p>
+<p><strong>下载官方 64 位 （x64） Windows 7 SP1 MUI 语言包</strong></p>
+<p>阿拉伯语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-ar-sa_f07f2cc7b55b17076eebceea2c2c2826b08b8f63.exe">windows6.1-kb2483139-x64-ar-sa_f07f2cc7b55b17076eebceea2c2c2826b08b8f63.exe</a><br>保加利亚语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-bg-bg_e4c9392592ed2d4a8c7ec68270b5140430df197a.exe">windows6.1-kb2483139-x64-bg-bg_e4c9392592ed2d4a8c7ec68270b5140430df197a.exe</a><br>简体中文： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-zh-cn_2c1884b4fdf6c8e91986369d88bbcaae01c6f187.exe">windows6.1-kb2483139-x64-zh-cn_2c1884b4fdf6c8e91986369d88bbcaae01c6f187.exe</a><br>繁体中文： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-zh-hk_285282b1e2f750eeed91466918443b657968d977.exe">windows6.1-kb2483139-x64-zh-hk_285282b1e2f750eeed91466918443b657968d977.exe</a><br>克罗地亚语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-hr-hr_e7c6d648436d81466af331ab1ece07dd22be5fda.exe">windows6.1-kb2483139-x64-hr-hr_e7c6d648436d81466af331ab1ece07dd22be5fda.exe</a><br>捷克语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-cs-cz_1ea5b71d701e2480017b464b6560a2987e0d8971.exe">windows6.1-kb2483139-x64-cs-cz_1ea5b71d701e2480017b464b6560a2987e0d8971.exe</a><br>丹麦语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-da-dk_d753d19cc1a0fe95aef21548193393c04a6a8024.exe">windows6.1-kb2483139-x64-da-dk_d753d19cc1a0fe95aef21548193393c04a6a8024.exe</a><br>荷兰语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-nl-nl_12c90c70d408b08f51f500d6e974878a5d662398.exe">windows6.1-kb2483139-x64-nl-nl_12c90c70d408b08f51f500d6e974878a5d662398.exe</a><br>英语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-en-us_9b9c8a867baff2920507fbf1e1b4a158572b9b87.exe">windows6.1-kb2483139-x64-en-us_9b9c8a867baff2920507fbf1e1b4a158572b9b87.exe</a><br>爱沙尼亚语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-et-ee_b4fd94f6e461e21b7eec54d1e379e2807861aea2.exe">windows6.1-kb2483139-x64-et-ee_b4fd94f6e461e21b7eec54d1e379e2807861aea2.exe</a><br>芬兰语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-fi-fi_223465e1b382484d1d82f8f2ccfcd9ed2f902c76.exe">windows6.1-kb2483139-x64-fi-fi_223465e1b382484d1d82f8f2ccfcd9ed2f902c76.exe</a><br>法语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-fr-fr_0f18e2a244dd9ff04664112a82776d2bd2177798.exe">windows6.1-kb2483139-x64-fr-fr_0f18e2a244dd9ff04664112a82776d2bd2177798.exe</a><br>德语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-de-de_4f4ce6bd38530b4a02199172863b21a0cba13773.exe">windows6.1-kb2483139-x64-de-de_4f4ce6bd38530b4a02199172863b21a0cba13773.exe</a><br>希腊语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-el-gr_583791fea2fea71725388a746844d5be6488ca45.exe">windows6.1-kb2483139-x64-el-gr_583791fea2fea71725388a746844d5be6488ca45.exe</a><br>希伯来语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-he-il_617029400059f0847d7d90d4da673ae4ed43ebd9.exe">windows6.1-kb2483139-x64-he-il_617029400059f0847d7d90d4da673ae4ed43ebd9.exe</a><br>匈牙利语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-hu-hu_1c298d99baf7af3d830dcd1e2632eeb65d7ee395.exe">windows6.1-kb2483139-x64-胡-胡_1c298d99baf7af3d830dcd1e2632eeb65d7ee395.exe</a><br>意大利语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-it-it_6d8223c065d6974d833d0eaa162f3ceb7680850f.exe">windows6.1-kb2483139-x64-it-it_6d8223c065d6974d833d0eaa162f3ceb7680850f.exe</a><br>日语：<a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-ja-jp_aeaf7e9b0b6c2173bf757330017a7f655f1f8715.exe">windows6.1-kb2483139-x64-ja-jp_aeaf7e9b0b6c2173bf757330017a7f655f1f8715.exe</a><br>韩语：<a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-ko-kr_0ea76f748e3d5309d568147ad1337b2664090944.exe">windows6.1-kb2483139-x64-ko-kr_0ea76f748e3d5309d568147ad1337b2664090944.exe</a><br>拉脱维亚语：<a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-lv-lv_3919fb044a307144f1fc55cf4313aff45cde9a46.exe">windows6.1-kb2483139-x64-lv-lv_3919fb044a307144f1fc55cf4313aff45cde9a46.exe</a><br>立陶宛语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-lt-lt_c894f0a591735553ba68f9fb94b1b85133ca922c.exe">windows6.1-kb2483139-x64-lt-lt_c894f0a591735553ba68f9fb94b1b85133ca922c.exe</a><br>挪威语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-nb-no_78df68604970041a6337b4058a3e5339f79e50b4.exe">windows6.1-kb2483139-x64-nb-no_78df68604970041a6337b4058a3e5339f79e50b4.exe</a><br>波兰语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-pl-pl_24d00a966a7a75132c3af5627634483d3e2d01e7.exe">windows6.1-kb2483139-x64-pl-pl_24d00a966a7a75132c3af5627634483d3e2d01e7.exe</a><br>葡萄牙语（巴西）： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-pt-br_f8035731c55d774c95c7c673aedfd42d52479294.exe">windows6.1-kb2483139-x64-pt-br_f8035731c55d774c95c7c673aedfd42d52479294.exe</a><br>葡萄牙语 （葡萄牙）： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-pt-pt_78485491088298110a3e78b7a5f95e55ff7808df.exe">windows6.1-kb2483139-x64-pt-pt_78485491088298110a3e78b7a5f95e55ff7808df.exe</a><br>罗马尼亚语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-ro-ro_6e7a63541f2cb534dab3db719330fee5cfbb4e0f.exe">windows6.1-kb2483139-x64-ro-ro_6e7a63541f2cb534dab3db719330fee5cfbb4e0f.exe</a><br>俄语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-ru-ru_0587eb296a2f04e0d3699650d39b53ee18b97a79.exe">windows6.1-kb2483139-x64-ru-ru_0587eb296a2f04e0d3699650d39b53ee18b97a79.exe</a><br>塞尔维亚语（拉丁语）： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-sr-latn-cs_5f487007933585def54c67087895e74e25e699a9.exe">windows6.1-kb2483139-x64-sr-latn-cs_5f487007933585def54c67087895e74e25e699a9.exe</a><br>斯洛伐克语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-sk-sk_f1fb8a395d7d656649830f4f06496a5311ad572a.exe">windows6.1-kb2483139-x64-sk-sk_f1fb8a395d7d656649830f4f06496a5311ad572a.exe</a><br>斯洛文尼亚语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-sl-si_84606ed6bc061c72f756bbc061621b490fb761f7.exe">windows6.1-kb2483139-x64-sl-si_84606ed6bc061c72f756bbc061621b490fb761f7.exe</a><br>西班牙语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-es-es_fdbdf4061b960324efb9eedf7106df543ed8ce33.exe">windows6.1-kb2483139-x64-es-es_fdbdf4061b960324efb9eedf7106df543ed8ce33.exe</a><br>瑞典语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-sv-se_81051fe3083afdb4f2d1d23752c587de9bb35025.exe">windows6.1-kb2483139-x64-sv-se_81051fe3083afdb4f2d1d23752c587de9bb35025.exe</a><br>泰语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-th-th_dc9c0cc12ae488ed3e8dcaecb4392eef91ec213b.exe">windows6.1-kb2483139-x64-th-th_dc9c0cc12ae488ed3e8dcaecb4392eef91ec213b.exe</a><br>土耳其语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-tr-tr_07e7e3b34426fe68be813e911d3843b941a268b7.exe">windows6.1-kb2483139-x64-tr-tr_07e7e3b34426fe68be813e911d3843b941a268b7.exe</a><br>乌克兰语： <a href="http://download.windowsupdate.com/msdownload/update/software/updt/2011/02/windows6.1-kb2483139-x64-uk-ua_1ca449545a2bcfdeeed6080768186fc29f163504.exe">windows6.1-kb2483139-x64-uk-ua_1ca449545a2bcfdeeed6080768186fc29f163504.exe</a></p>
+]]></content>
+      <categories>
+        <category>windows</category>
+      </categories>
+      <tags>
+        <tag>win7</tag>
+        <tag>win10</tag>
+        <tag>win8</tag>
+        <tag>windows 7</tag>
+        <tag>windows 8</tag>
+        <tag>windows 10</tag>
+        <tag>语言</tag>
+        <tag>windows 11</tag>
+        <tag>win11</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>mac系统安装方法的12种方法</title>
+    <url>/posts/6ef51/</url>
+    <content><![CDATA[<p>对于macos，从经典的9.2到X系列（10.0-10.15），再到11后的版本（11、12、13、14、15、……），光盘、优盘、在线、刷机、对拷，十八般武器，最犀利的是哪一把？</p>
+<p>实践中有困难可咨询，推荐：<a href="https://shop287609711.taobao.com/">开心萝卜os</a></p>
+<span id="more"></span>
+
+<ol>
+<li><p>光盘安装。（对于ppc芯片，默认为用光盘安装，光驱若损坏，可通过复杂的打命令模式开启优盘安装）（10.9之后，苹果不在提供光盘形式的安装介质）</p>
+</li>
+<li><p>苹果自带的联网恢复功能进行安装。<br><a href="https://support.apple.com/zh-cn/102655">https://support.apple.com/zh-cn/102655</a><br><a href="https://support.apple.com/en-us/102655">https://support.apple.com/en-us/102655</a></p>
+</li>
+<li><p>制作U盘启动进行安装。（intel芯片都支持优盘安装，T2芯片默认禁止优盘启动，务必先去掉此项，通过command r进入到实用工具去除；若不小心抹掉怎么办？见第6、第12）<br><a href="https://support.apple.com/zh-cn/111336">https://support.apple.com/zh-cn/111336</a><br><a href="https://support.apple.com/zh-cn/111336">https://support.apple.com/zh-cn/111336</a></p>
+<p><a href="https://b23.tv/aFdpjpM">mac下制作启动优盘方法汇总 &gt;</a></p>
+<p><a href="https://b23.tv/6zIA1iV">windows下制作启动优盘方法汇总 &gt;</a><br>安装过程若报错，参考如下处理。</p>
+<ul>
+<li><p><a href="https://b23.tv/6MaUGkk">【“应用程序副本已损坏，不能用来安装macOS”，通过date来解决】</a></p>
+</li>
+<li><p><a href="https://b23.tv/JiLxzef">【OS X 未能安装在您的电脑上，通过date命令改日期解决。OS X 未能安装在您的电脑上，没有符合安装资格的软件包。请联系软件制造商以获得帮助。】</a></p>
+</li>
+</ul>
+</li>
+</ol>
+  <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">  032900002023.00 (13.3) </span><br><span class="line">091400002022.00 (12.6) </span><br><span class="line">082000002022.00 ( 12.5.1)</span><br><span class="line">072100002022.00 (12.5) </span><br><span class="line">030400002021.00（11） </span><br><span class="line">121212122019 （10.15）</span><br><span class="line">062614102014.30（10.15也可用这个）</span><br><span class="line">062614102014.30 （10.13、10.14）010514102017.30（10.12）</span><br><span class="line">0201010116（10.11.6） </span><br><span class="line">0923222120 122014102015.30（10.10）</span><br></pre></td></tr></table></figure>
+
+
+
+<ol start="2">
+<li>macpe将预装系统的镜像（dmg或img或其他形式）恢复至目标硬盘。适合批量。</li>
+<li>winpe将预装系统的镜像（img或其他分区镜像格式）恢复至目标硬盘。适合批量。</li>
+<li>安装镜像用各种工具写入硬盘的某个分区作为启动安装分区。（适合ppc老电脑光驱损坏或<a href="https://support.apple.com/zh-cn/103265">T2芯片电脑</a>禁止优盘启动）</li>
+<li>火线安装。（适合ppc电脑光驱损坏，又不方便拆硬盘）</li>
+<li>从appstore或其他途径下载后双击进行安装。</li>
+<li>预装好的硬盘通过对拷机对拷。（适合可拆卸硬盘批量安装）</li>
+<li>预装好的硬盘通过分区软件的复制磁盘功能对拷。（适合可拆卸硬盘）</li>
+<li>M芯片用ipsw格式刷机。(参考方法12)</li>
+<li><a href="https://support.apple.com/zh-cn/103265">T2芯片</a>若抹盘又不支持优盘启动，可按<a href="https://support.apple.com/zh-cn/108900">DFU模式刷机 &gt;</a>。（好多会失败，不要问为什么，可能是运气不好，失败怎么办，只好用第6种方法+<a href="https://shop287609711.taobao.com/">专业技术支持 &gt;</a>）</li>
+</ol>
+]]></content>
+      <categories>
+        <category>mac</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>mac系统</tag>
+        <tag>安装</tag>
       </tags>
   </entry>
 </search>
