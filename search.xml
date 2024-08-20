@@ -14,8 +14,8 @@
 <p>或B站视频： <a href="https://b23.tv/uPZYPMM">https://b23.tv/uPZYPMM</a></p>
 </li>
 <li><p>根据查到的序列号到官网查阅机子信息</p>
-<p>中文的：<a href="https://checkcoverage.apple.com/?locale=zh-CN">https://checkcoverage.apple.com/?locale=zh-CN</a></p>
-<p>英文的：<a href="https://checkcoverage.apple.com/?locale=en-US">https://checkcoverage.apple.com/?locale=en-US</a></p>
+<p>中文的：<a href="https://checkcoverage.apple.com/?locale=zh_CN">https://checkcoverage.apple.com/?locale=zh_CN</a></p>
+<p>英文的：<a href="https://checkcoverage.apple.com/?locale=en_US">https://checkcoverage.apple.com/?locale=en_US</a></p>
 </li>
 <li><p>根据提供的机型、年份在本站查兼容性表</p>
 </li>
@@ -1275,8 +1275,8 @@
 <p>或B站视频： <a href="https://b23.tv/uPZYPMM">https://b23.tv/uPZYPMM</a></p>
 </li>
 <li><p>根据查到的序列号到官网查阅机子信息</p>
-<p>中文的：<a href="https://checkcoverage.apple.com/?locale=zh-CN">https://checkcoverage.apple.com/?locale=zh-CN</a></p>
-<p>英文的：<a href="https://checkcoverage.apple.com/?locale=en-US">https://checkcoverage.apple.com/?locale=en-US</a></p>
+<p>中文的：<a href="https://checkcoverage.apple.com/?locale=zh_CN">https://checkcoverage.apple.com/?locale=zh_CN</a></p>
+<p>英文的：<a href="https://checkcoverage.apple.com/?locale=en_US">https://checkcoverage.apple.com/?locale=en_US</a></p>
 </li>
 <li><p>根据提供的机型、年份查兼容性表</p>
 </li>
@@ -3920,6 +3920,46 @@
       <tags>
         <tag>mac系统</tag>
         <tag>安装</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>no bootable device insert boot disk and press any key如何处理？</title>
+    <url>/posts/4250b65a/</url>
+    <content><![CDATA[<p>此前给Mac设备装了Windows系统造成的遗留隐患。</p>
+<ol>
+<li>文件都在，一个没丢，也不会坏，至少Mac系统里面都是好的。</li>
+<li>Windows7里面的文件也都在。</li>
+<li>Mac OS依然能进，不要急着去重装系统！！！！！</li>
+</ol>
+<p>实践中有困难可咨询，推荐：<a href="https://shop287609711.taobao.com/">开心萝卜os</a></p>
+<span id="more"></span>
+<p>以下各种方法都试试</p>
+<ol>
+<li>开机长按option或alt键，选择优盘启动安装盘盘，重新装系统</li>
+<li><a href="https://support.apple.com/zh-cn/102539">重置NVRAM或PRAM</a></li>
+<li><a href="https://support.apple.com/zh-cn/102605">重置SMC</a></li>
+<li>改为使用USB2.0的优盘</li>
+<li>更换预装系统的硬盘</li>
+<li>若双系统，进mac系统删除windows分区，然后重新安装</li>
+</ol>
+<ul>
+<li><p>按开机电源按钮强制关机再开机（重启）；</p>
+</li>
+<li><p>开机声音响后快速长按 Alt 键（Windows键盘左Alt键），苹果的键盘应该是 option 。</p>
+</li>
+<li><p>此时不出意外的话屏幕会出现一个硬盘。如果你有多个硬盘的话注意选择Mac系统所在的硬盘。（不要选DVD光盘或者U盘）。</p>
+</li>
+<li><p>然后按Enter键，不出意外的话就正常进入Mac系统了。</p>
+</li>
+</ul>
+<p>有重要数据线拷贝数据，若分区进不去，无法拷贝，咨询<a href="https://shop287609711.taobao.com/">开心萝卜os</a></p>
+]]></content>
+      <categories>
+        <category>mac</category>
+        <category>教程</category>
+      </categories>
+      <tags>
+        <tag>mac系统</tag>
       </tags>
   </entry>
 </search>
