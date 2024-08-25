@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="zh-CN,en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 7.3.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/happyos32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/happyos16.ico">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"easyos2.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="什么也没动，只是做了个备份，怎么就启动不了了呢？ 如碰到难题，推荐咨询：开心萝卜os">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Microsoft Windows 2000 的计算机上出现的“Stop 0x0000007B”错误信息故障诊断">
+<meta property="og:url" content="https://easyos2.github.io/en/posts/7273fd6f/index.html">
+<meta property="og:site_name" content="开心系统">
+<meta property="og:description" content="什么也没动，只是做了个备份，怎么就启动不了了呢？ 如碰到难题，推荐咨询：开心萝卜os">
+<meta property="og:locale" content="en_US">
+<meta property="article:published_time" content="2024-08-25T08:31:44.298Z">
+<meta property="article:modified_time" content="2024-08-25T09:53:00.986Z">
+<meta property="article:author" content="开心系统">
+<meta property="article:tag" content="修复">
+<meta property="article:tag" content="引导">
+<meta property="article:tag" content="windows 2000">
+<meta property="article:tag" content="win2000">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://easyos2.github.io/en/posts/7273fd6f/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'en'
+  };
+</script>
+
+  <title>Microsoft Windows 2000 的计算机上出现的“Stop 0x0000007B”错误信息故障诊断 | 开心系统</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta custom-logo">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">开心系统</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+      <p class="site-subtitle" itemprop="description">简单、轻松装系统</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section">Home</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section">About</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section">Tags</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section">Categories</a>
+
+  </li>
+        <li class="menu-item menu-item-products">
+
+    <a href="/products/" rel="section">Products</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger">Search
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="Searching..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://easyos2.github.io/posts/7273fd6f/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="开心系统">
+      <meta itemprop="description" content="苹果系统升级、降级、重装、双系统安装，Dos、Windows系统故障修复">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="开心系统">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Microsoft Windows 2000 的计算机上出现的“Stop 0x0000007B”错误信息故障诊断
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">Posted on</span>
+              
+
+              <time title="Created: 2024-08-25 16:31:44 / Modified: 17:53:00" itemprop="dateCreated datePublished" datetime="2024-08-25T16:31:44+08:00">2024-08-25</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/windows/" itemprop="url" rel="index"><span itemprop="name">windows</span></a>
+                </span>
+            </span>
+
+          
+            <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv" style="display: none;">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">Views: </span>
+              <span id="busuanzi_value_page_pv"></span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>什么也没动，只是做了个备份，怎么就启动不了了呢？</p>
+<p>如碰到难题，推荐咨询：<a target="_blank" rel="noopener" href="https://shop287609711.taobao.com/">开心萝卜os</a></p>
+<span id="more"></span>
+<p>本文说明了如何对在基于 Microsoft Windows 2000 的计算机上出现的“Stop 0x0000007B”错误信息进行故障诊断。在某些情况下，基于 Windows 2000 的计算机有可能以蓝屏的形式显示与以下内容类似的错误信息：</p>
+<p>***STOP 0x0000007B (parameter1, parameter2, parameter3, parameter4)<br>INACCESSIBLE_BOOT_DEVICE</p>
+<p>“Stop 0x0000007B”错误信息是一个 Windows 2000 Executive 字符模式的 Stop 错误信息。错误原因可能多种多样。这可能表明，在启动设备的驱动程序对 Microsoft Windows 试图在其上启动的设备进行初始化时，输入&#x2F;输出 (I&#x2F;Ｏ) 系统初始化失败，或者表明因为文件系统不能识别存储在启动设备上的数据而导致文件系统未能初始化。在下列情况下可能出现此错误信息：</p>
+<table class="list ul"><tbody><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">Windows 安装在一个不受支持的磁盘上或小型计算机系统接口 (SCSI) 控制器上。</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">安装了一个新的 SCSI 适配器或磁盘控制器。</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">用系统分区对磁盘进行了重新分区。</font></td></tr></tbody></table>
+
+<p>本文说明了一般和特定的故障诊断步骤，当在基于 Windows 2000 的计算机上接收到此错误信息时可以使用这些步骤。  </p>
+<p><strong>注意</strong>：本文不讨论如何对在 Windows 2000 安装过程中或者在运行 Windows 2000 安装程序时出现的“Stop 0x0000007B”错误信息进行故障诊断。要对在运行安装程序以安装 Windows 2000 时或者在安装 Windows 2000 Service Pack 时出现的“Stop 0x0000007B”错误信息进行故障诊断，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/822051/">822051</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/822051/">http://support.microsoft.com/kb/822051/</a>) 如何对运行 Windows 2000 安装程序时出现的“Stop 0x0000007B”错误信息进行故障诊断</p>
+<h4 id="一般故障诊断步骤"><a href="#一般故障诊断步骤" class="headerlink" title="一般故障诊断步骤"></a>一般故障诊断步骤</h4><p>在对“Stop 0x0000007B”错误信息进行故障诊断之前，请阅读本文的内容以确定下文所列出的特定问题是否有任何一项与您的情况相符。如果没有这些特定问题，则使用以下一般故障诊断步骤：</p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">如果最近添加了新硬件，则卸下该新硬件，或对它进行重新配置，以使它不与以前安装的任何其他控制器的资源发生冲突。<br><br>如果启动控制器和另一个控制器之间存在 IRQ 或 I/O 端口地址冲突，Windows 2000 可能会显示一条“Stop 0x0000007B”错误信息。请检查 Microsoft 硬件兼容列表 (HCL)，确保所要添加的硬件及其驱动程序与 Windows 2000 兼容。有关 HCL 的更多信息，请访问下面的 Microsoft 网站：</font><div class="indent"><a target="_blank" href="http://www.microsoft.com/whdc/hcl/default.mspx" rel="nofollow noopener"><font color="#002c99" size="2">http://www.microsoft.com/whdc/hcl/default.mspx</font></a> <span class="pLink"><font size="2">(http://www.microsoft.com/whdc/hcl/default.mspx)</font></span></div><font size="2">有关所要安装的硬件的信息，请与硬件制造商联系。</font></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">使用“最后一次正确的配置”功能。如果最近安装了一个与启动控制器不兼容的设备驱动程序，使用“最后一次正确的配置”功能可能会解决问题。<br><br>在使用“最后一次正确的配置”功能时，您会使用最近一次的可行设置来启动计算机。此功能可恢复计算机上一次成功启动时的有效注册表信息和驱动程序设置。如果您在更改计算机后（例如，安装或升级设备驱动程序后）无法启动 Windows，则应使用此功能。<br><br>要使用“最后一次正确的配置”功能启动计算机，请按照下列步骤操作：</font><div class="table-box"><table class="list al"><tbody><tr><td class="number"><font size="2">a.</font></td><td class="text"><font size="2">重新启动计算机。</font></td></tr><tr><td class="number"><font size="2">b.</font></td><td class="text"><font size="2">收到以下消息时按 F8 键：</font><div class="message"><font size="2">请选择要启动的操作系统。</font></div></td></tr><tr><td class="number"><font size="2">c.</font></td><td class="text"><font size="2">在“Windows 高级选项”菜单上，使用箭头键选择“最后一次正确的配置”，然后按 Enter 键。</font></td></tr><tr><td class="number"><font size="2">d.</font></td><td class="text"><font size="2">如果在计算机上还运行着其他操作系统，请在出现的列表上选中“Microsoft Windows 2000”，然后按 Enter 键。<br><br><strong>警告</strong>：在使用“最后一次正确的配置”功能启动计算机后，最近一次成功启动以后所做的更改均会丢失。<br><br>如果您可以使用“最后一次正确的配置”启动计算机，那么您上次对计算机做出的更改（例如，安装驱动程序）可能就是导致问题的原因。要对一个问题进行故障诊断，可以删除或更新驱动程序，然后测试 Windows，判断问题是否解决。</font></td></tr></tbody></table></div></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><font size="2">使用紧急修复磁盘 (ERD)。如果有 ERD，可用它来对问题进行故障诊断。可以使用紧急修复过程来修复系统文件、分区引导扇区和启动环境。<br><br>有关紧急修复功能的其他信息，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</font><div class="indent"><a class="KBlink" target="_blank" href="http://support.microsoft.com/kb/231777/" rel="nofollow noopener"><font color="#002c99" size="2">231777</font></a> <font size="2"><span class="pLink">(http://support.microsoft.com/kb/231777/)</span> 如何在 Windows 2000 中创建紧急修复磁盘</font></div></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">阅读以下 Microsoft 知识库文章的内容，确定是否有任何故障诊断步骤适用于您的情况：</font><div class="indent"><a class="KBlink" target="_blank" href="http://support.microsoft.com/kb/122926/" rel="nofollow noopener"><font color="#002c99" size="2">122926</font></a> <font size="2"><span class="pLink">(http://support.microsoft.com/kb/122926/)</span> Stop 0x0000007B 或“0x4,0,0,0”错误的疑难解答</font></div></td></tr></tbody></table>
+
+<h4 id="特定故障诊断步骤"><a href="#特定故障诊断步骤" class="headerlink" title="特定故障诊断步骤"></a>特定故障诊断步骤</h4><h5 id="引导扇区病毒"><a href="#引导扇区病毒" class="headerlink" title="引导扇区病毒"></a>引导扇区病毒</h5><p>如果您的计算机感染了引导扇区病毒，则可能会收到“Stop 0x0000007B”错误信息。请使用防病毒程序检查计算机是否感染了病毒。此外，在再次使用软盘前也应检查是否感染了病毒。  </p>
+<p>有关如何帮助保护引导扇区免受病毒侵害的其他信息，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/122221/">122221</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/122221/">http://support.microsoft.com/kb/122221/</a>) 如何保护 Windows 中的引导扇区免受病毒侵害</p>
+<p>Microsoft 不提供可检测或清除计算机病毒的软件。如果您怀疑或证实计算机感染了病毒，请获取最新的防病毒软件。有关防病毒软件制造商的列表，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/49500/">49500</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/49500/">http://support.microsoft.com/kb/49500/</a>) 防病毒软件供应商列表</p>
+<h5 id="特定问题列表"><a href="#特定问题列表" class="headerlink" title="特定问题列表"></a>特定问题列表</h5><p>下面的列表包含了有关会出现“Stop 0x0000007B”错误信息的特定情况的信息。有关如何对问题进行故障诊断的更多信息，请单击相应的链接：</p>
+<table class="list ul"><tbody><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6a" rel="nofollow noopener"><font color="#002c99" size="2">移除动态硬盘后试图启动计算机时会收到“Stop 0x0000007B”错误信息</font></a></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6g" rel="nofollow noopener"><font color="#002c99" size="2">将系统磁盘移到另一台计算机后出现“Stop 0x0000007B”错误信息</font></a></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6b" rel="nofollow noopener"><font color="#002c99" size="2">Dell PowerEdge 2450 服务器上更新 PERC2 SCSI 驱动程序后出现“Stop 0x0000007B”错误信息</font></a></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6c" rel="nofollow noopener"><font color="#002c99" size="2">加载其他筛选器驱动程序时如果禁用 Diskperf 会出现“Stop 0x0000007B”错误信息</font></a></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6d" rel="nofollow noopener"><font color="#002c99" size="2">在从一个镜像动态磁盘启动计算机时出现“Stop: 0x0000007B”错误信息</font></a></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6e" rel="nofollow noopener"><font color="#002c99" size="2">安装新主板后启动计算机时出现“Stop 0x0000007B”错误信息</font></a></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6f" rel="nofollow noopener"><font color="#002c99" size="2">将含有启动分区的基本磁盘转换为动态磁盘时出现“Stop 0x0000007B”错误信息</font></a></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6h" rel="nofollow noopener"><font color="#002c99" size="2">某些计算机上使用 Sysprep 可能会导致“Stop 0x0000007B”错误信息</font></a></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6i" rel="nofollow noopener"><font color="#002c99" size="2">在从断开的基本镜像将计算机启动到阴影驱动器时收到“Stop 0x00000058 FTDISK_INTERNAL_ERROR”错误信息</font></a></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6j" rel="nofollow noopener"><font color="#002c99" size="2">删除 Roxio Easy CD Creator 5 Platinum 后出现“Stop 0x0000007B”错误信息</font></a></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6k" rel="nofollow noopener"><font color="#002c99" size="2">安装了 Iomega IomegaWare 3.1 后启动计算机时出现“Stop 0x0000007B”错误信息</font></a></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6l" rel="nofollow noopener"><font color="#002c99" size="2">安装了 Iomega 工具后出现“Stop 0x0000007B”错误信息</font></a></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><a target="_blank" href="http://support.microsoft.com/kb/822052/zh-cn#6m" rel="nofollow noopener"><font color="#002c99" size="2">删除 Veritas Open Transaction Manager 后出现“Stop 0x0000007B”错误信息</font></a></td></tr></tbody></table>
+
+<h4 id="移除动态硬盘后试图启动计算机时会收到“Stop-0x0000007B”错误信息"><a href="#移除动态硬盘后试图启动计算机时会收到“Stop-0x0000007B”错误信息" class="headerlink" title="移除动态硬盘后试图启动计算机时会收到“Stop 0x0000007B”错误信息"></a>移除动态硬盘后试图启动计算机时会收到“Stop 0x0000007B”错误信息</h4><p>在启动基于 Windows 2000 的计算机时，收到以下 Stop 错误信息：</p>
+<p>STOP:0x0000007b (0xf881b84c,0xc0000034,0x00000000,0x00000000)<br>INACCESSIBLE_BOOT_DEVICE  </p>
+<p>0xc00000034 STATUS_OBJECT_NAME_NOT_FOUND</p>
+<h5 id="为什么出现这个问题"><a href="#为什么出现这个问题" class="headerlink" title="为什么出现这个问题"></a>为什么出现这个问题</h5><p>如果硬盘的主要磁盘组标识与存储在注册表中的主要磁盘组标识不匹配，则会出现该错误信息。如果满足以下所有条件，就可能发生此不匹配问题：</p>
+<table class="list ul"><tbody><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">在运行 Windows 2000 的计算机上将含有系统分区的硬盘配置成动态磁盘。</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">从计算机上取下硬盘，然后将该硬盘安装到第二台基于 Windows 2000 的计算机上。</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">将硬盘导入到第二台基于 Windows 2000 的计算机中的含有动态磁盘的磁盘组中。</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">将硬盘从第二台计算机返回到第一台计算机。</font></td></tr></tbody></table>
+
+<h5 id="如何解决"><a href="#如何解决" class="headerlink" title="如何解决"></a>如何解决</h5><p>要解决此问题，请使用注册表编辑器从不能启动的计算机的注册表上删除 Primary Disk Group 注册表项。要删除该注册表项，请按照下列步骤操作。  </p>
+<p><strong>警告</strong>：注册表编辑器使用不当可能导致严重问题，可能需要重新安装操作系统。Microsoft 不能保证您可以解决因注册表编辑器使用不当而导致的问题。使用注册表编辑器需要您自担风险。</p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">从不能启动的计算机上取下含有系统分区的硬盘，将该硬盘安装到第二台计算机上，然后启动第二台计算机。</font></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">在第二台计算机上，单击“开始”，单击“运行”，在“打开”框中键入 <span class="userInput">regedt32</span>，然后单击“确定”。</font></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><font size="2">在注册表编辑器中单击“HKEY_LOCAL_MACHINE”，然后在“注册表”菜单上单击“加载配置单元”。</font></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">找到并单击包含第一台计算机操作系统配置单元的 System 文件。<br><br><strong>注意</strong>：该 System 文件位于 <var>Drive</var>:/Winnt/System32/Config 文件夹中，其中 <var>Drive</var> 是来自第一台计算机的硬盘的驱动器号。</font></td></tr><tr><td class="number"><font size="2">5.</font></td><td class="text"><font size="2">单击“打开”，在“项名称”框中键入 <span class="userInput">Temp</span>，然后单击“确定”。</font></td></tr><tr><td class="number"><font size="2">6.</font></td><td class="text"><font size="2">双击“HKEY_LOCAL_MACHINE”，然后双击“Temp”。</font></td></tr><tr><td class="number"><font size="2">7.</font></td><td class="text"><font size="2">双击“ControlSet00<var>n</var>”，其中 <var>n</var> 是控制集编号。</font></td></tr><tr><td class="number"><font size="2">8.</font></td><td class="text"><font size="2">双击“Services”，再双击“dmio”,然后单击“Boot Info”。</font></td></tr><tr><td class="number"><font size="2">9.</font></td><td class="text"><font size="2">右键单击“Primary Disk Group”注册表项，然后单击“删除”。</font></td></tr><tr><td class="number"><font size="2">10.</font></td><td class="text"><font size="2">对于在 HKEY_LOCAL_MACHINE/Temp 子项中出现的 ControlSet00<var>n</var> 的每个实例，重复第 7 到 9 步。</font></td></tr><tr><td class="number"><font size="2">11.</font></td><td class="text"><font size="2">单击“Temp”，然后在“注册表”菜单上单击“卸载配置单元”，然后单击“是”。</font></td></tr><tr><td class="number"><font size="2">12.</font></td><td class="text"><font size="2">退出注册表编辑器。</font></td></tr><tr><td class="number"><font size="2">13.</font></td><td class="text"><font size="2">关闭第二台计算机，然后将来自第一台计算机的硬盘取出。</font></td></tr><tr><td class="number"><font size="2">14.</font></td><td class="text"><font size="2">在第一台计算机上重新安装该硬盘，然后启动第一台计算机。</font></td></tr></tbody></table>
+
+<p>在 Windows 2000 中，可能只有一个动态磁盘组。在将一个动态磁盘从一台计算机移动到另一台已经包含动态磁盘的计算机上时，该磁盘上的主要磁盘组标识就会被改变，磁盘就会合并到第二台计算机的动态磁盘数据库中。但是，磁盘上的操作系统的注册表中所存储的主要磁盘组标识并未改变。在将硬盘返回到第一台计算机上时，新的主要磁盘组标识和存储在注册表中的主要磁盘组标识之间的不匹配就会导致错误。  </p>
+<p>有关动态磁盘编号的其他信息，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/222470/">222470</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/222470/">http://support.microsoft.com/kb/222470/</a>) 动态磁盘编号和 DmDiag.exe 工具</p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/222189/">222189</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/222189/">http://support.microsoft.com/kb/222189/</a>) Windows 磁盘管理中磁盘组的说明</p>
+<h4 id="将系统磁盘移到另一台计算机后出现“Stop-0x0000007B”错误信息"><a href="#将系统磁盘移到另一台计算机后出现“Stop-0x0000007B”错误信息" class="headerlink" title="将系统磁盘移到另一台计算机后出现“Stop 0x0000007B”错误信息"></a>将系统磁盘移到另一台计算机后出现“Stop 0x0000007B”错误信息</h4><p>在将基于 Windows 2000 的计算机上的系统（启动）磁盘移动到另一台计算机上时，在试图启动另一台计算机时可能会收到以下错误信息：</p>
+<p>*** STOP:0x0000007B (0xF741B84C,0xC0000034,0x00000000,0x00000000)<br>INACCESSIBLE_BOOT_DEVICE</p>
+<h5 id="为什么出现这个问题-1"><a href="#为什么出现这个问题-1" class="headerlink" title="为什么出现这个问题"></a>为什么出现这个问题</h5><p>如果系统磁盘所移至的计算机使用的硬件不同于原来的基于 Windows 2000 的计算机，就会出现此问题。例如，将系统硬盘移到一台与原来计算机型号不同的备份计算机上时就会发生此问题。在这种情况下，备份计算机上的大容量存储控制器硬件的注册表项和驱动程序未安装在 Windows 中。  </p>
+<p>有几种不同的芯片集可用于集成设备电子 (IDE) 控制器，每个芯片集使用不同的即插即用 (PNP) ID 来对其进行识别。备份计算机的大容量存储控制器的 PNP-ID 信息必须存在于注册表中，Windows 才能够在您启动计算机时对正确的驱动程序进行初始化。</p>
+<h5 id="如何解决-1"><a href="#如何解决-1" class="headerlink" title="如何解决"></a>如何解决</h5><p>所支持的将 Windows 2000 安装移动到新硬件的方法详见 Microsoft 知识库中的以下文章：</p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/249694/">249694</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/249694/">http://support.microsoft.com/kb/249694/</a>) 如何将 Windows 2000 安装移到不同的硬件</p>
+<p>但对于灾难恢复方法，请根据您的实际情况进行如下操作：</p>
+<table class="list ul"><tbody><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">备份计算机应使用相同的硬件。</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">将备份计算机上出问题的硬件组件换成制造商、品牌和型号与原计算机中的对应组件都相同的组件。</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">如果系统磁盘是 SCSI 磁盘，则在新计算机中使用相同品牌和型号的 SCSI 控制器。</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">如果系统磁盘是 IDE 磁盘，则使用与原计算机相同的主板类型，且需具有相同的 IDE 芯片集类型和 PNP-ID。</font></td></tr></tbody></table>
+
+<p>对于基于 SCSI 的系统磁盘，可以灌注注册表，并确保如果在传递系统磁盘内容之前安装 SCSI 控制器，所需要的驱动程序已安装。Windows PNP 检测控制器，设置关键的注册表项，然后复制适当的驱动程序。  </p>
+<p>在验证了 SCSI 控制器出现在设备管理器中后，就可以安全地将备用控制器删除了。如果以后必须将系统驱动器移动到另一台具有相同品牌和型号的 SCSI 控制器的计算机，那么 Windows 可以成功启动，这是因为已经使用过一次该控制器并保留了正确的配置信息。</p>
+<h5 id="其他信息"><a href="#其他信息" class="headerlink" title="其他信息"></a>其他信息</h5><p>尽管 Microsoft 不支持以下方法，但可以通过事先导入或合并需要的注册表项并复制驱动程序来支持 Windows 本机支持的 IDE 控制器。这个方法可能会使被移动的系统驱动器成功启动。不过，其他硬件差别可能产生其他问题。这个解决方案对于其 PNP-ID 与以下列表匹配的 IDE 控制器提供了支持。但是，如果想提前确定在当前和备份计算机中使用哪些 IDE 控制器，可以在 %SystemRoot%&#x2F;Setupapi.log 文件中查找在安装过程中检测到的 PNP-ID。确定了计算机中所使用的 PNP-ID 后，可以选择合并注册表或只用需要的 PNP-ID 填充注册表。  </p>
+<p>下面的列表是 Windows 中本机支持的 IDE 控制器的 PNP-ID 列表：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br></pre></td><td class="code"><pre><span class="line">&lt;font size=&quot;2&quot;&gt;;***********（标准 IDE ATA/ATAPI 控制器）*********</span><br><span class="line">Primary_IDE_Channel=%systemroot%/inf/mshdc.inf</span><br><span class="line">Secondary_IDE_Channel=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;*********** Generic_ESDI_Hard_Disk_Controller **********</span><br><span class="line">*PNP0600=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;*********** Aztech IDE 控制器 **********************</span><br><span class="line">*AZT0502=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;*********** 通用双路 PCI IDE 的设备 ID *********</span><br><span class="line">PCI/CC_0101=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;************Acer Labs Inc ******************************</span><br><span class="line">PCI/VEN_10B9&amp;amp;DEV_5215=%systemroot%/inf/mshdc.inf</span><br><span class="line">PCI/VEN_10B9&amp;amp;DEV_5219=%systemroot%/inf/mshdc.inf</span><br><span class="line">PCI/VEN_10B9&amp;amp;DEV_5229=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;************Appian Technology **************************</span><br><span class="line">PCI/VEN_1097&amp;amp;DEV_0038=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;************CMD Technology *****************************</span><br><span class="line">PCI/VEN_1095&amp;amp;DEV_0640=%systemroot%/inf/mshdc.inf</span><br><span class="line">PCI/VEN_1095&amp;amp;DEV_0646=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;************Compaq *************************************</span><br><span class="line">PCI/VEN_0E11&amp;amp;DEV_AE33=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;*************Intel *************************************</span><br><span class="line">PCI/VEN_8086&amp;amp;DEV_1222=%systemroot%/inf/mshdc.inf</span><br><span class="line">PCI/VEN_8086&amp;amp;DEV_1230=%systemroot%/inf/mshdc.inf</span><br><span class="line">PCI/VEN_8086&amp;amp;DEV_7010=%systemroot%/inf/mshdc.inf</span><br><span class="line">PCI/VEN_8086&amp;amp;DEV_7111=%systemroot%/inf/mshdc.inf</span><br><span class="line">PCI/VEN_8086&amp;amp;DEV_2411=%systemroot%/inf/mshdc.inf</span><br><span class="line">PCI/VEN_8086&amp;amp;DEV_2421=%systemroot%/inf/mshdc.inf</span><br><span class="line">PCI/VEN_8086&amp;amp;DEV_7199=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;*************PC Technology *****************************</span><br><span class="line">PCI/VEN_1042&amp;amp;DEV_1000=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;*************Silicon Integrated System *****************</span><br><span class="line">PCI/VEN_1039&amp;amp;DEV_0601=%systemroot%/inf/mshdc.inf</span><br><span class="line">PCI/VEN_1039&amp;amp;DEV_5513=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;*************Symphony Labs *****************************</span><br><span class="line">PCI/VEN_10AD&amp;amp;DEV_0001=%systemroot%/inf/mshdc.inf</span><br><span class="line">PCI/VEN_10AD&amp;amp;DEV_0150=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;*************Promise Technology ************************</span><br><span class="line">PCI/VEN_105A&amp;amp;DEV_4D33=%systemroot%/inf/mshdc.inf</span><br><span class="line"></span><br><span class="line">;*************VIA Technologies, Inc. ********************</span><br><span class="line">PCI/VEN_1106&amp;amp;DEV_0571=%systemroot%/inf/mshdc.inf&lt;/font&gt;</span><br></pre></td></tr></table></figure>
+
+<p>要导入此信息，在互换驱动器后显示“Stop 0x0000007B”错误信息的两台不同的测试计算机上，请按照这些步骤操作。在每台测试计算机上按这些步骤操作后，就应当能够移动硬盘并启动两台计算机而不会收到错误信息。不过，请注意其他硬件差别可能会导致其他问题。为此，请按照下列步骤操作：</p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">将下面的信息复制到记事本中，然后将该文件保存到软盘上，命名为 Mergeide.reg。<br><br><strong>注意</strong>：请确保文件以 .reg 扩展名而不是 .txt 扩展名保存。</font><div class="indent"><pre class="in_text set-code-show" data-index="1" name="code"><font size="2">********* 由此处开始复制 *************
+
+<p>Windows Registry Editor Version 5.00</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;primary_ide_channel]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”atapi”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;secondary_ide_channel]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”atapi”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;*pnp0600]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”atapi”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;*azt0502]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”atapi”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;gendisk]<br>“ClassGUID”&#x3D;”{4D36E967-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”disk”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#cc_0101]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_0e11&amp;dev_ae33]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_1039&amp;dev_0601]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_1039&amp;dev_5513]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_1042&amp;dev_1000]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_105a&amp;dev_4d33]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_1095&amp;dev_0640]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_1095&amp;dev_0646]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_1097&amp;dev_0038]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_10ad&amp;dev_0001]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_10ad&amp;dev_0150]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_10b9&amp;dev_5215]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_10b9&amp;dev_5219]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_10b9&amp;dev_5229]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”pciide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_1106&amp;dev_0571]<br>“Service”&#x3D;”pciide”<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_8086&amp;dev_1222]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”intelide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_8086&amp;dev_1230]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”intelide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_8086&amp;dev_2411]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”intelide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_8086&amp;dev_2421]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”intelide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_8086&amp;dev_7010]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”intelide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_8086&amp;dev_7111]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”intelide”</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Control&#x2F;CriticalDeviceDatabase&#x2F;pci#ven_8086&amp;dev_7199]<br>“ClassGUID”&#x3D;”{4D36E96A-E325-11CE-BFC1-08002BE10318}”<br>“Service”&#x3D;”intelide”</p>
+<p>;Add driver for Atapi (requires atapi.sys in drivers directory)</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Services&#x2F;atapi]<br>“ErrorControl”&#x3D;dword:00000001<br>“Group”&#x3D;”SCSI miniport”<br>“Start”&#x3D;dword:00000000<br>“Tag”&#x3D;dword:00000019<br>“Type”&#x3D;dword:00000001<br>“DisplayName”&#x3D;”Standard IDE&#x2F;ESDI Hard Disk Controller”<br>“ImagePath”&#x3D;hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,&#x2F;<br>52,00,49,00,56,00,45,00,52,00,53,00,5c,00,61,00,74,00,61,00,70,00,69,00,2e,&#x2F;<br>  00,73,00,79,00,73,00,00,00</p>
+<p>;Add driver for intelide (requires intelide.sys in drivers directory)</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Services&#x2F;IntelIde]<br>“ErrorControl”&#x3D;dword:00000001<br>“Group”&#x3D;”System Bus Extender”<br>“Start”&#x3D;dword:00000000<br>“Tag”&#x3D;dword:00000004<br>“Type”&#x3D;dword:00000001<br>“ImagePath”&#x3D;hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,&#x2F;<br>52,00,49,00,56,00,45,00,52,00,53,00,5c,00,69,00,6e,00,74,00,65,00,6c,00,69,&#x2F;<br>00,64,00,65,00,2e,00,73,00,79,00,73,00,00,00</p>
+<p>;Add driver for pciide (requires pciide.sys and pciidex.sys in drivers directory)</p>
+<p>[HKEY_LOCAL_MACHINE&#x2F;SYSTEM&#x2F;CurrentControlSet&#x2F;Services&#x2F;PCIIde]<br>“ErrorControl”&#x3D;dword:00000001<br>“Group”&#x3D;”System Bus Extender”<br>“Start”&#x3D;dword:00000000<br>“Tag”&#x3D;dword:00000003<br>“Type”&#x3D;dword:00000001<br>“ImagePath”&#x3D;hex(2):53,00,79,00,73,00,74,00,65,00,6d,00,33,00,32,00,5c,00,44,00,&#x2F;<br>52,00,49,00,56,00,45,00,52,00,53,00,5c,00,70,00,63,00,69,00,69,00,64,00,65,&#x2F;<br>00,2e,00,73,00,79,00,73,00,00,00</p>
+<p>************ 复制到此处结束 ***************</font></pre></div></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">从 %SystemRoot%&#x2F;Driver Cache&#x2F;i386&#x2F;Driver.cab 文件中提取 Atapi.sys、Intelide.sys、Pciide.sys 和 Pciidex.sys 文件，或者，如果 Service Pack 已经安装在计算机上，从最新近安装的 Service Pack 分发媒体上将其复制到 %SystemRoot%&#x2F;System32&#x2F;Drivers 文件夹中。</font></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><font size="2">在 Microsoft Windows 资源管理器中，右键单击位于软盘驱动器上的“Mergeide.reg”文件，然后单击“合并”。</font></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">在提示确认将 Mergeide.reg 文件中的信息添加到注册表时，单击“是”。</font></td></tr><tr><td class="number"><font size="2">5.</font></td><td class="text"><font size="2">关闭计算机，然后将系统磁盘驱动器移到另一台收到“Stop 0x0000007b”错误信息的测试计算机上，并启动该测试计算机。</font></td></tr></tbody></table></p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/822052/zh-cn#6a">返回页首</a></p>
+<h4 id="Dell-PowerEdge-2450-服务器上更新-PERC2-SCSI-驱动程序后出现“Stop-0x0000007B”错误信息"><a href="#Dell-PowerEdge-2450-服务器上更新-PERC2-SCSI-驱动程序后出现“Stop-0x0000007B”错误信息" class="headerlink" title="Dell PowerEdge 2450 服务器上更新 PERC2 SCSI 驱动程序后出现“Stop 0x0000007B”错误信息"></a>Dell PowerEdge 2450 服务器上更新 PERC2 SCSI 驱动程序后出现“Stop 0x0000007B”错误信息</h4><p>在从 Microsoft Windows Update 网站更新 SCSI 控制器的驱动程序时，重新启动计算机时可能以蓝屏的形式显示与以下内容类似的 Stop 错误信息：</p>
+<p>*** STOP:0x0000007B (0xF201B848, 0xC0000034, 0x00000000, 0x00000000)<br>INACCESSIBLE_BOOT_DEVICE</p>
+<h5 id="为什么出现这个问题-2"><a href="#为什么出现这个问题-2" class="headerlink" title="为什么出现这个问题"></a>为什么出现这个问题</h5><p>在一台 Dell PowerEdge 2450 服务器上对 PERC2 RAID 阵列控制器的 SCSI 控制器驱动程序进行更新时，如果满足以下两个条件之一，便会发生此问题：</p>
+<table class="list ul"><tbody><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">在从 Windows Update 网站安装 SCSI 驱动程序前未更新 PERC2 RAID 阵列控制器上的固件。</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">Afamgt“Fast Utility”上层筛选器驱动程序加载到了 Windows 注册表中。</font></td></tr></tbody></table>
+
+<h5 id="如何解决-2"><a href="#如何解决-2" class="headerlink" title="如何解决"></a>如何解决</h5><p>要解决此问题，请按显示的顺序使用下列方法。只有在方法 1 不能解决问题时才继续到方法 2；只有在方法 2 不能解决问题时才继续到方法 3。  </p>
+<p><strong>方法 1：更换 Perc2.sys 驱动程序文件</strong>  </p>
+<p>用适用于您的 SCSI RAID 控制器固件级别的正确版本更换已更新的 Perc2.sys 驱动程序文件。为此，请按照下列步骤操作。  </p>
+<p><strong>注意</strong>：如果以前已经更新了 RAID 控制器固件，请从 Dell 获得正确版本的 Perc2.sys 驱动程序。不能使用随硬件附带的 OpenManage 光盘中的文件版本。要获得 Perc2.sys 文件的正确版本，请与 Dell 联系或访问下面的 Dell FTP 网站：</p>
+<p><a href="ftp://ftp.dell.com/scsi-raid">ftp://ftp.dell.com/scsi-raid</a> (<a href="ftp://ftp.dell.com/scsi-raid">ftp://ftp.dell.com/scsi-raid</a>)</p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">使用 Windows 2000 安装光盘启动计算机，然后按 F6 键来安装第三方 SCSI 或 RAID 驱动程序。<br><br><strong>注意</strong>：在从 CD-ROM 或 DVD-ROM 驱动器启动计算机之前，可能需要更改 BIOS 设置。有关如何将计算机配置为从 CD-ROM 或 DVD-ROM 驱动器启动的更多信息，请参阅计算机的文档或与计算机制造商联系。</font></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">按 S 键指定一个其他设备，然后插入含有 PERC2 RAID 控制器已经安装的固件修订版本所用的正确驱动程序的软盘。</font></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><font size="2">按 R 键修复 Windows 2000 安装。</font></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">按 C 键使用故障恢复控制台。</font></td></tr><tr><td class="number"><font size="2">5.</font></td><td class="text"><font size="2">键入代表所要修复的 Windows 2000 安装的编号，然后在得到相应提示时键入管理员密码。</font></td></tr><tr><td class="number"><font size="2">6.</font></td><td class="text"><font size="2">在命令提示符处，键入 <span class="userInput">cd system32/drivers</span>，然后按 Enter 键。</font></td></tr><tr><td class="number"><font size="2">7.</font></td><td class="text"><font size="2">将日期为 10.29.01 的 Perc2.sys 驱动程序文件重命名。<br><br>为此，在命令提示符处键入“ren perc2.sys perc2.old”，然后按 Enter 键。</font></td></tr><tr><td class="number"><font size="2">8.</font></td><td class="text"><font size="2">将正确版本的 Perc2.sys 文件从软盘复制到 Winnt/System32/Drivers 文件夹。<br><br>为此，在命令提示符处键入“copy a:/perc2.sys”，然后按 Enter 键。</font></td></tr><tr><td class="number"><font size="2">9.</font></td><td class="text"><font size="2">键入“exit”退出故障恢复控制台并重新启动计算机。</font></td></tr></tbody></table>
+
+<p>如果 Windows 不能成功启动，转到方法 2。  </p>
+<p><strong>方法 2：删除 Afamgt 筛选器驱动程序</strong>  </p>
+<p>从 Windows 注册表中删除 Afamgt 筛选器驱动程序。为此，请按照下列步骤操作。  </p>
+<p><strong>警告</strong>：注册表编辑器使用不当可能导致严重问题，可能需要重新安装操作系统。Microsoft 不能保证您可以解决因注册表编辑器使用不当而导致的问题。使用注册表编辑器需要您自担风险。</p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">执行 Windows 2000 的并行安装。<br><br>有关如何执行此操作的其他信息，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</font><div class="indent"><a class="KBlink" target="_blank" href="http://support.microsoft.com/kb/266465/" rel="nofollow noopener"><font color="#002c99" size="2">266465</font></a> <font size="2"><span class="pLink">(http://support.microsoft.com/kb/266465/)</span> 如何执行 Windows 2000 或 Windows Server 2003 的并行安装</font></div></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">从新安装的 Windows 启动注册表编辑器，然后找到 HKEY_LOCAL_MACHINE 注册表项。</font></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><font size="2">在“注册表”菜单上，单击“加载配置单元”。</font></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">找到原始 Windows 安装的 SystemRoot/System32/Config 文件夹，单击 System 文件，然后单击“打开”。</font></td></tr><tr><td class="number"><font size="2">5.</font></td><td class="text"><font size="2">在“加载配置单元”框中，键入 <span class="userInput">test</span>，然后单击“确定”。<br><br>原始的 Windows 安装的配置单元 HKEY_LOCAL_MACHINE 作为当前注册表项 HKEY_LOCAL_MACHINE 的一个子项被加载。</font></td></tr><tr><td class="number"><font size="2">6.</font></td><td class="text"><font size="2">在加载的注册表配置单元的以下注册表位置，从 UpperFilters 值中删除 AFAMGT 数据项：</font><div class="indent"><font size="2">HKEY_LOCAL_MACHINE/test/ControlSet001/Control/Class/{4D36E967-E325-11CE-BFC1-08002 BE10318}</font></div><div class="indent"><font size="2">值：UpperFilters<br>数据：AFAMGT 卸载注册表配置单元</font></div><font size="2">为此，请单击“test”项，然后单击“注册表”菜单上的“卸载配置单元”。</font></td></tr><tr><td class="number"><font size="2">7.</font></td><td class="text"><font size="2">单击“是”确认卸载测试注册表项及其所有子项。</font></td></tr><tr><td class="number"><font size="2">8.</font></td><td class="text"><font size="2">退出注册表编辑器，然后将计算机重新启动到原始的 Windows 安装。</font></td></tr></tbody></table>
+
+<p>如果 Windows 不能成功启动，转到方法 3。  </p>
+<p><strong>方法 3：更新 RAID 控制器固件</strong>  </p>
+<p>将 RAID 控制器的固件更新到最新版本。有关如何更新固件的更多信息，请参阅设备随带的文件，或者与 Dell 联系。要与 Dell 联系，请访问下面的 Dell 网站：</p>
+<p><a target="_blank" rel="noopener" href="http://support.dell.com/">http://support.dell.com</a> (<a target="_blank" rel="noopener" href="http://support.dell.com/">http://support.dell.com</a>)</p>
+<h4 id="在从一个镜像动态磁盘启动计算机时出现“Stop-0x0000007B”错误信息"><a href="#在从一个镜像动态磁盘启动计算机时出现“Stop-0x0000007B”错误信息" class="headerlink" title="在从一个镜像动态磁盘启动计算机时出现“Stop: 0x0000007B”错误信息"></a>在从一个镜像动态磁盘启动计算机时出现“Stop: 0x0000007B”错误信息</h4><p>如果对启动分区使用动态磁盘上的软件镜像，在启动和关闭计算机时可能会收到以下错误信息：</p>
+<p>STOP:0x0000007B (0x817bdee8, 0xc0000010, 0x00000000, 0x00000000) Inaccessible_Boot_Device</p>
+<p><strong>注意</strong>：错误信息中第二个参数的定义为：</p>
+<p>0xc0000010 STATUS_INVALID_DEVICE_REQUEST</p>
+<h5 id="为什么出现这个问题-3"><a href="#为什么出现这个问题-3" class="headerlink" title="为什么出现这个问题"></a>为什么出现这个问题</h5><p>在主要启动磁盘在某一时间报告一些不可恢复的磁盘 I&#x2F;O 错误并且冗余失败的情况下，可能发生此问题。这导致主要启动卷在逻辑磁盘管理器 (LDM) 数据库中标记一个“恢复”状态，并阻止启动到陈旧的卷上。</p>
+<h5 id="如何解决-3"><a href="#如何解决-3" class="headerlink" title="如何解决"></a>如何解决</h5><p>要解决此问题，请使用一张容错 (FT) 启动软盘，将计算机重新启动到位于阴影驱动器上的操作系统。  </p>
+<p>有关如何创建启动软盘的其他信息，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/119467/">119467</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/119467/">http://support.microsoft.com/kb/119467/</a>) 如何为 NTFS 或 FAT 分区创建启动盘</p>
+<p>在将计算机重新启动到位于阴影驱动器上的操作系统后，启动“磁盘管理”，右键单击主要驱动器（其旁边应显示一个黄色的三角号，表示需要注意），然后单击“重新激活磁盘”，以删除恢复标志并开始重新生成。重新生成镜像且确认镜像正常后，可以将计算机正常重新启动到主要驱动器上。  </p>
+<p>但务必要查清为什么主驱动器会有 I&#x2F;O 错误并纠正该错误，以防止再次发生此问题。查看系统事件日志中在发生启动故障之前由“Dmio”事件源记录的事件消息。  </p>
+<p><strong>注意</strong>：如果导致此故障的不可恢复的磁盘 I&#x2F;O 错误只发生在启动过程的早期阶段，则系统事件日志可能不会包含任何关于失败的冗余的消息，只有在将计算机成功启动到阴影驱动器后才会包含此消息。  </p>
+<p>当您在重新启动计算机之前为操作系统磁盘使用动态磁盘镜像时，请查看“磁盘管理”以确保镜像卷和动态磁盘处于正常状态，未显示出任何错误。如果出现错误，请通过重新激活磁盘以重置 LDM 标志的方法来纠正错误。如果这个措施不能解决问题，请用容错 (FT) 启动软盘进行计划的下一次重新启动，将计算机重新启动到阴影驱动器。  </p>
+<h4 id="安装新主板后启动计算机时出现“Stop-0x0000007B”错误信息"><a href="#安装新主板后启动计算机时出现“Stop-0x0000007B”错误信息" class="headerlink" title="安装新主板后启动计算机时出现“Stop 0x0000007B”错误信息"></a>安装新主板后启动计算机时出现“Stop 0x0000007B”错误信息</h4><p>在您安装新主板后启动计算机时，可能会在蓝屏上出现以下错误信息：</p>
+<p>STOP:0x0000007B:(parameter1, parameter2, parameter3, parameter4)<br>INACCESSIBLE_BOOT_DEVICE</p>
+<h5 id="为什么出现这个问题-4"><a href="#为什么出现这个问题-4" class="headerlink" title="为什么出现这个问题"></a>为什么出现这个问题</h5><p>如果新主板所包含的嵌入式 IDE 控制器使用了不同于原主板的芯片集，则可能会发生此问题。</p>
+<h5 id="如何解决-4"><a href="#如何解决-4" class="headerlink" title="如何解决"></a>如何解决</h5><p>要解决此问题，请重新启动 Windows 2000 安装程序，然后修复 Windows 2000 安装。为此，请按照下列步骤操作：</p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">使用 Windows 2000 安装程序软盘或者从 Windows 2000 安装光盘启动计算机。<br><br><strong>注意</strong>：要从 Windows 2000 安装光盘启动计算机，必须把计算机配置成从 CD-ROM 驱动器或 DVD 驱动器启动。有关如何将计算机配置为从 CD-ROM 驱动器或 DVD 驱动器启动的更多信息，请参阅您的个人计算机附带的文档或者与制造商联系。</font></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">在“欢迎使用安装程序”屏幕上，按 Enter 键。</font></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><font size="2">阅读许可协议，然后在提示是否接受 Windows 2000 许可协议时，按 F8 键。</font></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">选择 Windows 2000 的当前安装（如果尚未选择），然后按 R 键。</font></td></tr><tr><td class="number"><font size="2">5.</font></td><td class="text"><font size="2">按照屏幕上的说明修复 Windows 2000 安装。</font></td></tr></tbody></table>
+
+<h4 id="在从断开的基本镜像将计算机启动到阴影驱动器时收到“Stop-0x00000058-FTDISK-INTERNAL-ERROR”错误信息"><a href="#在从断开的基本镜像将计算机启动到阴影驱动器时收到“Stop-0x00000058-FTDISK-INTERNAL-ERROR”错误信息" class="headerlink" title="在从断开的基本镜像将计算机启动到阴影驱动器时收到“Stop 0x00000058 FTDISK_INTERNAL_ERROR”错误信息"></a>在从断开的基本镜像将计算机启动到阴影驱动器时收到“Stop 0x00000058 FTDISK_INTERNAL_ERROR”错误信息</h4><p>用 Windows 2000 可以将操作系统磁盘由软件镜像的基于 Microsoft Windows NT 4.0 的服务器升级，而无需首先中断镜像。Windows 2000 对于基本磁盘和早期的容错集（如镜像）有某些限制。限制之一就是不能从“陈旧”或非同步的主驱动器启动到阴影驱动器。<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/822052/zh-cn#6a">返回页首</a></p>
+<p>如果因为某些原因主操作系统驱动器不工作或者在其处于软件镜像配置条件下脱机，Windows 2000 会继续从阴影驱动器运行。此时如果执行了典型关机并恢复主操作系统驱动器，您不能用主驱动器重新启动到正在工作的阴影驱动器。只有当 Boot.ini 文件中已经存在了一个指向阴影驱动器操作系统的项，然后在主驱动器未通过冗余校验后试图使用该项时，这才会变得明显。在这种情况下，当试图启动到主操作系统磁盘或阴影操作系统磁盘时，会收到“Stop 0x00000058 FTDISK_INTERNAL_ERROR”错误信息。此时如果删除或关闭阴影驱动器，然后再试图启动到旧的主驱动器，则会收到“Stop 0x0000007B INACCESSIBLE_BOOT_DEVICE”错误信息。这也是一种保护机制，因为最当前的数据在阴影驱动器上。  </p>
+<p><strong>注意</strong>：本文中的信息只适用于基本磁盘，不适用于动态磁盘。</p>
+<p>为防止数据丢失并从“Stop 0x00000058 FTDISK_INTERNAL_ERROR”错误信息完全恢复，请按照下列步骤操作：</p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">使用一张 Windows NT 容错启动软盘将计算机启动到阴影（辅助）系统驱动器。<br><br>有关如何创建启动磁盘的其他信息，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</font><div class="indent"><a class="KBlink" target="_blank" href="http://support.microsoft.com/kb/119467/" rel="nofollow noopener"><font color="#002c99" size="2">119467</font></a> <font size="2"><span class="pLink">(http://support.microsoft.com/kb/119467/)</span> 如何为 NTFS 或 FAT 分区创建启动盘</font></div></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">在 Windows 2000 中，请按照下列步骤操作：</font><div class="table-box"><table class="list al"><tbody><tr><td class="number"><font size="2">a.</font></td><td class="text"><font size="2">单击“开始”，指向“设置”，然后单击“控制面板”。</font></td></tr><tr><td class="number"><font size="2">b.</font></td><td class="text"><font size="2">双击“管理工具”，然后双击“计算机管理”。</font></td></tr><tr><td class="number"><font size="2">c.</font></td><td class="text"><font size="2">双击“存储”，然后单击“磁盘管理”。</font></td></tr><tr><td class="number"><font size="2">d.</font></td><td class="text"><font size="2">右键单击镜像分区，然后单击“重新同步镜像”。<br><br>当镜像的状态显示为“正常”时，关机然后再重新启动。</font></td></tr><tr><td class="number"><font size="2">e.</font></td><td class="text"><font size="2">将计算机启动到正常的主操作系统驱动器。</font></td></tr></tbody></table></div><font size="2"><strong>注意</strong>：镜像的动态磁盘操作系统驱动器没有此限制。在类似的情况下，如果使用了镜像的动态磁盘，当将计算机启动到阴影驱动器时不会收到“Stop 0x00000058 FTDISK_INTERNAL_ERROR”错误信息。这是动态磁盘优于基本磁盘的一个方面。<br><br></font></td></tr></tbody></table>
+
+<h4 id="删除-Roxio-Easy-CD-Creator-5-Platinum-后出现“Stop-0x0000007B”错误信息"><a href="#删除-Roxio-Easy-CD-Creator-5-Platinum-后出现“Stop-0x0000007B”错误信息" class="headerlink" title="删除 Roxio Easy CD Creator 5 Platinum 后出现“Stop 0x0000007B”错误信息"></a>删除 Roxio Easy CD Creator 5 Platinum 后出现“Stop 0x0000007B”错误信息</h4><p>在删除 Roxio Easy CD Creator 5 Platinum 后重新启动计算机时，可能会以蓝屏的形式收到与以下内容类似的 Stop 错误信息：</p>
+<p>*** STOP:0x0000007B (0xF741B84C, 0xC0000034, 0x00000000, 0x00000000)<br>INACCESSIBLE_BOOT_DEVICE</p>
+<p>当重新安装 Roxio Easy CD Creator 5 Platinum 版本时也可能会收到此错误信息。</p>
+<h5 id="为什么出现这个问题-5"><a href="#为什么出现这个问题-5" class="headerlink" title="为什么出现这个问题"></a>为什么出现这个问题</h5><p>如果在删除 Easy CD Creator 5 Platinum 时未删除通过 Easy CD Creator 5 Platinum 安装程序添加的 PrtSeqRd.sys UpperFilters 驱动程序注册表项，就会发生此问题。在删除程序时，PrtSeqRd.sys 驱动程序文件被删除，但 UpperFilters 项会保留在注册表中。在这种情况下，当启动 Windows 时就可能会收到“Stop 0x0000007B”错误信息。</p>
+<h5 id="如何解决-5"><a href="#如何解决-5" class="headerlink" title="如何解决"></a>如何解决</h5><p>要解决此问题，请按显示的顺序使用下列方法。只有当前一种方法不能解决问题时才试用下一种方法。  </p>
+<p><strong>警告</strong>：注册表编辑器使用不当可能导致严重问题，可能需要重新安装操作系统。Microsoft 不能保证您可以解决因注册表编辑器使用不当而导致的问题。使用注册表编辑器需要您自担风险。<br><strong>方法 1：用一个备份注册表 System 配置单元来编辑注册表</strong>  </p>
+<p>为此，请按照下列步骤操作：</p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">使用 Windows 2000 安装光盘启动计算机。<br><br><strong>注意</strong>：在从 CD-ROM 或 DVD-ROM 驱动器启动计算机之前，可能需要更改 BIOS 设置。有关如何将计算机配置为从 CD-ROM 或 DVD-ROM 驱动器启动的更多信息，请参阅计算机的文档或与计算机制造商联系。</font></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">如果需要一个第三方硬盘控制器，按 S 键来指定其他设备，然后插入包含该硬盘控制器的正确驱动程序的软盘。</font></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><font size="2">按 R 键选择“修复”，然后按 C 键选择故障恢复控制台。</font></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">键入代表所要修复的 Windows 2000 安装的编号，然后在得到相应提示时键入管理员密码。</font></td></tr><tr><td class="number"><font size="2">5.</font></td><td class="text"><font size="2">更改到 %windir%/System32/Config 文件夹，将 System 文件重命名为 System.old，然后从 %windir%/Repair/System 文件夹复制 System 文件。<br><br>为此，请在 <var>Drive</var>:/WinNT 提示符处键入下列命令行（其中，<var><var>Drive</var></var> 是安装 Windows 2000 的驱动器，WinNT 是安装 Windows 2000 的文件夹），然后在每行之后按 Enter 键：</font><div class="indent"><span class="userInput"><font size="2">cd system32/config<br>ren system system.old<br>copy C:/winnt/repair/system</font></span></div><font size="2">将出现以下信息：</font><div class="indent"><pre class="in_text set-code-show" data-index="2" name="code"><font size="2">复制了 1 个文件。</font></pre></div></td></tr><tr><td class="number"><font size="2">6.</font></td><td class="text"><font size="2">键入 <span class="userInput">exit</span>，按 Enter 键退出故障恢复控制台，然后重新启动 Windows。<br><br><strong>注意</strong>：如果 Windows 不能成功启动，请转到本文的“方法 2：禁用 Easy CD Creator Services”，不要执行此方法中的其余步骤。</font></td></tr><tr><td class="number"><font size="2">7.</font></td><td class="text"><font size="2">以管理员身份登录到 Windows。</font></td></tr><tr><td class="number"><font size="2">8.</font></td><td class="text"><font size="2">单击“开始”，单击“运行”，在“打开”框中键入 <span class="userInput">regedt32</span>，然后单击“确定”。</font></td></tr><tr><td class="number"><font size="2">9.</font></td><td class="text"><font size="2">单击“HKEY_LOCAL_MACHINE”，然后在“注册表”菜单上单击“加载配置单元”。</font></td></tr><tr><td class="number"><font size="2">10.</font></td><td class="text"><font size="2">找到 C:/Winnt/System32/Config 文件夹，单击“System.old”，然后单击“打开”。</font></td></tr><tr><td class="number"><font size="2">11.</font></td><td class="text"><font size="2">在“项名称”框中，键入 <span class="userInput">test</span>，然后单击“确定”。<br><br>作为测试，原始的 System 配置单元被加载到当前的 HKEY_LOCAL_MACHINE 配置单元下。</font></td></tr><tr><td class="number"><font size="2">12.</font></td><td class="text"><font size="2">找到下面的注册表子项，然后单击它：</font><strong><font size="2"></font><div class="indent"><font size="2">HKEY_LOCAL_MACHINE/test/ControlSet001/Control/Class/{4D36E965-E325-11CE-BFC1-08002BE10318}</font></div></strong></td></tr><tr><td class="number"><font size="2">13.</font></td><td class="text"><font size="2">在右窗格中单击“LowerFilters”，然后在“编辑”菜单上单击“删除”。<br><br>单击“是”确认删除。</font></td></tr><tr><td class="number"><font size="2">14.</font></td><td class="text"><font size="2">在右窗格中单击“UpperFilters”，然后在“编辑”菜单上单击“删除”。<br><br>单击“是”确认删除。</font></td></tr><tr><td class="number"><font size="2">15.</font></td><td class="text"><font size="2">找到下面的注册表子项，然后单击它：</font><strong><font size="2"></font><div class="indent"><font size="2">HKEY_LOCAL_MACHINE/test/ControlSet001/Control/Class/{4D36E967-E325-11CE-BFC1-08002BE10318}</font></div></strong></td></tr><tr><td class="number"><font size="2">16.</font></td><td class="text"><font size="2">在右窗格中，双击“UpperFilters”。</font></td></tr><tr><td class="number"><font size="2">17.</font></td><td class="text"><font size="2">在“数据”框中，删除“PrtSeqRd.sys”项，然后单击“确定”。<br><br>如果出现提示，要求允许注册表编辑器删除空字符串，单击“确定”。</font></td></tr><tr><td class="number"><font size="2">18.</font></td><td class="text"><font size="2">找到下面的注册表子项，然后单击它：</font><strong><font size="2"></font><div class="indent"><font size="2">HKEY_LOCAL_MACHINE/test/ControlSet001/Services</font></div></strong></td></tr><tr><td class="number"><font size="2">19.</font></td><td class="text"><font size="2">通过将“Start”值改为 <span class="userInput">4</span>，来禁用与下列注册表子项（如果有）对应的服务：</font><div class="indent"><font size="2">Cdr4_2K<br>Cdralw2k<br>Cdudf dvd_2K<br>Mmc_2K<br>PrtSeqRd<br>Pwd_2K<br>UdfReadr</font></div><font size="2">为此，请单击一个子项（例如，单击“Cdr4_2K”），在右窗格中双击“Start”，在“数据”框中键入 <span class="userInput">4</span>，然后单击“确定”。</font></td></tr><tr><td class="number"><font size="2">20.</font></td><td class="text"><font size="2">对 HKEY_LOCAL_MACHINE/test 注册表子项下的所有其他“ControlSet00<var>xxx</var>”项（其中 <var>xxx</var> 为编号），例如 ControlSet002，重复第 12 步到第 19 步。</font></td></tr><tr><td class="number"><font size="2">21.</font></td><td class="text"><font size="2">卸载 System.old 注册表配置单元。为此，请按照下列步骤操作：</font><div class="table-box"><table class="list al"><tbody><tr><td class="number"><font size="2">a.</font></td><td class="text"><font size="2">单击“test”，然后在“注册表”菜单上单击“卸载配置单元”。</font></td></tr><tr><td class="number"><font size="2">b.</font></td><td class="text"><font size="2">单击“是”确认卸载 test 项及其所有子项。</font></td></tr></tbody></table></div></td></tr><tr><td class="number"><font size="2">22.</font></td><td class="text"><font size="2">退出注册表编辑器，然后重新加载原始的注册表 System 配置单元。为此，请按照下列步骤操作：</font><div class="table-box"><table class="list al"><tbody><tr><td class="number"><font size="2">a.</font></td><td class="text"><font size="2">关闭计算机，然后使用 Windows 2000 安装光盘启动计算机。</font></td></tr><tr><td class="number"><font size="2">b.</font></td><td class="text"><font size="2">如果需要一个第三方硬盘控制器，按 S 键来指定其他设备，然后插入包含该硬盘控制器的正确驱动程序的软盘。</font></td></tr><tr><td class="number"><font size="2">c.</font></td><td class="text"><font size="2">按 R 键选择“修复”，然后按 C 键选择故障恢复控制台。</font></td></tr><tr><td class="number"><font size="2">d.</font></td><td class="text"><font size="2">键入代表所要修复的 Windows 2000 安装的编号，然后在得到相应提示时键入管理员密码。</font></td></tr><tr><td class="number"><font size="2">e.</font></td><td class="text"><font size="2">更改到 %windir%/System32/Config 文件夹，将 System 文件重命名为 System.xxx，然后将 System.old 文件重命名为 System。<br><br>为此，请在 <var>Drive</var>:/WinNT 提示符处键入下列命令行（其中，<var><var>Drive</var></var> 是安装 Windows 2000 的驱动器，WinNT 是安装 Windows 2000 的文件夹），并在每行之后按 Enter 键：</font><div class="indent"><span class="userInput"><font size="2">cd system32/config<br>ren system system.xxx<br>ren system.old system</font></span></div></td></tr><tr><td class="number"><font size="2">f.</font></td><td class="text"><font size="2">键入 <span class="userInput">exit</span>，然后按 Enter 键退出故障恢复控制台。</font></td></tr><tr><td class="number"><font size="2">g.</font></td><td class="text"><font size="2">正常重新启动计算机。</font></td></tr></tbody></table></div></td></tr></tbody></table>
+
+<p><strong>方法 2：禁用 Easy CD Creator Services</strong></p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">使用 Windows 2000 安装光盘启动计算机。</font></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">如果需要一个第三方硬盘控制器，按 S 键来指定其他设备，然后插入包含该硬盘控制器的正确驱动程序的软盘。</font></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><font size="2">按 R 键选择“修复”，然后按 C 键选择故障恢复控制台。</font></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">键入代表所要修复的 Windows 2000 安装的编号，然后在得到提示时键入管理员密码。</font></td></tr><tr><td class="number"><font size="2">5.</font></td><td class="text"><font size="2">更改到 %windir%/System32/Config 文件夹，将 System 文件重命名为 System.xxx，然后将 System.old 文件重命名为 System。<br><br>为此，请在 <var>Drive</var>:/WinNT 提示符处键入下列命令行（其中，<var><var>Drive</var></var> 是安装 Windows 2000 的驱动器，WinNT 是安装 Windows 2000 的文件夹），并在每行之后按 Enter 键：</font><div class="indent"><span class="userInput"><font size="2">cd system32/config<br>ren system system.xxx<br>ren system.old system</font></span></div></td></tr><tr><td class="number"><font size="2">6.</font></td><td class="text"><font size="2">更改到 %windir%/System32/Drivers 文件夹。<br><br>为此，请在命令提示符处键入以下命令，然后按 Enter 键：</font><div class="indent"><span class="userInput"><font size="2">cd C:/WinNT/System32/Drivers</font></span></div></td></tr><tr><td class="number"><font size="2">7.</font></td><td class="text"><font size="2">在命令提示符处，键入以下命令行，并在每行之后按 Enter 键：</font><div class="indent"><span class="userInput"><font size="2">ren prtseqrd.sys prtseqrd.old<br>copy diskperf.sys prtseqrd.sys</font></span></div></td></tr><tr><td class="number"><font size="2">8.</font></td><td class="text"><font size="2">禁用下列 Roxio 服务（如果存在）：</font><div class="indent"><font size="2">Cdr4_2K<br>Cdralw2k<br>Cdudf dvd_2K<br>Mmc_2K<br>PrtSeqRd<br>Pwd_2K<br>UdfReadr</font></div><font size="2">为此，请键入 <span class="userInput">disable <var>ServiceName</var></span>，然后按 Enter 键，其中 <var>ServiceName</var> 是列表中某一服务的名称。例如，键入 <span class="userInput">disable cdr4_2k</span>，然后按 Enter 键。</font></td></tr><tr><td class="number"><font size="2">9.</font></td><td class="text"><font size="2">如果下列文件存在于 C:/WinNT/System32/Drivers 文件夹中，将文件重命名为使用 .old 扩展名：</font><div class="indent"><font size="2">Cdr4_2K.sys<br>Cdralw2k.sys<br>Cdudf.sys</font></div><font size="2">为此，请按照下列步骤操作：</font><div class="table-box"><table class="list al"><tbody><tr><td class="number"><font size="2">a.</font></td><td class="text"><font size="2">在命令行提示符处，键入 <span class="userInput">dir cdr4_2k.sys</span>，然后按 Enter 键。<br><br>如果文件名出现，键入 <span class="userInput">ren cdr4_2K.sys cdr4_2K.old</span>，然后按 Enter 键。</font></td></tr><tr><td class="number"><font size="2">b.</font></td><td class="text"><font size="2">在命令行提示符处，键入 <span class="userInput">dir cdralw2k.sys</span>，然后按 Enter 键。<br><br>如果文件名出现，键入 <span class="userInput">ren cdralw2k.sys cdralw2k.old</span>，然后按 Enter 键。</font></td></tr><tr><td class="number"><font size="2">c.</font></td><td class="text"><font size="2">在命令行提示符处，键入 <span class="userInput">dir cdudf.sys</span>，然后按 Enter 键。<br><br>如果文件名出现，键入 <span class="userInput">ren cdudf.sys cdudf.old</span>，然后按 Enter 键</font></td></tr></tbody></table></div></td></tr><tr><td class="number"><font size="2">10.</font></td><td class="text"><font size="2">键入 <span class="userInput">exit</span>，然后按 Enter 键退出故障恢复控制台，并重新启动计算机。</font></td></tr><tr><td class="number"><font size="2">11.</font></td><td class="text"><font size="2">用 Windows 2000 安装光盘启动计算机，然后按 Enter 键来设置 Windows，再按 R 键来修复当前的 Windows 安装。</font></td></tr></tbody></table>
+
+<p><strong>方法 3：编辑 Windows 并行安装的 System 配置单元</strong></p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">执行 Windows 的并行安装。<br><br>有关如何执行此操作的其他信息，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</font><div class="indent"><a class="KBlink" target="_blank" href="http://support.microsoft.com/kb/266465/" rel="nofollow noopener"><font color="#002c99" size="2">266465</font></a> <font size="2"><span class="pLink">(http://support.microsoft.com/kb/266465/)</span> 如何执行 Windows 2000 或 Windows Server 2003 的并行安装</font></div></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">在 Windows 的新安装中，单击“开始”，然后单击“运行”。<br><br>在“打开”框中，键入 <span class="userInput">regedit</span>，然后单击“确定”。</font></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><font size="2">找到并单击“HKEY_LOCAL_MACHINE”项。</font></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">在“注册表”菜单上，单击“加载配置单元”。</font></td></tr><tr><td class="number"><font size="2">5.</font></td><td class="text"><font size="2">找到原始 Windows 安装的 %SystemRoot%/System32/Config 文件夹，单击“System”文件，然后单击“打开”。</font></td></tr><tr><td class="number"><font size="2">6.</font></td><td class="text"><font size="2">在“加载配置单元”框中，键入 <span class="userInput">test</span>，然后单击“确定”。<br><br>作为测试，原始 Windows 安装的 System 配置单元被加载到当前的 HKEY_LOCAL_MACHINE 配置单元。</font></td></tr><tr><td class="number"><font size="2">7.</font></td><td class="text"><font size="2">重复上文中“方法 1：用一个备份注册表 System 配置单元来编辑注册表”一节中的第 12 步到第 19 步，编辑测试注册表子项。</font></td></tr><tr><td class="number"><font size="2">8.</font></td><td class="text"><font size="2">卸载测试注册表子项。为此，请按照下列步骤操作：</font><div class="table-box"><table class="list al"><tbody><tr><td class="number"><font size="2">a.</font></td><td class="text"><font size="2">单击“test”，然后在“注册表”菜单上单击“卸载配置单元”。</font></td></tr><tr><td class="number"><font size="2">b.</font></td><td class="text"><font size="2">单击“是”确认卸载 test 项及其所有子项。</font></td></tr></tbody></table></div></td></tr><tr><td class="number"><font size="2">9.</font></td><td class="text"><font size="2">退出注册表编辑器，然后将计算机重新启动到原始的 Windows 安装。<br><br>如果无法将计算机启动到原始的 Windows 安装，请用 Windows 2000 安装光盘来启动计算机，按 Enter 键来设置 Windows，然后按 R 键修复当前的 Windows 安装。</font></td></tr></tbody></table>
+
+<h4 id="安装了-Iomega-IomegaWare-3-1-后启动计算机时出现“Stop-0x0000007B”错误信息"><a href="#安装了-Iomega-IomegaWare-3-1-后启动计算机时出现“Stop-0x0000007B”错误信息" class="headerlink" title="安装了 Iomega IomegaWare 3.1 后启动计算机时出现“Stop 0x0000007B”错误信息"></a>安装了 Iomega IomegaWare 3.1 后启动计算机时出现“Stop 0x0000007B”错误信息</h4><p>在尝试启动计算机时，可能会收到与以下内容类似的错误信息：</p>
+<p>STOP 0x0000007B (parameter1, parameter2, parameter3, parameter4)<br>INACCESSIBLE_BOOT_DEVICE</p>
+<h5 id="为什么出现这个问题-6"><a href="#为什么出现这个问题-6" class="headerlink" title="为什么出现这个问题"></a>为什么出现这个问题</h5><p>如果计算机上安装了 Iomega IomegaWare 3.1 版，就可能出现此问题。</p>
+<h5 id="如何解决-6"><a href="#如何解决-6" class="headerlink" title="如何解决"></a>如何解决</h5><p>要解决此问题，请按照顺序使用以下方法。  </p>
+<p><strong>方法 1</strong></p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">使用故障恢复控制台还原计算机。为此，请按照下列步骤操作：</font><div class="table-box"><table class="list al"><tbody><tr><td class="number"><font size="2">a.</font></td><td class="text"><font size="2">使用 Windows 2000 安装光盘启动计算机。<br><br><strong>注意</strong>：在从 CD-ROM 或 DVD-ROM 驱动器启动计算机之前，可能需要更改 BIOS 设置。有关如何将计算机配置为从 CD-ROM 或 DVD-ROM 驱动器启动的更多信息，请参阅计算机的文档或与计算机制造商联系。</font></td></tr><tr><td class="number"><font size="2">b.</font></td><td class="text"><font size="2">按 R 键选择“修复”，然后按 C 键选择故障恢复控制台。</font></td></tr><tr><td class="number"><font size="2">c.</font></td><td class="text"><font size="2">键入代表所要修复的 Windows 2000 安装的编号，然后在得到相应提示时键入管理员密码。</font></td></tr><tr><td class="number"><font size="2">d.</font></td><td class="text"><font size="2">更改到 %windir%/System32/Config 文件夹，将 System 文件重命名为 System.old，然后从 %windir%/Repair/System 文件夹复制 System 文件。<br><br>为此，请在 <var>Drive</var>:/WinNT 提示符处键入下列命令行（其中，<var><var>Drive</var></var> 是安装 Windows 2000 的驱动器，WinNT 是安装 Windows 2000 的文件夹），并在每行之后按 Enter 键：</font><div class="indent"><span class="userInput"><font size="2">cd system32/config<br>ren system system.old<br>copy C:/WinNT/repair/system</font></span></div></td></tr><tr><td class="number"><font size="2">e.</font></td><td class="text"><font size="2">键入 <span class="userInput">exit</span>，然后按 Enter 键。</font></td></tr><tr><td class="number"><font size="2">f.</font></td><td class="text"><font size="2">正常启动计算机。<br><br>如果能够正常启动计算机，请转到本方法的第 2 步，然后执行本方法的其余步骤。如果不能正常启动计算机，请转到方法 2。</font></td></tr></tbody></table></div></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">编辑注册表。为此，请按照下列步骤操作。</font></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><br><font size="2"><strong>警告</strong>：注册表编辑器使用不当可能导致严重问题，可能需要重新安装操作系统。Microsoft 不能保证您可以解决因注册表编辑器使用不当而导致的问题。使用注册表编辑器需要您自担风险。</font><div class="table-box"><table class="list al"><tbody><tr><td class="number"><font size="2">a.</font></td><td class="text"><font size="2">单击“开始”，然后单击“运行”。</font></td></tr><tr><td class="number"><font size="2">b.</font></td><td class="text"><font size="2">在“打开”框中，键入“regedt32”，然后单击“确定”。</font></td></tr><tr><td class="number"><font size="2">c.</font></td><td class="text"><font size="2">找到并单击下面的注册表项：</font><div class="indent"><font size="2">HKEY_LOCAL_MACHINE</font></div></td></tr><tr><td class="number"><font size="2">d.</font></td><td class="text"><font size="2">在“注册表”菜单上，单击“加载配置单元”，然后加载 Windows/System32/Config/System.old 配置单元。</font></td></tr><tr><td class="number"><font size="2">e.</font></td><td class="text"><font size="2">提示您指定一个名称时，键入“Test”。</font></td></tr><tr><td class="number"><font size="2">f.</font></td><td class="text"><font size="2">找到并单击以下各项，其中 <var>xxx</var> 代表诸如 001 和 002 这样的数值：</font><div class="indent"><font size="2">ControlSet<var>xxx</var>/Control/Class/{4D36E965-E325-11CE-BFC1-08002BE10318}<br>ControlSet<var>xxx</var>/Control/Class/{4D36E967-E325-11CE-BFC1-08002BE10318}</font></div></td></tr><tr><td class="number"><font size="2">g.</font></td><td class="text"><font size="2">删除第 2f 步中每个项的 LowerFilters 项。</font></td></tr><tr><td class="number"><font size="2">h.</font></td><td class="text"><font size="2">在“ControlSet<var>xxx</var>/Services”下，通过将“Start”值改为 <span class="userInput">4</span> 来禁用对应于以下注册表子项的服务：</font><div class="indent"><font size="2">Iomdisk<br>Iomega Activity Disk2<br>IomegaAccess<br>ZipToA</font></div><font size="2">为此，请单击一个子项（例如，单击“Iomdisk”），在右窗格中双击“开始”，在“数据”框中键入 <span class="userInput">4</span>，然后单击“确定”。</font></td></tr><tr><td class="number"><font size="2">i.</font></td><td class="text"><font size="2">在“注册表”菜单上，单击“卸载配置单元”，然后卸载 Windows/System32/Config/System.old 配置单元。</font></td></tr><tr><td class="number"><font size="2">j.</font></td><td class="text"><font size="2">退出注册表编辑器。</font></td></tr></tbody></table></div></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">还原 System 文件。为此，请按照下列步骤操作：</font><div class="table-box"><table class="list al"><tbody><tr><td class="number"><font size="2">a.</font></td><td class="text"><font size="2">使用 Windows 2000 安装光盘启动计算机。</font></td></tr><tr><td class="number"><font size="2">b.</font></td><td class="text"><font size="2">按 R 键选择“修复”，然后按 C 键选择故障恢复控制台。</font></td></tr><tr><td class="number"><font size="2">c.</font></td><td class="text"><font size="2">键入代表所要修复的 Windows 2000 安装的编号，然后在得到相应提示时键入管理员密码。</font></td></tr><tr><td class="number"><font size="2">d.</font></td><td class="text"><font size="2">更改到 %windir%/System32/Config 文件夹，将 System 文件重命名为 System.xxx，然后将 System.old 文件重命名为 System。为此，请在 <var>Drive</var>:/WinNT 提示符处键入下列命令行（其中，<var><var>Drive</var></var> 是安装 Windows 2000 的驱动器，WinNT 是安装 Windows 2000 的文件夹），并在每行之后按 Enter 键：</font><div class="indent"><span class="userInput"><font size="2">cd system32/config<br>ren system system.xxx<br>ren system.old system</font></span></div></td></tr><tr><td class="number"><font size="2">e.</font></td><td class="text"><font size="2">键入 <span class="userInput">exit</span>，然后按 Enter 键退出故障恢复控制台。</font></td></tr></tbody></table></div></td></tr><tr><td class="number"><font size="2">5.</font></td><td class="text"><font size="2">正常启动计算机，然后使用“控制面板”中的“添加/删除程序”工具将 IomegaWare 程序从计算机上删除。</font></td></tr></tbody></table>
+
+<p><strong>方法 2</strong>  </p>
+<p>如果在执行方法 1 的第 1 步后不能正常启动计算机，请按照下列步骤操作：</p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">使用故障恢复控制台撤消系统还原。为此，请按照下列步骤操作：</font><div class="table-box"><table class="list al"><tbody><tr><td class="number"><font size="2">a.</font></td><td class="text"><font size="2">使用 Windows 2000 安装光盘启动计算机。</font></td></tr><tr><td class="number"><font size="2">b.</font></td><td class="text"><font size="2">按 R 键选择“修复”，然后按 C 键选择故障恢复控制台。</font></td></tr><tr><td class="number"><font size="2">c.</font></td><td class="text"><font size="2">键入代表所要修复的 Windows 2000 安装的编号，然后在得到相应提示时键入管理员密码。</font></td></tr><tr><td class="number"><font size="2">d.</font></td><td class="text"><font size="2">更改到 %windir%/System32/Config 文件夹，将 System 文件重命名为 System.xxx，然后将 System.old 文件重命名为 System。<br><br>为此，请在 <var>Drive</var>:/WinNT 提示符处键入下列命令行（其中，<var><var>Drive</var></var> 是安装 Windows 2000 的驱动器，WinNT 是安装 Windows 2000 的文件夹），并在每行之后按 Enter 键：</font><div class="indent"><span class="userInput"><font size="2">cd system32/config<br>ren system system.xxx<br>ren system.old system</font></span></div></td></tr></tbody></table></div></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">重命名并复制 Iomdisk.sys 驱动程序。<br><br>为此，请在命令提示符处键入下列命令行，并在每行之后按 Enter 键：</font><div class="indent"><span class="userInput"><font size="2">cd WinNT/system32/drivers<br>ren iomdisk.sys iomdisk.old<br>copy atapi.sys iomdisk.sys</font></span></div></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><font size="2">禁用 Iomega 服务。为此，请按照下列步骤操作：</font><div class="table-box"><table class="list al"><tbody><tr><td class="number"><font size="2">a.</font></td><td class="text"><font size="2">在命令提示符处键入 <span class="userInput">listsvc</span>，然后找到下列 Iomega 服务：</font><div class="table-box"><table class="list ul"><tbody><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">Iomdisk</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">Iomega Activity Disk2</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">IomegaAccess</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">ZipToA</font></td></tr></tbody></table></div></td></tr><tr><td class="number"><font size="2">b.</font></td><td class="text"><font size="2">对于列表中的每个服务，键入 <span class="userInput">disable <var>ServiceName</var></span>，其中 <var>ServiceName</var> 是所要禁用的服务的名称。</font></td></tr></tbody></table></div></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">执行 Windows 2000 原位升级。<br><br>有关如何执行 Windows 2000 原位升级的其他信息，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</font><div class="indent"><a class="KBlink" target="_blank" href="http://support.microsoft.com/kb/292175/" rel="nofollow noopener"><font color="#002c99" size="2">292175</font></a> <font size="2"><span class="pLink">(http://support.microsoft.com/kb/292175/)</span> 如何执行 Windows 2000 的原位升级</font></div></td></tr><tr><td class="number"><font size="2">5.</font></td><td class="text"><font size="2">使用“控制面板”中的“添加/删除程序”工具将 IomegaWare 程序从计算机上删除。</font></td></tr></tbody></table>
+
+<h4 id="安装了-Iomega-工具后出现“Stop-0x0000007B”错误信息"><a href="#安装了-Iomega-工具后出现“Stop-0x0000007B”错误信息" class="headerlink" title="安装了 Iomega 工具后出现“Stop 0x0000007B”错误信息"></a>安装了 Iomega 工具后出现“Stop 0x0000007B”错误信息</h4><p>在计算机上安装了 Iomega 工具后，可能会收到与以下内容类似的错误信息：</p>
+<p>STOP 0x0000007B (parameter1, parameter2, parameter3, parameter4)<br>INACCESSIBLE_BOOT_DEVICE</p>
+<h5 id="为什么出现这个问题-7"><a href="#为什么出现这个问题-7" class="headerlink" title="为什么出现这个问题"></a>为什么出现这个问题</h5><p>在 Iomega ATAPI 驱动程序存在阻止 Windows 正常启动的问题的情况下，可能会发生此问题。</p>
+<h5 id="如何解决-7"><a href="#如何解决-7" class="headerlink" title="如何解决"></a>如何解决</h5><p>要解决此问题，请按照下列步骤操作：</p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">使用 Windows 2000 安装光盘启动计算机。</font></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">按 R 键选择“修复”，然后按 C 键选择故障恢复控制台。</font></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><font size="2">键入代表所要修复的 Windows 2000 安装的编号，然后在得到相应提示时键入管理员密码。</font></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">要禁用 Iomega 驱动程序，请在故障恢复控制台命令提示符处键入如下命令，然后按 Enter 键：</font><div class="indent"><span class="userInput"><font size="2">disable imgatapi</font></span></div></td></tr><tr><td class="number"><font size="2">5.</font></td><td class="text"><font size="2">要判断 Iomega Atapi 服务是否依然设定为“Boot”，键入如下命令，然后按 Enter 键：</font><div class="indent"><span class="userInput"><font size="2">listsvc</font></span></div></td></tr><tr><td class="number"><font size="2">6.</font></td><td class="text"><font size="2">根据您的具体情况执行下列操作之一：</font><div class="table-box"><table class="list ul"><tbody><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">如果 Iomega Atapi 服务被设定为“Boot”，键入 <span class="userInput">exit</span>，然后按 Enter 键重新启动计算机。</font></td></tr><tr><td class="bullet"><font size="2">•</font></td><td class="text"><font size="2">如果 Iomega Atapi 服务被设定为“Disabled”，键入如下命令行，并在每行之后按 Enter 键：</font><div class="indent"><span class="userInput"><font size="2">enable atapi service_boot_start<br>exit</font></span></div></td></tr></tbody></table></div></td></tr><tr><td class="number"><font size="2">7.</font></td><td class="text"><font size="2">使用“控制面板”中的“添加/删除程序”工具将 IomegaWare 程序从计算机上删除。</font></td></tr></tbody></table>
+
+<h4 id="删除-Veritas-Open-Transaction-Manager-后出现“Stop-0x0000007B”错误信息"><a href="#删除-Veritas-Open-Transaction-Manager-后出现“Stop-0x0000007B”错误信息" class="headerlink" title="删除 Veritas Open Transaction Manager 后出现“Stop 0x0000007B”错误信息"></a>删除 Veritas Open Transaction Manager 后出现“Stop 0x0000007B”错误信息</h4><p>在将 Veritas Open Transaction Manager 从计算机上删除后，重新启动计算机时可能会收到以下错误信息之一：</p>
+<p>STOP 0x0000007B (parameter1, parameter2, parameter3, parameter4)<br>INACCESSIBLE_BOOT_DEVICE</p>
+<p>STOP 0x00000050 (parameter1, parameter2, parameter3, parameter4)<br>PAGE_FAULT_IN_NONPAGED_AREA</p>
+<p>利用“最后一次正确的配置”功能，使用最近一次的可行设置来启动计算机，并不能解决问题。  </p>
+<p>Veritas Open Transaction Manager 是 Veritas Backup Exec 的一个组件。</p>
+<h5 id="为什么出现这个问题-8"><a href="#为什么出现这个问题-8" class="headerlink" title="为什么出现这个问题"></a>为什么出现这个问题</h5><p>如果安装 Veritas Open Transaction Manager 时由该程序添加的某些注册表项没有在删除该程序时随之删除，而这些注册表项阻止计算机正确启动，就可能发生此问题。</p>
+<h5 id="如何解决-8"><a href="#如何解决-8" class="headerlink" title="如何解决"></a>如何解决</h5><p>为了解决这个问题，请从注册表中手动删除剩余的 Otman5 驱动程序引用。为此，首先必须将 Windows 2000 的一个并行副本安装到一个单独的文件夹中，然后用注册表编辑器修改注册表中的 System 配置单元。为此，请按照下列步骤操作：</p>
+<table class="list ol"><tbody><tr><td class="number"><font size="2">1.</font></td><td class="text"><font size="2">执行 Windows 的并行安装。<br><br>有关如何执行此操作的其他信息，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</font><div class="indent"><a class="KBlink" target="_blank" href="http://support.microsoft.com/kb/266465/" rel="nofollow noopener"><font color="#002c99" size="2">266465</font></a> <font size="2"><span class="pLink">(http://support.microsoft.com/kb/266465/)</span> 如何执行 Windows 2000 或 Windows Server 2003 的并行安装</font></div></td></tr><tr><td class="number"><font size="2">2.</font></td><td class="text"><font size="2">在 Windows 的新安装中，单击“开始”，然后单击“运行”。<br><br>在“打开”框中，键入 <span class="userInput">regedit</span>，然后单击“确定”。</font></td></tr><tr><td class="number"><font size="2">3.</font></td><td class="text"><font size="2">找到并单击“HKEY_LOCAL_MACHINE”项。</font></td></tr><tr><td class="number"><font size="2">4.</font></td><td class="text"><font size="2">在“注册表”菜单上，单击“加载配置单元”。</font></td></tr><tr><td class="number"><font size="2">5.</font></td><td class="text"><font size="2">找到原始 Windows 安装的 %SystemRoot%/System32/Config 文件夹，单击“System”文件，然后单击“打开”。</font></td></tr><tr><td class="number"><font size="2">6.</font></td><td class="text"><font size="2">在“加载配置单元”框中，键入 <span class="userInput">test</span>，然后单击“确定”。<br><br>作为测试，原始 Windows 安装的 System 配置单元被加载到当前的 HKEY_LOCAL_MACHINE 配置单元。</font></td></tr><tr><td class="number"><font size="2">7.</font></td><td class="text"><font size="2">找到并单击下面的注册表项：</font><div class="indent"><font size="2">HKEY_LOCAL_MACHINE/Test/Select</font></div><font size="2">记下 <span class="userInput">Default</span> 项的值。<br><br>例如，该值可能是“0x1”。</font></td></tr><tr><td class="number"><font size="2">8.</font></td><td class="text"><font size="2">找到并单击如下注册表项，其中 <var>x</var> 是在前面第 7 步中确定的数值：</font><div class="indent"><font size="2">ControlSet00<var>x</var>/Control/Class/{4D36E967-E325-11CE-BFC1-08002BE10318}</font></div></td></tr><tr><td class="number"><font size="2">9.</font></td><td class="text"><font size="2">在右窗格中双击“UpperFilters”值，然后删除“Otman5”行。</font></td></tr><tr><td class="number"><font size="2">10.</font></td><td class="text"><font size="2">找到并单击如下注册表项，其中 <var>x</var> 是在前面第 7 步中确定的数值：</font><div class="indent"><font size="2">ControlSet00<var>x</var>/Control/Class/{71A27CDD-812A-11D0-BEC7-08002BE2092F}</font></div></td></tr><tr><td class="number"><font size="2">11.</font></td><td class="text"><font size="2">在右窗格中双击“UpperFilters”值，然后删除“Otman5”行。</font></td></tr><tr><td class="number"><font size="2">12.</font></td><td class="text"><font size="2">卸载测试注册表子项。为此，请按照下列步骤操作：</font><div class="table-box"><table class="list al"><tbody><tr><td class="number"><font size="2">a.</font></td><td class="text"><font size="2">单击“test”，然后在“注册表”菜单上单击“卸载配置单元”。</font></td></tr><tr><td class="number"><font size="2">b.</font></td><td class="text"><font size="2">单击“是”确认卸载 test 项及其所有子项。</font></td></tr></tbody></table></div></td></tr><tr><td class="number"><font size="2">13.</font></td><td class="text"><font size="2">退出注册表编辑器，然后将计算机重新启动到原始的 Windows 安装。</font></td></tr></tbody></table>
+
+<p>本文中提到的第三方产品由 Microsoft 以外的其他公司提供。对于这些产品的性能或可靠性，Microsoft 不作任何暗示保证或其他形式的保证。  </p>
+<h3 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h3><p>有关如何使用故障恢复控制台的其他信息，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/301645/">301645</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/301645/">http://support.microsoft.com/kb/301645/</a>) 如何在无法启动 Windows 2000 的计算机上使用故障恢复控制台</p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/216417/">216417</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/216417/">http://support.microsoft.com/kb/216417/</a>) 如何安装 Windows 故障恢复控制台</p>
+<p>有关如何禁用防碍 Windows 正确启动的服务或设备的其他信息，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/165748/">165748</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/165748/">http://support.microsoft.com/kb/165748/</a>) 如何禁用防止 NT 启动的服务或设备</p>
+<p>有关如何解决 Windows 2000 中的启动问题的其他信息，请单击下面的文章编号，以查看 Microsoft 知识库中相应的文章：</p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/315396/">315396</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/315396/">http://support.microsoft.com/kb/315396/</a>) 如何解决 Windows 2000 中的启动问题</p>
+<p>要了解如何与 P1 进行联系，请在以下列表中单击适当的文章编号，以查看 Microsoft 知识库中相应的文章：</p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/65416/">65416</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/65416/">http://support.microsoft.com/kb/65416/</a>) 硬件和软件供应商联系信息，A-K  </p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/60781/">60781</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/60781/">http://support.microsoft.com/kb/60781/</a>) 硬件和软件供应商联系信息，L-P  </p>
+<p><a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/60782/">60782</a> (<a target="_blank" rel="noopener" href="http://support.microsoft.com/kb/60782/">http://support.microsoft.com/kb/60782/</a>) 硬件和软件供应商联系信息，Q-Z</p>
+<p>You receive a “Stop 0x0000007B” error message when you try to start your computer after you move the dynamic hard disk<br>When you start your Windows 2000-based computer, you receive the following Stop error message:<br>STOP: 0x0000007b (0xf881b84c,0xc0000034,0x00000000,0x00000000)<br>INACCESSIBLE_BOOT_DEVICE  </p>
+<p>0xc00000034 STATUS_OBJECT_NAME_NOT_FOUND<br>Cause<br>This error message may occur if the primary disk group identity of the hard disk does not match the primary disk group identity that is stored in the registry. This mismatch may occur if all the following conditions are true: • You configure the hard disk that contains the system partition as a dynamic disk on a computer that is running Windows 2000.<br>• You remove the hard disk from the computer, and then install the hard disk in a second Windows 2000-based computer.<br>• You import the hard disk to a disk group that contains dynamic disks on the second Windows 2000-based computer.<br>• You return the hard disk from the second computer to the first computer.  </p>
+<p>Resolution<br>To resolve this problem, use Registry Editor to delete the Primary Disk Group registry key from the registry of the computer that does not start. To delete this key, follow these steps.  </p>
+<p>Warning Serious problems might occur if you modify the registry incorrectly by using Registry Editor or by using another method. These problems might require that you reinstall your operating system. Microsoft cannot guarantee that these problems can be solved. Modify the registry at your own risk.1. Remove the hard disk that contains the system partition from the computer that does not start, install the hard disk in the second computer, and then start the second computer.<br>2. On the second computer, click Start, click Run, type regedt32 in the Open box, and then click OK.<br>3. In Registry Editor, click HKEY_LOCAL_MACHINE, and then on the Registry menu, click Load Hive.<br>4. Locate, and then click the System file that contains the hive of the first computer’s operating system.  </p>
+<p>Note The System file is in the Drive:\Winnt\System32\Config folder, where Drive is the drive letter of the hard disk that is from the first computer.<br>5. Click Open, type Temp in the Key Name box, and then click OK.<br>6. Double-click HKEY_LOCAL_MACHINE, and then double-click Temp.<br>7. Double-click ControlSet00n, where n is the number of the control set.<br>8. Double-click Services, double-click dmio, and then click Boot Info.<br>9. Right-click the Primary Disk Group registry key, and then click Delete.<br>10. Repeat steps 7 through 9 for each instance of ControlSet00n that appears in the HKEY_LOCAL_MACHINE\Temp subkey.<br>11. Click Temp, and then on the Registry menu, click Unload Hive, and then click Yes.<br>12. Quit Registry Editor.<br>13. Shut down the second computer, and then remove the hard disk that is from the first computer.<br>14. Reinstall the hard disk in the first computer, and then start the first computer.</p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/leeguoquan/article/details/2814702">https://blog.csdn.net/leeguoquan/article/details/2814702</a></p>
+<p>如果安装了 Iomega IomegaWare 3.1 版程序，可能会出现此问题。注册表编辑器使用不当可导致严重问题，可能需要重新安装操作系统。我不能保证您可以解决因注册表编辑器使用不当而导致的题。使用注册表编辑器需要您自担风险。<br>要解决此问题，请按照出现的顺序使用以下方法。  </p>
+<p>方法 1<br>第 1 部分：通过故障恢复控制台恢复系统<br>1. 通过使用 Windows 2000 CD 作为启动盘启动计算机。  </p>
+<p>注意：您可能必须在基本输入输出系统 (BIOS) 设置中更改启动计算机的磁盘。有关 BIOS 的信息，请参阅计算机随附的文档。<br>2. 提示您执行此操作时，请按 R 键选择“修复”，然后按 C 键选择“故障恢复控制台”。<br>3. 键入 cd windows&#x2F;system32&#x2F;config，然后按 Enter 键更改文件夹。<br>4. 键入 ren system system.old，然后按 Enter 键。<br>5. 键入 copy windows&#x2F;repair&#x2F;system，然后按 Enter 键。<br>6. 键入 exit，然后按 Enter 键。<br>7. 正常启动计算机，不要从 Windows CD 启动。<br>8. 如果无法正常启动计算机，请转到方法 2。如果可正常启动计算机，请转到此方法的第 2 部分。<br>第 2 部分：编辑注册表<br>1. 单击“开始”，单击“运行”，键入 regedt32，然后单击“确定”。<br>2. 单击以下注册表项：  </p>
+<p>HKEY_LOCAL_MACHINE<br>3. 在“文件”菜单上，单击“加载配置单元”，然后加载 Windows&#x2F;System32&#x2F;Config&#x2F;System.old 配置单元。<br>4. 提示您指定一个名称时，键入 Test。<br>5. 找到并随后单击以下注册表项，其中 <xxx> 表示编号，如 001、002 以及其他编号：  </p>
+<p>ControlSet<xxx>&#x2F;Control&#x2F;Class&#x2F;{4D36E965-E325-11CE-BFC1-08002BE10318}<br>ControlSet<xxx>&#x2F;Control&#x2F;Class&#x2F;{4D36E967-E325-11CE-BFC1-08002BE10318}<br>6. 删除步骤 5 中每个注册表项的 LOWERFILTERS 项。<br>7. 在 ControlSet<xxx>&#x2F;Services 下，将 iomdisk, Iomega Activity Disk2, IomegaAccess 和 ZipToA 的初始值更改为 4（禁用）。<br>8. 在“文件”菜单上，单击“卸载配置单元”，然后卸载 Windows&#x2F;System32&#x2F;Config&#x2F;System.old 配置单元。<br>9. 在“文件”菜单上，单击“退出”以退出注册表编辑器。<br>第 3 部分：恢复系统<br>1. 通过使用 Windows 2000 CD 作为启动盘启动计算机。  </p>
+<p>注意：您可能必须在 BIOS 设置中更改启动计算机的磁盘。有关 BIOS 的信息，请参阅计算机随附的文档。<br>2. 提示您执行此操作时，按 R 键选择“修复”，然后按 C 键选择“故障恢复控制台”。<br>3. 键入 cd windows&#x2F;system32&#x2F;config，然后按 Enter 键更改文件夹。<br>4. 键入 ren system system.xxx，然后按 Enter 键。<br>5. 键入 ren system.old system，然后按 Enter 键。<br>6. 键入 exit，然后按 Enter 键。<br>第 4 部分：删除 IomegaWare<br>正常启动计算机（不要从 Windows CD 启动），然后删除 IomegaWare 程序。  </p>
+<p>方法 2<br>如果在执行方法 1 中步骤 1-7 后无法正常启动计算机，请按以下步骤执行操作。<br>第 1 部分：撤消系统恢复<br>1. 通过使用 Windows 2000 CD 作为启动盘启动计算机。  </p>
+<p>注意：您可能必须在 BIOS 设置中更改启动计算机的磁盘。有关 BIOS 的信息，请参阅计算机随附的文档。<br>2. 提示您执行此操作时，请按 R 键选择“修复”，然后按 C 键选择“故障恢复控制台”。<br>3. 键入 cd windows&#x2F;system32&#x2F;config，然后按 Enter 键更改文件夹。<br>4. 键入 ren system system.xxx，然后按 Enter 键。<br>5. 键入 ren system.old system，然后按 Enter 键。<br>第 2 部分：复制驱动程序<br>1. 键入 cd windows&#x2F;system32&#x2F;drivers，然后按 Enter 键。<br>2. 键入 ren IomDisk.sys IomDisk.old，然后按 Enter 键。<br>3. 键入 copy atapi.sys iomDisk.sys，然后按 Enter 键。<br>第 3 部分：禁用 Iomega 服务<br>1. 键入 listsvc，然后找到以下 Iomega 服务：<br>• iomdisk<br>• Iomega Activity Disk2<br>• IomegaAccess<br>• ZipToA<br>2. 键入 disable 服务名称，禁用上述各项服务。<br>第 4 部分：执行原位 Windows 升级<br>执行 Windows 2000 原位升级，然后使用“控制面板”中的“添加或删除程序”工具删除 IomegaWare。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E4%BF%AE%E5%A4%8D/" rel="tag"># 修复</a>
+              <a href="/tags/%E5%BC%95%E5%AF%BC/" rel="tag"># 引导</a>
+              <a href="/tags/windows-2000/" rel="tag"># windows 2000</a>
+              <a href="/tags/win2000/" rel="tag"># win2000</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/posts/7273fd6f/" rel="prev" title="NTFS文件系统引导扇区分析">
+      <i class="fa fa-chevron-left"></i> NTFS文件系统引导扇区分析
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/posts/aa53aede/" rel="next" title="Microsoft Windows xp 的计算机上出现的“Stop 0x0000007B”错误信息故障诊断">
+      Microsoft Windows xp 的计算机上出现的“Stop 0x0000007B”错误信息故障诊断 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%80%E8%88%AC%E6%95%85%E9%9A%9C%E8%AF%8A%E6%96%AD%E6%AD%A5%E9%AA%A4"><span class="nav-number">1.</span> <span class="nav-text">一般故障诊断步骤</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%89%B9%E5%AE%9A%E6%95%85%E9%9A%9C%E8%AF%8A%E6%96%AD%E6%AD%A5%E9%AA%A4"><span class="nav-number">2.</span> <span class="nav-text">特定故障诊断步骤</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%BC%95%E5%AF%BC%E6%89%87%E5%8C%BA%E7%97%85%E6%AF%92"><span class="nav-number">2.1.</span> <span class="nav-text">引导扇区病毒</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%89%B9%E5%AE%9A%E9%97%AE%E9%A2%98%E5%88%97%E8%A1%A8"><span class="nav-number">2.2.</span> <span class="nav-text">特定问题列表</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%A7%BB%E9%99%A4%E5%8A%A8%E6%80%81%E7%A1%AC%E7%9B%98%E5%90%8E%E8%AF%95%E5%9B%BE%E5%90%AF%E5%8A%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%97%B6%E4%BC%9A%E6%94%B6%E5%88%B0%E2%80%9CStop-0x0000007B%E2%80%9D%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF"><span class="nav-number">3.</span> <span class="nav-text">移除动态硬盘后试图启动计算机时会收到“Stop 0x0000007B”错误信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98"><span class="nav-number">3.1.</span> <span class="nav-text">为什么出现这个问题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3"><span class="nav-number">3.2.</span> <span class="nav-text">如何解决</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%B0%86%E7%B3%BB%E7%BB%9F%E7%A3%81%E7%9B%98%E7%A7%BB%E5%88%B0%E5%8F%A6%E4%B8%80%E5%8F%B0%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%8E%E5%87%BA%E7%8E%B0%E2%80%9CStop-0x0000007B%E2%80%9D%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF"><span class="nav-number">4.</span> <span class="nav-text">将系统磁盘移到另一台计算机后出现“Stop 0x0000007B”错误信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98-1"><span class="nav-number">4.1.</span> <span class="nav-text">为什么出现这个问题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3-1"><span class="nav-number">4.2.</span> <span class="nav-text">如何解决</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%85%B6%E4%BB%96%E4%BF%A1%E6%81%AF"><span class="nav-number">4.3.</span> <span class="nav-text">其他信息</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Dell-PowerEdge-2450-%E6%9C%8D%E5%8A%A1%E5%99%A8%E4%B8%8A%E6%9B%B4%E6%96%B0-PERC2-SCSI-%E9%A9%B1%E5%8A%A8%E7%A8%8B%E5%BA%8F%E5%90%8E%E5%87%BA%E7%8E%B0%E2%80%9CStop-0x0000007B%E2%80%9D%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF"><span class="nav-number">5.</span> <span class="nav-text">Dell PowerEdge 2450 服务器上更新 PERC2 SCSI 驱动程序后出现“Stop 0x0000007B”错误信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98-2"><span class="nav-number">5.1.</span> <span class="nav-text">为什么出现这个问题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3-2"><span class="nav-number">5.2.</span> <span class="nav-text">如何解决</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%A8%E4%BB%8E%E4%B8%80%E4%B8%AA%E9%95%9C%E5%83%8F%E5%8A%A8%E6%80%81%E7%A3%81%E7%9B%98%E5%90%AF%E5%8A%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%97%B6%E5%87%BA%E7%8E%B0%E2%80%9CStop-0x0000007B%E2%80%9D%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF"><span class="nav-number">6.</span> <span class="nav-text">在从一个镜像动态磁盘启动计算机时出现“Stop: 0x0000007B”错误信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98-3"><span class="nav-number">6.1.</span> <span class="nav-text">为什么出现这个问题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3-3"><span class="nav-number">6.2.</span> <span class="nav-text">如何解决</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E6%96%B0%E4%B8%BB%E6%9D%BF%E5%90%8E%E5%90%AF%E5%8A%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%97%B6%E5%87%BA%E7%8E%B0%E2%80%9CStop-0x0000007B%E2%80%9D%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF"><span class="nav-number">7.</span> <span class="nav-text">安装新主板后启动计算机时出现“Stop 0x0000007B”错误信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98-4"><span class="nav-number">7.1.</span> <span class="nav-text">为什么出现这个问题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3-4"><span class="nav-number">7.2.</span> <span class="nav-text">如何解决</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%9C%A8%E4%BB%8E%E6%96%AD%E5%BC%80%E7%9A%84%E5%9F%BA%E6%9C%AC%E9%95%9C%E5%83%8F%E5%B0%86%E8%AE%A1%E7%AE%97%E6%9C%BA%E5%90%AF%E5%8A%A8%E5%88%B0%E9%98%B4%E5%BD%B1%E9%A9%B1%E5%8A%A8%E5%99%A8%E6%97%B6%E6%94%B6%E5%88%B0%E2%80%9CStop-0x00000058-FTDISK-INTERNAL-ERROR%E2%80%9D%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF"><span class="nav-number">8.</span> <span class="nav-text">在从断开的基本镜像将计算机启动到阴影驱动器时收到“Stop 0x00000058 FTDISK_INTERNAL_ERROR”错误信息</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A0%E9%99%A4-Roxio-Easy-CD-Creator-5-Platinum-%E5%90%8E%E5%87%BA%E7%8E%B0%E2%80%9CStop-0x0000007B%E2%80%9D%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF"><span class="nav-number">9.</span> <span class="nav-text">删除 Roxio Easy CD Creator 5 Platinum 后出现“Stop 0x0000007B”错误信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98-5"><span class="nav-number">9.1.</span> <span class="nav-text">为什么出现这个问题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3-5"><span class="nav-number">9.2.</span> <span class="nav-text">如何解决</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E4%BA%86-Iomega-IomegaWare-3-1-%E5%90%8E%E5%90%AF%E5%8A%A8%E8%AE%A1%E7%AE%97%E6%9C%BA%E6%97%B6%E5%87%BA%E7%8E%B0%E2%80%9CStop-0x0000007B%E2%80%9D%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF"><span class="nav-number">10.</span> <span class="nav-text">安装了 Iomega IomegaWare 3.1 后启动计算机时出现“Stop 0x0000007B”错误信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98-6"><span class="nav-number">10.1.</span> <span class="nav-text">为什么出现这个问题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3-6"><span class="nav-number">10.2.</span> <span class="nav-text">如何解决</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%89%E8%A3%85%E4%BA%86-Iomega-%E5%B7%A5%E5%85%B7%E5%90%8E%E5%87%BA%E7%8E%B0%E2%80%9CStop-0x0000007B%E2%80%9D%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF"><span class="nav-number">11.</span> <span class="nav-text">安装了 Iomega 工具后出现“Stop 0x0000007B”错误信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98-7"><span class="nav-number">11.1.</span> <span class="nav-text">为什么出现这个问题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3-7"><span class="nav-number">11.2.</span> <span class="nav-text">如何解决</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%88%A0%E9%99%A4-Veritas-Open-Transaction-Manager-%E5%90%8E%E5%87%BA%E7%8E%B0%E2%80%9CStop-0x0000007B%E2%80%9D%E9%94%99%E8%AF%AF%E4%BF%A1%E6%81%AF"><span class="nav-number">12.</span> <span class="nav-text">删除 Veritas Open Transaction Manager 后出现“Stop 0x0000007B”错误信息</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E5%87%BA%E7%8E%B0%E8%BF%99%E4%B8%AA%E9%97%AE%E9%A2%98-8"><span class="nav-number">12.1.</span> <span class="nav-text">为什么出现这个问题</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E8%A7%A3%E5%86%B3-8"><span class="nav-number">12.2.</span> <span class="nav-text">如何解决</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8F%82%E8%80%83"><span class="nav-number"></span> <span class="nav-text">参考</span></a></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">开心系统</p>
+  <div class="site-description" itemprop="description">苹果系统升级、降级、重装、双系统安装，Dos、Windows系统故障修复</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives">
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">categories</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">29</span>
+        <span class="site-state-item-name">tags</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/true" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+  <div class="languages">
+    <label class="lang-select-label">
+      <i class="fa fa-language"></i>
+      <span>English</span>
+      <i class="fa fa-angle-up" aria-hidden="true"></i>
+    </label>
+    <select class="lang-select" data-canonical="">
+      
+        <option value="zh-CN" data-href="/posts/7273fd6f/" selected="">
+          简体中文
+        </option>
+      
+        <option value="en" data-href="/en/posts/7273fd6f/" selected="">
+          English
+        </option>
+      
+    </select>
+  </div>
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2024</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">开心系统</span>
+</div>
+
+<!--
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://mist.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Mist</a>
+  </div>
+-->
+
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/muse.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
